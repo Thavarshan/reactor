@@ -29,6 +29,8 @@ New to the jargon? [GLOSSARY.md](GLOSSARY.md) explains terms like *props*,
     components and interact with them like a user would
   - [MSW](https://mswjs.io/): a fake server for the data-fetching exercises
   - [Vite](https://vite.dev/): the browser playground
+  - [Tailwind CSS](https://tailwindcss.com/) and [shadcn/ui](https://ui.shadcn.com/):
+    ready-made, good-looking components for the playground
 
 ## Setup
 
@@ -54,6 +56,13 @@ npm run dev
 
 Open the address it prints, then edit `playground/App.tsx` to render the
 component you're working on. The page updates every time you save.
+
+The playground uses [shadcn/ui](https://ui.shadcn.com/) for its look. The
+components live in `playground/components/ui` and import with
+`import { Button } from "@/components/ui/button"`. Add more with
+`npx shadcn@latest add dropdown-menu`. They're only for the playground: the
+exercises themselves use plain HTML elements, so their tests can find
+everything by role and name.
 
 ## Workflow for each exercise
 
@@ -135,6 +144,7 @@ reactor/
 │   │   └── ...
 │   └── level01_jsx_and_components/ ... level13_apps/
 ├── playground/                          browser playground (npm run dev)
+│   └── components/ui/                   shadcn/ui components
 ├── test/
 │   ├── setup.ts                         runs before every test file
 │   └── server.ts                        the fake server for fetch tests

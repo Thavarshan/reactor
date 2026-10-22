@@ -12,13 +12,18 @@ export class ErrorBoundary extends Component<Props, State> {
     return { error };
   }
 
-  render() {
+  render(): ReactNode {
     if (this.state.error) {
       return (
-        <div role="alert" className="playground-error">
-          <strong>Something threw an error:</strong>
-          <pre>{this.state.error.message}</pre>
-          <p>Fix it and save. The page reloads by itself.</p>
+        <div
+          role="alert"
+          className="mx-auto my-10 max-w-3xl rounded-lg border border-destructive/50 bg-destructive/10 p-4 text-sm"
+        >
+          <strong className="text-destructive">Something threw an error:</strong>
+          <pre className="mt-2 whitespace-pre-wrap">{this.state.error.message}</pre>
+          <p className="mt-2 text-muted-foreground">
+            Fix it and save. The page reloads by itself.
+          </p>
         </div>
       );
     }
