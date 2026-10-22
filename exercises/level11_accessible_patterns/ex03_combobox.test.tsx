@@ -9,15 +9,15 @@
  *     npm test -- ex03_combobox
  */
 
-import { fireEvent, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { Combobox } from "./ex03_combobox";
+import { Combobox } from './ex03_combobox';
 
-const fruits = ["Apple", "Banana", "Mango", "Orange"];
+const fruits = ['Apple', 'Banana', 'Mango', 'Orange'];
 
-describe("Combobox", () => {
+describe('Combobox', () => {
   // Examples to get you started:
   //
   // it("shows matching options while typing", async () => {
@@ -42,18 +42,24 @@ describe("Combobox", () => {
   //   expect(screen.queryByRole("listbox")).not.toBeInTheDocument();
   // });
 
-  it.todo("starts closed, with no listbox and no aria-activedescendant");
-  it.todo("matches ignoring case, in the original order");
-  it.todo("points aria-controls at the listbox, which is named by the label");
-  it.todo("moves the active option with ArrowDown and ArrowUp, wrapping");
-  it.todo("sets aria-activedescendant and aria-selected on the active option only");
-  it.todo("opens all options with the first active on ArrowDown, and the last on ArrowUp");
-  it.todo("does nothing on Enter when no option is active");
-  it.todo("closes on Escape and keeps the text");
-  it.todo("closes the list when nothing matches, and ArrowDown then does nothing");
-  it.todo("starts from the first match again after Escape");
-  it.todo("clears the active option when typing again");
-  it.todo("picks an option on click and keeps focus in the text box");
-  it.todo("keeps focus in the text box while using the arrow keys");
-  it.todo("calls preventDefault for ArrowDown, ArrowUp and Enter");
+  it.todo('starts closed, with no listbox and no aria-activedescendant');
+  it.todo('matches ignoring case, in the original order');
+  it.todo('points aria-controls at the listbox, which is named by the label');
+  it.todo('moves the active option with ArrowDown and ArrowUp, wrapping');
+  it.todo(
+    'sets aria-activedescendant and aria-selected on the active option only',
+  );
+  it.todo(
+    'opens all options with the first active on ArrowDown, and the last on ArrowUp',
+  );
+  it.todo('does nothing on Enter when no option is active');
+  it.todo('closes on Escape and keeps the text');
+  it.todo(
+    'closes the list when nothing matches, and ArrowDown then does nothing',
+  );
+  it.todo('starts from the first match again after Escape');
+  it.todo('clears the active option when typing again');
+  it.todo('picks an option on click and keeps focus in the text box');
+  it.todo('keeps focus in the text box while using the arrow keys');
+  it.todo('calls preventDefault for ArrowDown, ArrowUp and Enter');
 });

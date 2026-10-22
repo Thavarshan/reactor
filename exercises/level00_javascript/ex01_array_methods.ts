@@ -159,30 +159,38 @@ export type Product = {
 
 export function inStockNames(products: readonly Product[]): string[] {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: inStockNames");
+  throw new Error('Not implemented: inStockNames');
 }
 
 export function totalPrice(products: readonly Product[]): number {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: totalPrice");
+  throw new Error('Not implemented: totalPrice');
 }
 
-export function findById(products: readonly Product[], id: number): Product | undefined {
+export function findById(
+  products: readonly Product[],
+  id: number,
+): Product | undefined {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: findById");
+  throw new Error('Not implemented: findById');
 }
 
 export function anySoldOut(products: readonly Product[]): boolean {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: anySoldOut");
+  throw new Error('Not implemented: anySoldOut');
 }
 
-export function allCheaperThan(products: readonly Product[], limit: number): boolean {
+export function allCheaperThan(
+  products: readonly Product[],
+  limit: number,
+): boolean {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: allCheaperThan");
+  throw new Error('Not implemented: allCheaperThan');
 }
 
-export function groupByCategory(products: readonly Product[]): Record<string, Product[]> {
+export function groupByCategory(
+  products: readonly Product[],
+): Record<string, Product[]> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: groupByCategory");
+  throw new Error('Not implemented: groupByCategory');
 }

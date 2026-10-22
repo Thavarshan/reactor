@@ -9,12 +9,12 @@
  *     npm test -- ex01_use_toggle
  */
 
-import { act, renderHook } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { act, renderHook } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 
-import { useToggle } from "./ex01_use_toggle";
+import { useToggle } from './ex01_use_toggle';
 
-describe("useToggle", () => {
+describe('useToggle', () => {
   // Examples to get you started:
   //
   // it("starts as false by default", () => {
@@ -30,11 +30,11 @@ describe("useToggle", () => {
   //   expect(result.current.value).toBe(true);
   // });
 
-  it.todo("starts as true when given true");
-  it.todo("flips back to false when toggled a second time");
-  it.todo("stays true when setOn is called twice");
-  it.todo("stays false when setOff is called while already false");
-  it.todo("ends false after setOn then setOff");
-  it.todo("flips twice when toggle is called twice inside one act");
-  it.todo("ignores a new initialValue after the first render");
+  it.todo('starts as true when given true');
+  it.todo('flips back to false when toggled a second time');
+  it.todo('stays true when setOn is called twice');
+  it.todo('stays false when setOff is called while already false');
+  it.todo('ends false after setOn then setOff');
+  it.todo('flips twice when toggle is called twice inside one act');
+  it.todo('ignores a new initialValue after the first render');
 });

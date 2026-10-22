@@ -168,7 +168,7 @@
  *   "nearest" }). (jsdom doesn't have it, so guard with `?.`.)
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type ComboboxProps = {
   /** The label of the text box, also the name of the listbox. */
@@ -179,7 +179,11 @@ export type ComboboxProps = {
   onSelect?: (value: string) => void;
 };
 
-export function Combobox({ label, options, onSelect }: ComboboxProps): ReactElement {
+export function Combobox({
+  label,
+  options,
+  onSelect,
+}: ComboboxProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Combobox");
+  throw new Error('Not implemented: Combobox');
 }

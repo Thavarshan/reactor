@@ -175,5 +175,5 @@ export type UseFetchResult<T> = {
 
 export function useFetch<T>(url: string): UseFetchResult<T> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useFetch");
+  throw new Error('Not implemented: useFetch');
 }

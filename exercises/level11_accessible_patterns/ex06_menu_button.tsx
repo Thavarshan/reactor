@@ -169,7 +169,7 @@
  *   selecting them does nothing.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type MenuItem = {
   /** The item's text and accessible name. */
@@ -187,5 +187,5 @@ export type MenuButtonProps = {
 
 export function MenuButton({ label, items }: MenuButtonProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: MenuButton");
+  throw new Error('Not implemented: MenuButton');
 }

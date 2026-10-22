@@ -9,13 +9,13 @@
  *     npm test -- ex05_use_interval
  */
 
-import { act, renderHook } from "@testing-library/react";
-import { useState } from "react";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { act, renderHook } from '@testing-library/react';
+import { useState } from 'react';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { useInterval } from "./ex05_use_interval";
+import { useInterval } from './ex05_use_interval';
 
-describe("useInterval", () => {
+describe('useInterval', () => {
   // Fake timers let a test move time forward instantly.
   beforeEach(() => {
     vi.useFakeTimers();
@@ -50,10 +50,10 @@ describe("useInterval", () => {
   //   expect(result.current).toBe(3);
   // });
 
-  it.todo("calls the callback 3 times after 3 delays");
-  it.todo("never calls the callback when the delay is null");
-  it.todo("stops when the delay becomes null and starts again after");
-  it.todo("uses the new timing when the delay changes");
-  it.todo("calls a new callback on time without restarting the countdown");
-  it.todo("stops and leaves no timers after unmount");
+  it.todo('calls the callback 3 times after 3 delays');
+  it.todo('never calls the callback when the delay is null');
+  it.todo('stops when the delay becomes null and starts again after');
+  it.todo('uses the new timing when the delay changes');
+  it.todo('calls a new callback on time without restarting the countdown');
+  it.todo('stops and leaves no timers after unmount');
 });

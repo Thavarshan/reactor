@@ -145,7 +145,7 @@
  * - Group the countries by continent with <optgroup>.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Country = {
   /** The country's name, shown and used as its option value. */
@@ -160,10 +160,10 @@ export type Country = {
  * in two countries.
  */
 export const COUNTRIES: Country[] = [
-  { name: "Sri Lanka", cities: ["Colombo", "Kandy", "Galle"] },
-  { name: "Japan", cities: ["Tokyo", "Kyoto", "Osaka"] },
-  { name: "Australia", cities: ["Sydney", "Perth", "Melbourne"] },
-  { name: "United Kingdom", cities: ["London", "Perth", "Edinburgh"] },
+  { name: 'Sri Lanka', cities: ['Colombo', 'Kandy', 'Galle'] },
+  { name: 'Japan', cities: ['Tokyo', 'Kyoto', 'Osaka'] },
+  { name: 'Australia', cities: ['Sydney', 'Perth', 'Melbourne'] },
+  { name: 'United Kingdom', cities: ['London', 'Perth', 'Edinburgh'] },
 ];
 
 export type LocationPickerProps = {
@@ -171,7 +171,9 @@ export type LocationPickerProps = {
   countries: Country[];
 };
 
-export function LocationPicker({ countries }: LocationPickerProps): ReactElement {
+export function LocationPicker({
+  countries,
+}: LocationPickerProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: LocationPicker");
+  throw new Error('Not implemented: LocationPicker');
 }

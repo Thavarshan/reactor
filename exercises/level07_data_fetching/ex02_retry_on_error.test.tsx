@@ -9,20 +9,20 @@
  *     npm test -- ex02_retry_on_error
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { delay, http, HttpResponse } from "msw";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { delay, http, HttpResponse } from 'msw';
+import { describe, expect, it } from 'vitest';
 
-import { server } from "../../test/server";
-import { type Quote, QuoteOfTheDay } from "./ex02_retry_on_error";
+import { server } from '../../test/server';
+import { type Quote, QuoteOfTheDay } from './ex02_retry_on_error';
 
 const QUOTE: Quote = {
-  text: "The more I study, the more insatiable do I feel my genius for it.",
-  author: "Ada Lovelace",
+  text: 'The more I study, the more insatiable do I feel my genius for it.',
+  author: 'Ada Lovelace',
 };
 
-describe("QuoteOfTheDay", () => {
+describe('QuoteOfTheDay', () => {
   // Examples to get you started:
   //
   // it("shows the quote when the first request works", async () => {
@@ -47,9 +47,9 @@ describe("QuoteOfTheDay", () => {
   //   expect(screen.queryByRole("alert")).not.toBeInTheDocument();
   // });
 
-  it.todo("shows the alert and the button when the server answers 500");
-  it.todo("shows the alert and the button when there is no answer at all");
-  it.todo("shows loading and hides the alert and button while retrying");
-  it.todo("can fail twice and still succeed on the third try");
-  it.todo("sends exactly one request per click on Try again");
+  it.todo('shows the alert and the button when the server answers 500');
+  it.todo('shows the alert and the button when there is no answer at all');
+  it.todo('shows loading and hides the alert and button while retrying');
+  it.todo('can fail twice and still succeed on the third try');
+  it.todo('sends exactly one request per click on Try again');
 });

@@ -1,4 +1,4 @@
-import { Component, type ReactNode } from "react";
+import { Component, type ReactNode } from 'react';
 
 type Props = { children: ReactNode };
 type State = { error: Error | null };
@@ -19,8 +19,12 @@ export class ErrorBoundary extends Component<Props, State> {
           role="alert"
           className="mx-auto my-10 max-w-3xl rounded-lg border border-destructive/50 bg-destructive/10 p-4 text-sm"
         >
-          <strong className="text-destructive">Something threw an error:</strong>
-          <pre className="mt-2 whitespace-pre-wrap">{this.state.error.message}</pre>
+          <strong className="text-destructive">
+            Something threw an error:
+          </strong>
+          <pre className="mt-2 whitespace-pre-wrap">
+            {this.state.error.message}
+          </pre>
           <p className="mt-2 text-muted-foreground">
             Fix it and save. The page reloads by itself.
           </p>

@@ -9,13 +9,13 @@
  *     npm test -- ex01_counter
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { Counter } from "./ex01_counter";
+import { Counter } from './ex01_counter';
 
-describe("Counter", () => {
+describe('Counter', () => {
   // Examples to get you started:
   //
   // it("shows 0 by default", () => {
@@ -30,10 +30,10 @@ describe("Counter", () => {
   //   expect(screen.getByRole("status")).toHaveTextContent("1");
   // });
 
-  it.todo("shows 0 and disables Decrease when given no props");
-  it.todo("shows the initial value first");
-  it.todo("disables Increase at max and ignores clicks on it");
-  it.todo("disables both buttons when min equals max");
-  it.todo("works with negative ranges");
-  it.todo("calls onChange with the new value, but not on the first render");
+  it.todo('shows 0 and disables Decrease when given no props');
+  it.todo('shows the initial value first');
+  it.todo('disables Increase at max and ignores clicks on it');
+  it.todo('disables both buttons when min equals max');
+  it.todo('works with negative ranges');
+  it.todo('calls onChange with the new value, but not on the first render');
 });

@@ -9,13 +9,13 @@
  *     npm test -- ex06_use_optimistic
  */
 
-import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { act, render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { Chat, type Message } from "./ex06_use_optimistic";
+import { Chat, type Message } from './ex06_use_optimistic';
 
-describe("Chat", () => {
+describe('Chat', () => {
   // Examples to get you started:
   //
   // it("shows the initial messages", () => {
@@ -38,12 +38,12 @@ describe("Chat", () => {
   //   expect(screen.queryByText("Sending...")).not.toBeInTheDocument();
   // });
 
-  it.todo("shows initialMessages in order");
-  it.todo("shows No messages yet. when there are none");
-  it.todo("shows a sent message at once with Sending...");
-  it.todo("empties the input once the send has finished");
+  it.todo('shows initialMessages in order');
+  it.todo('shows No messages yet. when there are none');
+  it.todo('shows a sent message at once with Sending...');
+  it.todo('empties the input once the send has finished');
   it.todo("shows the server's copy without Sending... on success");
-  it.todo("removes the message and shows the alert on failure");
-  it.todo("removes the old alert once a later send has worked");
-  it.todo("ignores an empty or spaces-only message");
+  it.todo('removes the message and shows the alert on failure');
+  it.todo('removes the old alert once a later send has worked');
+  it.todo('ignores an empty or spaces-only message');
 });

@@ -133,7 +133,7 @@
  *   the selector.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type ToggleSwitchProps = {
   /** The switch's visible label and accessible name. */
@@ -153,5 +153,5 @@ export function ToggleSwitch({
   onChange,
 }: ToggleSwitchProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ToggleSwitch");
+  throw new Error('Not implemented: ToggleSwitch');
 }

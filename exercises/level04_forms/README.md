@@ -10,7 +10,7 @@ make it **controlled** instead: the text lives in state, and the input just
 shows it.
 
 ```tsx
-const [city, setCity] = useState("");
+const [city, setCity] = useState('');
 
 <input value={city} onChange={(e) => setCity(e.target.value)} />;
 ```
@@ -80,7 +80,7 @@ filtered list, a count or an "is everything ticked?" flag can all be
 calculated while rendering:
 
 ```tsx
-const [query, setQuery] = useState("");
+const [query, setQuery] = useState('');
 const matches = items.filter((item) => item.includes(query)); // not state
 ```
 

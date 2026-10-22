@@ -23,7 +23,7 @@ Two things can make a component suspend in this level:
 - **A lazy component** whose code hasn't downloaded yet:
 
   ```tsx
-  const Editor = lazy(() => import("./editor"));
+  const Editor = lazy(() => import('./editor'));
   ```
 
 - **`use(promise)`**, which reads the value of a Promise during render:
@@ -47,7 +47,7 @@ Two things can make a component suspend in this level:
 const [isPending, startTransition] = useTransition();
 
 startTransition(() => {
-  setTab("posts");
+  setTab('posts');
 });
 ```
 
@@ -78,12 +78,14 @@ calls it with the form's data. Three hooks build on that:
 - After an action finishes, React resets the form fields.
 
 ```tsx
-const [state, formAction, isPending] = useActionState(saveName, { error: null });
+const [state, formAction, isPending] = useActionState(saveName, {
+  error: null,
+});
 
 <form action={formAction}>
   <input name="name" />
   <button disabled={isPending}>Save</button>
-</form>
+</form>;
 ```
 
 ## Testing concurrent features
@@ -102,7 +104,7 @@ Two habits will save you a lot of confusion:
   await act(async () => {
     render(<UserCard userId={1} />);
   });
-  await act(() => user.click(screen.getByRole("tab", { name: "Posts" })));
+  await act(() => user.click(screen.getByRole('tab', { name: 'Posts' })));
   ```
 
   Without it, React can lose track of the waiting work, and the content

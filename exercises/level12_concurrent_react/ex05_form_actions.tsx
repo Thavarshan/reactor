@@ -155,7 +155,7 @@
  * - Add a "Frequency" select (weekly or monthly) and send it too.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type SubscribeFormProps = {
   /** Sends the email to the server. Resolves when done, rejects on failure. */
@@ -164,5 +164,5 @@ export type SubscribeFormProps = {
 
 export function SubscribeForm({ subscribe }: SubscribeFormProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: SubscribeForm");
+  throw new Error('Not implemented: SubscribeForm');
 }

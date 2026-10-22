@@ -12,19 +12,19 @@
  *     npm test -- ex03_use_callback
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { Playlist, type Song } from "./ex03_use_callback";
+import { Playlist, type Song } from './ex03_use_callback';
 
 const songs: Song[] = [
-  { id: "a", title: "So What" },
-  { id: "b", title: "Blue Train" },
-  { id: "c", title: "Take Five" },
+  { id: 'a', title: 'So What' },
+  { id: 'b', title: 'Blue Train' },
+  { id: 'c', title: 'Take Five' },
 ];
 
-describe("Playlist", () => {
+describe('Playlist', () => {
   // Examples to get you started:
   //
   // it("renders every row once at first", () => {
@@ -44,9 +44,11 @@ describe("Playlist", () => {
   // });
 
   it.todo("toggles Mute's aria-pressed both ways");
-  it.todo("re-renders only the played row and marks its button pressed");
+  it.todo('re-renders only the played row and marks its button pressed');
   it.todo("shows 'Now playing: <title>' for the playing song");
-  it.todo("re-renders exactly the old row and the new row when switching songs");
-  it.todo("stops the song when its Play button is clicked again");
-  it.todo("renders no rows when the parent re-renders with the same songs");
+  it.todo(
+    're-renders exactly the old row and the new row when switching songs',
+  );
+  it.todo('stops the song when its Play button is clicked again');
+  it.todo('renders no rows when the parent re-renders with the same songs');
 });

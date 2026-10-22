@@ -9,15 +9,15 @@
  *     npm test -- ex03_checkbox_group
  */
 
-import { render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { CheckboxGroup } from "./ex03_checkbox_group";
+import { CheckboxGroup } from './ex03_checkbox_group';
 
-const OPTIONS = ["Cheese", "Ham", "Olives"];
+const OPTIONS = ['Cheese', 'Ham', 'Olives'];
 
-describe("CheckboxGroup", () => {
+describe('CheckboxGroup', () => {
   // Examples to get you started:
   //
   // it("starts with nothing ticked", () => {
@@ -34,12 +34,18 @@ describe("CheckboxGroup", () => {
   //   expect(screen.getByRole("checkbox", { name: "Select all" })).toBePartiallyChecked();
   // });
 
-  it.todo("starts with nothing ticked and Select all neither ticked nor indeterminate");
-  it.todo("ticks the defaultSelected options and shows Select all as indeterminate");
-  it.todo("ticks Select all when defaultSelected has every option");
-  it.todo("ticks Select all when the last option is ticked");
-  it.todo("Select all ticks everything from the in between state");
-  it.todo("Select all unticks everything when everything is ticked");
-  it.todo("calls onChange with the list in options order, not on the first render");
-  it.todo("works with a single option");
+  it.todo(
+    'starts with nothing ticked and Select all neither ticked nor indeterminate',
+  );
+  it.todo(
+    'ticks the defaultSelected options and shows Select all as indeterminate',
+  );
+  it.todo('ticks Select all when defaultSelected has every option');
+  it.todo('ticks Select all when the last option is ticked');
+  it.todo('Select all ticks everything from the in between state');
+  it.todo('Select all unticks everything when everything is ticked');
+  it.todo(
+    'calls onChange with the list in options order, not on the first render',
+  );
+  it.todo('works with a single option');
 });

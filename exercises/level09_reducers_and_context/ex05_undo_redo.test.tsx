@@ -10,13 +10,18 @@
  *     npm test -- ex05_undo_redo
  */
 
-import { act, render, renderHook, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { act, render, renderHook, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { ColorPicker, type History, historyReducer, useHistory } from "./ex05_undo_redo";
+import {
+  ColorPicker,
+  type History,
+  historyReducer,
+  useHistory,
+} from './ex05_undo_redo';
 
-describe("historyReducer", () => {
+describe('historyReducer', () => {
   // Example to get you started:
   //
   // it("moves the present into the past on set", () => {
@@ -28,14 +33,14 @@ describe("historyReducer", () => {
   //   });
   // });
 
-  it.todo("clears the future on set");
-  it.todo("returns the same state when setting the same value");
-  it.todo("returns the same state for undo or redo with nothing to do");
-  it.todo("gets back to an equal state after undo then redo");
-  it.todo("never mutates frozen input");
+  it.todo('clears the future on set');
+  it.todo('returns the same state when setting the same value');
+  it.todo('returns the same state for undo or redo with nothing to do');
+  it.todo('gets back to an equal state after undo then redo');
+  it.todo('never mutates frozen input');
 });
 
-describe("useHistory", () => {
+describe('useHistory', () => {
   // Example to get you started:
   //
   // it("undoes a change to a number", () => {
@@ -46,10 +51,10 @@ describe("useHistory", () => {
   //   expect(result.current.value).toBe(1);
   // });
 
-  it.todo("reports canUndo and canRedo as the history changes");
+  it.todo('reports canUndo and canRedo as the history changes');
 });
 
-describe("ColorPicker", () => {
+describe('ColorPicker', () => {
   // Example to get you started:
   //
   // it("starts white with Undo and Redo disabled", () => {
@@ -60,7 +65,7 @@ describe("ColorPicker", () => {
   // });
 
   it.todo("marks only the current colour's button as pressed");
-  it.todo("follows the undo and redo example from the exercise");
-  it.todo("adds no undo step when the current colour is clicked");
-  it.todo("disables Redo after a new colour is picked following an undo");
+  it.todo('follows the undo and redo example from the exercise');
+  it.todo('adds no undo step when the current colour is clicked');
+  it.todo('disables Redo after a new colour is picked following an undo');
 });

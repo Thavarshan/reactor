@@ -9,12 +9,12 @@
  *     npm test -- ex04_use_previous
  */
 
-import { renderHook } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { renderHook } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 
-import { usePrevious } from "./ex04_use_previous";
+import { usePrevious } from './ex04_use_previous';
 
-describe("usePrevious", () => {
+describe('usePrevious', () => {
   // Examples to get you started:
   //
   // it("returns undefined on the first render", () => {
@@ -31,9 +31,9 @@ describe("usePrevious", () => {
   //   expect(result.current).toBe(1);
   // });
 
-  it.todo("returns the value before the latest change after several changes");
-  it.todo("keeps the previous value when re-rendered with the same value");
-  it.todo("treats the same object as unchanged");
-  it.todo("treats a new object with the same contents as a change");
-  it.todo("returns 2 after changing 1 -> 2 -> 1");
+  it.todo('returns the value before the latest change after several changes');
+  it.todo('keeps the previous value when re-rendered with the same value');
+  it.todo('treats the same object as unchanged');
+  it.todo('treats a new object with the same contents as a change');
+  it.todo('returns 2 after changing 1 -> 2 -> 1');
 });

@@ -9,13 +9,13 @@
  *     npm test -- ex05_form_actions
  */
 
-import { act, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { act, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { SubscribeForm } from "./ex05_form_actions";
+import { SubscribeForm } from './ex05_form_actions';
 
-describe("SubscribeForm", () => {
+describe('SubscribeForm', () => {
   // Examples to get you started:
   //
   // it("asks for an email when the field is empty", async () => {
@@ -40,11 +40,15 @@ describe("SubscribeForm", () => {
   //   expect(screen.getByRole("status")).toHaveTextContent("Thanks! ada@example.com is now subscribed.");
   // });
 
-  it.todo("shows Please enter your email. and does not subscribe when empty");
-  it.todo("shows the valid-address alert and keeps the text when there is no @");
-  it.todo("trims the email before calling subscribe");
-  it.todo("disables the button and shows Subscribing... while waiting");
-  it.todo("shows the thank-you status, empties the field and removes old alerts on success");
+  it.todo('shows Please enter your email. and does not subscribe when empty');
+  it.todo(
+    'shows the valid-address alert and keeps the text when there is no @',
+  );
+  it.todo('trims the email before calling subscribe');
+  it.todo('disables the button and shows Subscribing... while waiting');
+  it.todo(
+    'shows the thank-you status, empties the field and removes old alerts on success',
+  );
   it.todo("shows the error's message and keeps the email on failure");
-  it.todo("submits when Enter is pressed in the field");
+  it.todo('submits when Enter is pressed in the field');
 });

@@ -134,14 +134,16 @@
  *   the time of day (pass the hour in as a prop so it stays testable).
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type NameGreetingProps = {
   /** The text the "Name" box starts with. Default "". */
   initialName?: string;
 };
 
-export function NameGreeting({ initialName = "" }: NameGreetingProps): ReactElement {
+export function NameGreeting({
+  initialName = '',
+}: NameGreetingProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: NameGreeting");
+  throw new Error('Not implemented: NameGreeting');
 }

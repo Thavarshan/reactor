@@ -146,12 +146,18 @@ export type Debounced<A extends unknown[]> = ((...args: A) => void) & {
   cancel: () => void;
 };
 
-export function debounce<A extends unknown[]>(fn: (...args: A) => void, waitMs: number): Debounced<A> {
+export function debounce<A extends unknown[]>(
+  fn: (...args: A) => void,
+  waitMs: number,
+): Debounced<A> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: debounce");
+  throw new Error('Not implemented: debounce');
 }
 
-export function throttle<A extends unknown[]>(fn: (...args: A) => void, waitMs: number): (...args: A) => void {
+export function throttle<A extends unknown[]>(
+  fn: (...args: A) => void,
+  waitMs: number,
+): (...args: A) => void {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: throttle");
+  throw new Error('Not implemented: throttle');
 }

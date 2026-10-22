@@ -154,7 +154,7 @@
  * - Turn the counter red with a CSS class while the warning shows.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type CharacterCountProps = {
   /** The textarea's label, e.g. "Bio". */
@@ -165,7 +165,11 @@ export type CharacterCountProps = {
   defaultValue?: string;
 };
 
-export function CharacterCount({ label, maxLength = 100, defaultValue = "" }: CharacterCountProps): ReactElement {
+export function CharacterCount({
+  label,
+  maxLength = 100,
+  defaultValue = '',
+}: CharacterCountProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: CharacterCount");
+  throw new Error('Not implemented: CharacterCount');
 }

@@ -156,7 +156,7 @@
  * - Add "Move up" and "Move down" buttons for each row.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type EmailListFormProps = {
   /** Called with the non-empty emails, top to bottom, on a valid submit. */
@@ -165,7 +165,10 @@ export type EmailListFormProps = {
   max?: number;
 };
 
-export function EmailListForm({ onSubmit, max = 5 }: EmailListFormProps): ReactElement {
+export function EmailListForm({
+  onSubmit,
+  max = 5,
+}: EmailListFormProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: EmailListForm");
+  throw new Error('Not implemented: EmailListForm');
 }

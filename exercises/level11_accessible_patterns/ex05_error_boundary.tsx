@@ -171,7 +171,7 @@
  * - Compare yours with the popular react-error-boundary package's API.
  */
 
-import { Component, type ReactNode } from "react";
+import { Component, type ReactNode } from 'react';
 
 export type FallbackProps = {
   /** The error that was caught. */
@@ -198,11 +198,14 @@ export type ErrorBoundaryState = {
   error: Error | null;
 };
 
-export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+export class ErrorBoundary extends Component<
+  ErrorBoundaryProps,
+  ErrorBoundaryState
+> {
   state: ErrorBoundaryState = { error: null };
 
   render(): ReactNode {
     // TODO: build me (add the error boundary methods), then make your tests pass.
-    throw new Error("Not implemented: ErrorBoundary");
+    throw new Error('Not implemented: ErrorBoundary');
   }
 }

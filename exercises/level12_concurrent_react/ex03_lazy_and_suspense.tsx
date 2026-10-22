@@ -161,7 +161,8 @@
  *   boundary (a component that catches errors thrown below it).
  */
 
-import { ComponentType, type ReactElement } from "react";
+import type { ComponentType } from 'react';
+import { type ReactElement } from 'react';
 
 export type LazyTab = {
   /** The text on the tab button. Also used in "Loading <label>...". */
@@ -177,17 +178,17 @@ export type LazyTabsProps = {
 
 export function LazyTabs({ tabs }: LazyTabsProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: LazyTabs");
+  throw new Error('Not implemented: LazyTabs');
 }
 
 /** The SalesChart panel, loaded only when it is first shown. */
 export const LazySalesChart: ComponentType = function LazySalesChart(): never {
   // TODO: replace this whole function with lazy(...), then make your tests pass.
-  throw new Error("Not implemented: LazySalesChart");
+  throw new Error('Not implemented: LazySalesChart');
 };
 
 /** The SalesTable panel, loaded only when it is first shown. */
 export const LazySalesTable: ComponentType = function LazySalesTable(): never {
   // TODO: replace this whole function with lazy(...), then make your tests pass.
-  throw new Error("Not implemented: LazySalesTable");
+  throw new Error('Not implemented: LazySalesTable');
 };

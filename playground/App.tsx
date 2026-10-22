@@ -19,17 +19,17 @@
 //
 // Add more with `npx shadcn@latest add <name>`, e.g. `add dropdown-menu`.
 
-import type { ReactNode } from "react";
+import type { ReactNode } from 'react';
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card';
 
 function Demo({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -47,17 +47,22 @@ export function App() {
   return (
     <main className="mx-auto flex max-w-3xl flex-col gap-6 px-4 py-10">
       <header className="flex items-center gap-3">
-        <h1 className="text-3xl font-semibold tracking-tight">reactor playground</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">
+          reactor playground
+        </h1>
         <Badge variant="secondary">dev</Badge>
       </header>
 
       <p className="text-muted-foreground">
-        Edit <code className="rounded bg-muted px-1.5 py-0.5">playground/App.tsx</code>{" "}
+        Edit{' '}
+        <code className="rounded bg-muted px-1.5 py-0.5">
+          playground/App.tsx
+        </code>{' '}
         to render the component you're working on.
       </p>
 
       <Demo title="Hello">
-        <Button onClick={() => alert("shadcn/ui is working")}>Click me</Button>
+        <Button onClick={() => alert('shadcn/ui is working')}>Click me</Button>
       </Demo>
     </main>
   );

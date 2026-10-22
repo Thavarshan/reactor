@@ -12,13 +12,13 @@
  *     npm test -- ex06_state_colocation
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { Dashboard, SlowDashboard } from "./ex06_state_colocation";
+import { Dashboard, SlowDashboard } from './ex06_state_colocation';
 
-describe("SlowDashboard (proves the problem)", () => {
+describe('SlowDashboard (proves the problem)', () => {
   // Example to get you started:
   //
   // it("re-renders the report on every keystroke", async () => {
@@ -29,10 +29,10 @@ describe("SlowDashboard (proves the problem)", () => {
   //   expect(spy).toHaveBeenCalledTimes(6); // 1 first render + 5 letters
   // });
 
-  it.todo("re-renders the report when the theme changes");
+  it.todo('re-renders the report when the theme changes');
 });
 
-describe("Dashboard", () => {
+describe('Dashboard', () => {
   // Example to get you started:
   //
   // it("does not re-render the report while typing", async () => {
@@ -44,9 +44,11 @@ describe("Dashboard", () => {
   //   expect(spy).toHaveBeenCalledTimes(1);
   // });
 
-  it.todo("renders the report exactly once at first");
-  it.todo("sets theme-dark on the Report region without re-rendering the report");
-  it.todo("switches back to theme-light");
-  it.todo("shows the Sales report table inside the Report region");
+  it.todo('renders the report exactly once at first');
+  it.todo(
+    'sets theme-dark on the Report region without re-rendering the report',
+  );
+  it.todo('switches back to theme-light');
+  it.todo('shows the Sales report table inside the Report region');
   it.todo("shows 'Characters: 0' after clearing the note");
 });

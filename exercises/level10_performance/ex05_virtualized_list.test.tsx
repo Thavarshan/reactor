@@ -9,15 +9,15 @@
  *     npm test -- ex05_virtualized_list
  */
 
-import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { fireEvent, render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 
-import { VirtualList } from "./ex05_virtualized_list";
+import { VirtualList } from './ex05_virtualized_list';
 
 // "Item 1" to "Item 1000"
 const items = Array.from({ length: 1000 }, (_, i) => `Item ${i + 1}`);
 
-describe("VirtualList", () => {
+describe('VirtualList', () => {
   // Examples to get you started:
   //
   // it("renders only the 5 visible rows at first", () => {
@@ -39,15 +39,15 @@ describe("VirtualList", () => {
   //   ]);
   // });
 
-  it.todo("gives the scroll box height 100px and overflow-y auto");
-  it.todo("makes the spacer as tall as all rows (20000px)");
-  it.todo("places each row at index * rowHeight with height rowHeight");
-  it.todo("sets aria-posinset and aria-setsize on each row");
-  it.todo("removes rows that scrolled out of view");
-  it.todo("shows 6 rows when scrolled between rows (510)");
-  it.todo("adds overscan rows on both sides");
-  it.todo("never renders overscan rows before the first item");
-  it.todo("shows Item 996 to Item 1000 when scrolled to the end");
-  it.todo("renders every row when they all fit");
-  it.todo("renders no rows and a 0px spacer for no items");
+  it.todo('gives the scroll box height 100px and overflow-y auto');
+  it.todo('makes the spacer as tall as all rows (20000px)');
+  it.todo('places each row at index * rowHeight with height rowHeight');
+  it.todo('sets aria-posinset and aria-setsize on each row');
+  it.todo('removes rows that scrolled out of view');
+  it.todo('shows 6 rows when scrolled between rows (510)');
+  it.todo('adds overscan rows on both sides');
+  it.todo('never renders overscan rows before the first item');
+  it.todo('shows Item 996 to Item 1000 when scrolled to the end');
+  it.todo('renders every row when they all fit');
+  it.todo('renders no rows and a 0px spacer for no items');
 });

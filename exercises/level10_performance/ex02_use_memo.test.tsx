@@ -12,13 +12,13 @@
  *     npm test -- ex02_use_memo
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { filterProducts, ProductSearch, sampleProducts } from "./ex02_use_memo";
+import { filterProducts, ProductSearch, sampleProducts } from './ex02_use_memo';
 
-describe("ProductSearch", () => {
+describe('ProductSearch', () => {
   // Examples to get you started:
   //
   // it("filters once on the first render", () => {
@@ -39,10 +39,12 @@ describe("ProductSearch", () => {
   // });
 
   it.todo("lists every product with '6 results' at first");
-  it.todo("calls filter once per keystroke, with the latest text");
-  it.todo("shows only matching products after typing");
-  it.todo("does not call filter when re-rendered with the same products");
-  it.todo("calls filter once when re-rendered with a new products array");
+  it.todo('calls filter once per keystroke, with the latest text');
+  it.todo('shows only matching products after typing');
+  it.todo('does not call filter when re-rendered with the same products');
+  it.todo('calls filter once when re-rendered with a new products array');
   it.todo("says '1 result' for exactly one match");
-  it.todo("shows '0 results' and 'No products found.' with no list when nothing matches");
+  it.todo(
+    "shows '0 results' and 'No products found.' with no list when nothing matches",
+  );
 });

@@ -9,13 +9,13 @@
  *     npm test -- ex06_selection_list
  */
 
-import { render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { CONTACTS, ContactManager } from "./ex06_selection_list";
+import { CONTACTS, ContactManager } from './ex06_selection_list';
 
-describe("ContactManager", () => {
+describe('ContactManager', () => {
   // Examples to get you started:
   //
   // it("asks you to select a contact at first", () => {
@@ -33,12 +33,14 @@ describe("ContactManager", () => {
   //   expect(screen.getByRole("heading", { level: 2 })).toHaveTextContent("Grace Hopper B.");
   // });
 
-  it.todo("lists every contact, none pressed, and has no edit boxes at first");
+  it.todo('lists every contact, none pressed, and has no edit boxes at first');
   it.todo("presses only the selected contact's button and fills the panel");
-  it.todo("updates the list button and the heading live while editing the name");
-  it.todo("updates the email text while editing the email");
+  it.todo(
+    'updates the list button and the heading live while editing the name',
+  );
+  it.todo('updates the email text while editing the email');
   it.todo("shows the other contact's values after switching");
-  it.todo("keeps edits after switching away and back");
+  it.todo('keeps edits after switching away and back');
   it.todo("deletes the contact and shows 'Select a contact'");
   it.todo("shows '(no name)' for an empty name");
 });

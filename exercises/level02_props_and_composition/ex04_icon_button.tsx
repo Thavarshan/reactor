@@ -140,7 +140,8 @@
  *   instead of aria-label, and compare the two approaches.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type IconButtonProps = {
   /** The icon to show: text, an emoji or an <svg>. */
@@ -155,7 +156,13 @@ export type IconButtonProps = {
   disabled?: boolean;
 };
 
-export function IconButton({ icon, label, onClick, pressed, disabled = false }: IconButtonProps): ReactElement {
+export function IconButton({
+  icon,
+  label,
+  onClick,
+  pressed,
+  disabled = false,
+}: IconButtonProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: IconButton");
+  throw new Error('Not implemented: IconButton');
 }

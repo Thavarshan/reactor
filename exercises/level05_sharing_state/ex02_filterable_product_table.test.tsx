@@ -9,25 +9,27 @@
  *     npm test -- ex02_filterable_product_table
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
 import {
   FilterableProductTable,
   PRODUCTS,
   ProductTable,
   SearchBar,
-} from "./ex02_filterable_product_table";
+} from './ex02_filterable_product_table';
 
 // Reads the table as an array of rows, each an array of cell texts.
 function tableRows() {
   return screen
-    .getAllByRole("row")
-    .map((row) => Array.from(row.querySelectorAll("th, td"), (cell) => cell.textContent));
+    .getAllByRole('row')
+    .map((row) =>
+      Array.from(row.querySelectorAll('th, td'), (cell) => cell.textContent),
+    );
 }
 
-describe("SearchBar", () => {
+describe('SearchBar', () => {
   // Example to get you started:
   //
   // it("calls onInStockOnlyChange when the checkbox is clicked", async () => {
@@ -45,11 +47,11 @@ describe("SearchBar", () => {
   //   expect(spy).toHaveBeenCalledWith(true);
   // });
 
-  it.todo("shows filterText and inStockOnly");
-  it.todo("calls onFilterTextChange with the new text");
+  it.todo('shows filterText and inStockOnly');
+  it.todo('calls onFilterTextChange with the new text');
 });
 
-describe("ProductTable", () => {
+describe('ProductTable', () => {
   // Example to get you started:
   //
   // it("groups every product under its category", () => {
@@ -57,14 +59,16 @@ describe("ProductTable", () => {
   //   expect(tableRows().slice(0, 3)).toEqual([["Name", "Price"], ["Fruits"], ["Apple", "$1"]]);
   // });
 
-  it.todo("shows every product in order under its category when there are no filters");
-  it.todo("ignores case and spaces around the filter text");
-  it.todo("hides out-of-stock products when inStockOnly is true");
-  it.todo("leaves out a category row with nothing to show");
-  it.todo("puts spread-out products of one category under one category row");
+  it.todo(
+    'shows every product in order under its category when there are no filters',
+  );
+  it.todo('ignores case and spaces around the filter text');
+  it.todo('hides out-of-stock products when inStockOnly is true');
+  it.todo('leaves out a category row with nothing to show');
+  it.todo('puts spread-out products of one category under one category row');
   it.todo("shows 'No products found.' and no table when nothing matches");
 });
 
-describe("FilterableProductTable", () => {
-  it.todo("filters the table as the user types and ticks the checkbox");
+describe('FilterableProductTable', () => {
+  it.todo('filters the table as the user types and ticks the checkbox');
 });

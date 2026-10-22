@@ -9,12 +9,12 @@
  *     npm test -- ex02_use_local_storage
  */
 
-import { act, renderHook } from "@testing-library/react";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { act, renderHook } from '@testing-library/react';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { useLocalStorage } from "./ex02_use_local_storage";
+import { useLocalStorage } from './ex02_use_local_storage';
 
-describe("useLocalStorage", () => {
+describe('useLocalStorage', () => {
   // localStorage keeps its data between tests, so start each test empty.
   beforeEach(() => {
     localStorage.clear();
@@ -40,12 +40,12 @@ describe("useLocalStorage", () => {
   //   expect(localStorage.getItem("count")).toBe("5");
   // });
 
-  it.todo("starts with a stored number, string or object, parsed");
-  it.todo("falls back to the initial value when the stored JSON is bad");
-  it.todo("stores strings with their JSON quotes");
-  it.todo("applies two functional updates made inside one act");
-  it.todo("saves the initial value right after the first render");
-  it.todo("reads localStorage only once, even after a rerender");
-  it.todo("keeps two keys independent");
-  it.todo("starts with the saved value after unmounting and rendering again");
+  it.todo('starts with a stored number, string or object, parsed');
+  it.todo('falls back to the initial value when the stored JSON is bad');
+  it.todo('stores strings with their JSON quotes');
+  it.todo('applies two functional updates made inside one act');
+  it.todo('saves the initial value right after the first render');
+  it.todo('reads localStorage only once, even after a rerender');
+  it.todo('keeps two keys independent');
+  it.todo('starts with the saved value after unmounting and rendering again');
 });

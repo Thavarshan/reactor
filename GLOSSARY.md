@@ -15,7 +15,7 @@ everywhere in React, especially for event handlers.
 **spread (`...`)**: Copies the items of an array or the properties of an
 object into a new one: `[...list, newItem]` or `{ ...user, name: "Ada" }`.
 
-**immutable update**: Making a *new* object or array with the change, instead
+**immutable update**: Making a _new_ object or array with the change, instead
 of changing (mutating) the original. React relies on this to notice that
 something changed.
 
@@ -23,7 +23,7 @@ something changed.
 `user.name = "Ada"`. Avoid this with React state.
 
 **reference equality**: `a === b` for objects is only true when they are the
-*very same object*, not just equal-looking ones. `{} === {}` is false. React
+_very same object_, not just equal-looking ones. `{} === {}` is false. React
 compares state and props this way.
 
 **closure**: A function that remembers the variables around it from where it
@@ -35,8 +35,8 @@ result of a network request. `await` waits for it.
 **`async` / `await`**: A way to write code that waits for promises as if it
 were step-by-step code.
 
-**debounce / throttle**: *Debounce* means "wait until things go quiet, then
-run once", as with search-as-you-type. *Throttle* means "run at most once
+**debounce / throttle**: _Debounce_ means "wait until things go quiet, then
+run once", as with search-as-you-type. _Throttle_ means "run at most once
 every N milliseconds".
 
 ## React basics
@@ -54,7 +54,7 @@ arguments: `<Greeting name="Ada" />` gives `Greeting` a prop `name`.
 component's opening and closing tags: `<Card>this is children</Card>`.
 
 **render / re-render**: React calling your component to find out what to
-show. It *re-renders* when its state changes or its parent re-renders.
+show. It _re-renders_ when its state changes or its parent re-renders.
 
 **state**: A value React remembers between renders (`useState`). Changing it
 with its setter makes React re-render.
@@ -92,8 +92,8 @@ can stop timers and remove listeners.
 **ref**: A box (`useRef`) that holds a value without causing re-renders.
 It's often used to hold a DOM element so you can call `.focus()` on it.
 
-**mount / unmount**: A component *mounts* when it first appears on screen
-and *unmounts* when it's removed.
+**mount / unmount**: A component _mounts_ when it first appears on screen
+and _unmounts_ when it's removed.
 
 **StrictMode**: A development-only helper that deliberately runs some things
 twice, such as effects, to expose missing cleanup. It doesn't happen in
@@ -147,7 +147,7 @@ people using a keyboard only or a screen reader.
 **screen reader**: Software that reads the page aloud for blind and
 low-vision users.
 
-**role**: What an element *is* to assistive technology: button, link,
+**role**: What an element _is_ to assistive technology: button, link,
 heading, dialog, tab... Native elements like `<button>` have one built in.
 
 **accessible name**: What a screen reader announces for an element. It comes

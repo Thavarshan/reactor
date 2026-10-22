@@ -141,7 +141,7 @@
  *   "(3) Inbox - Mail".
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type PageTitleProps = {
   /** The page name. Shown in the <h1> and in the browser tab. */
@@ -152,5 +152,5 @@ export type PageTitleProps = {
 
 export function PageTitle({ title, count = 0 }: PageTitleProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: PageTitle");
+  throw new Error('Not implemented: PageTitle');
 }

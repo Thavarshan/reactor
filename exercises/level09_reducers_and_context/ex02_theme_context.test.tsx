@@ -10,14 +10,19 @@
  *     npm test -- ex02_theme_context
  */
 
-import { act, render, renderHook, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import type { ReactNode } from "react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { act, render, renderHook, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import type { ReactNode } from 'react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { ThemeProvider, ThemeStatus, ThemeToggle, useTheme } from "./ex02_theme_context";
+import {
+  ThemeProvider,
+  ThemeStatus,
+  ThemeToggle,
+  useTheme,
+} from './ex02_theme_context';
 
-describe("theme context", () => {
+describe('theme context', () => {
   // Remove any spies a test created (such as a silenced console.error).
   afterEach(() => {
     vi.restoreAllMocks();
@@ -45,10 +50,10 @@ describe("theme context", () => {
   //   );
   // });
 
-  it.todo("starts dark when initialTheme is dark");
-  it.todo("comes back to light after two clicks on the toggle");
+  it.todo('starts dark when initialTheme is dark');
+  it.todo('comes back to light after two clicks on the toggle');
   it.todo("stays dark when setTheme('dark') is called twice");
-  it.todo("flips the theme with toggleTheme");
-  it.todo("keeps two sibling providers independent");
-  it.todo("lets a nested provider override the outer one");
+  it.todo('flips the theme with toggleTheme');
+  it.todo('keeps two sibling providers independent');
+  it.todo('lets a nested provider override the outer one');
 });

@@ -122,5 +122,5 @@
 
 export function usePrevious<T>(value: T): T | undefined {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: usePrevious");
+  throw new Error('Not implemented: usePrevious');
 }

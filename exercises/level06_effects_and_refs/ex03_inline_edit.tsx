@@ -156,7 +156,7 @@
  *   page, e.g. aria-label="Edit Task name".
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type InlineEditProps = {
   /** The text shown at first. */
@@ -167,7 +167,11 @@ export type InlineEditProps = {
   onSave?: (value: string) => void;
 };
 
-export function InlineEdit({ initialValue, label, onSave }: InlineEditProps): ReactElement {
+export function InlineEdit({
+  initialValue,
+  label,
+  onSave,
+}: InlineEditProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: InlineEdit");
+  throw new Error('Not implemented: InlineEdit');
 }

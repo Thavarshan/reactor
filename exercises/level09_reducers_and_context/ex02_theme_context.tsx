@@ -171,9 +171,10 @@
  *   the theme really changes. (Level 10 covers this.)
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
-export type Theme = "light" | "dark";
+export type Theme = 'light' | 'dark';
 
 export type ThemeContextValue = {
   /** The current theme. */
@@ -191,22 +192,25 @@ export type ThemeProviderProps = {
   initialTheme?: Theme;
 };
 
-export function ThemeProvider({ children, initialTheme = "light" }: ThemeProviderProps): ReactElement {
+export function ThemeProvider({
+  children,
+  initialTheme = 'light',
+}: ThemeProviderProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ThemeProvider");
+  throw new Error('Not implemented: ThemeProvider');
 }
 
 export function useTheme(): ThemeContextValue {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useTheme");
+  throw new Error('Not implemented: useTheme');
 }
 
 export function ThemeToggle(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ThemeToggle");
+  throw new Error('Not implemented: ThemeToggle');
 }
 
 export function ThemeStatus(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ThemeStatus");
+  throw new Error('Not implemented: ThemeStatus');
 }

@@ -46,7 +46,7 @@ invisible component that calls your hook, and hands you what the hook
 returned.
 
 ```tsx
-import { act, renderHook } from "@testing-library/react";
+import { act, renderHook } from '@testing-library/react';
 
 const { result } = renderHook(() => useCounter(5));
 expect(result.current.count).toBe(5);
@@ -104,10 +104,9 @@ receives them. Then `rerender(newProps)` calls your hook again with the
 new values:
 
 ```tsx
-const { result, rerender } = renderHook(
-  ({ start }) => useCounter(start),
-  { initialProps: { start: 5 } },
-);
+const { result, rerender } = renderHook(({ start }) => useCounter(start), {
+  initialProps: { start: 5 },
+});
 
 rerender({ start: 99 });
 // useState only uses its starting value on the first render,
@@ -136,7 +135,7 @@ gives up after one second):
 ```tsx
 const { result } = renderHook(() => useUser(1));
 await waitFor(() => expect(result.current.loading).toBe(false));
-expect(result.current.user?.name).toBe("Ada");
+expect(result.current.user?.name).toBe('Ada');
 ```
 
 ## The exercises

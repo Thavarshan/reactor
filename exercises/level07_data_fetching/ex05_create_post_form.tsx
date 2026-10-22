@@ -174,7 +174,7 @@
  *   `useActionState` (see the concurrent React level).
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 /** A post, as the server sends it back. */
 export type Post = {
@@ -194,7 +194,9 @@ export type CreatePostFormProps = {
   onCreated?: (post: Post) => void;
 };
 
-export function CreatePostForm({ onCreated }: CreatePostFormProps): ReactElement {
+export function CreatePostForm({
+  onCreated,
+}: CreatePostFormProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: CreatePostForm");
+  throw new Error('Not implemented: CreatePostForm');
 }

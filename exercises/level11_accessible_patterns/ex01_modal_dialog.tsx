@@ -155,7 +155,8 @@
  *   playground. What did you no longer need to write?
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type ModalDialogProps = {
   /** The text of the button that opens the dialog. */
@@ -174,17 +175,22 @@ export type ModalDialogProps = {
  */
 export function getFocusable(container: HTMLElement): HTMLElement[] {
   const selector = [
-    "a[href]",
-    "button:not([disabled])",
-    "input:not([disabled])",
-    "select:not([disabled])",
-    "textarea:not([disabled])",
+    'a[href]',
+    'button:not([disabled])',
+    'input:not([disabled])',
+    'select:not([disabled])',
+    'textarea:not([disabled])',
     '[tabindex]:not([tabindex="-1"])',
-  ].join(", ");
+  ].join(', ');
   return Array.from(container.querySelectorAll<HTMLElement>(selector));
 }
 
-export function ModalDialog({ triggerLabel, title, children, onClose }: ModalDialogProps): ReactElement {
+export function ModalDialog({
+  triggerLabel,
+  title,
+  children,
+  onClose,
+}: ModalDialogProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ModalDialog");
+  throw new Error('Not implemented: ModalDialog');
 }

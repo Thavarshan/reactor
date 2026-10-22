@@ -136,7 +136,7 @@
  *   guard").
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type StatusBadgeProps = {
   /** An account status from the server, e.g. "active". May be messy or unknown. */
@@ -145,5 +145,5 @@ export type StatusBadgeProps = {
 
 export function StatusBadge({ status }: StatusBadgeProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: StatusBadge");
+  throw new Error('Not implemented: StatusBadge');
 }

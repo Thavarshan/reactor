@@ -9,15 +9,15 @@
  *     npm test -- ex04_dropdown_click_outside
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { Dropdown } from "./ex04_dropdown_click_outside";
+import { Dropdown } from './ex04_dropdown_click_outside';
 
-const ITEMS = ["Edit", "Duplicate", "Delete"];
+const ITEMS = ['Edit', 'Duplicate', 'Delete'];
 
-describe("Dropdown", () => {
+describe('Dropdown', () => {
   // Examples to get you started:
   //
   // it("closes when you click outside", async () => {
@@ -45,10 +45,10 @@ describe("Dropdown", () => {
   //   expect(toggle).toHaveAttribute("aria-expanded", "false");
   // });
 
-  it.todo("starts closed with aria-expanded false and no list");
-  it.todo("opens and closes when the button is clicked twice");
-  it.todo("calls onSelect with the item text and closes");
-  it.todo("stays open when the list itself is clicked");
-  it.todo("does nothing on Escape while closed (focus stays put)");
-  it.todo("opens and closes correctly a second time");
+  it.todo('starts closed with aria-expanded false and no list');
+  it.todo('opens and closes when the button is clicked twice');
+  it.todo('calls onSelect with the item text and closes');
+  it.todo('stays open when the list itself is clicked');
+  it.todo('does nothing on Escape while closed (focus stays put)');
+  it.todo('opens and closes correctly a second time');
 });

@@ -9,19 +9,25 @@
  *     npm test -- ex02_destructuring_and_spread
  */
 
-import { describe, expect, it } from "vitest";
+import { describe, expect, it } from 'vitest';
 
-import { addTag, publicProfile, removeItem, updateUser, type User } from "./ex02_destructuring_and_spread";
+import {
+  addTag,
+  publicProfile,
+  removeItem,
+  updateUser,
+  type User,
+} from './ex02_destructuring_and_spread';
 
 // Frozen, so any attempt to change it throws an error and fails the test.
 const ada: User = Object.freeze({
   id: 1,
-  name: "Ada",
-  email: "ada@example.com",
-  tags: Object.freeze(["math"]),
+  name: 'Ada',
+  email: 'ada@example.com',
+  tags: Object.freeze(['math']),
 });
 
-describe("destructuring and spread", () => {
+describe('destructuring and spread', () => {
   // Examples to get you started:
   //
   // it("updateUser returns a new user with the change", () => {
@@ -34,12 +40,14 @@ describe("destructuring and spread", () => {
   //   expect(removeItem(["a", "b", "c"], 1)).toEqual(["a", "c"]);
   // });
 
-  it.todo("updateUser returns a new object even when there are no changes");
-  it.todo("updateUser can change several fields at once");
-  it.todo("addTag adds the tag to the end without changing ada.tags");
-  it.todo("addTag returns the same user when the tag is already there");
-  it.todo("publicProfile has every field except email");
-  it.todo("removeItem works for the first and the last index");
-  it.todo("removeItem returns a new array with the same items for -1 or a too-big index");
-  it.todo("removeItem returns [] for an empty array");
+  it.todo('updateUser returns a new object even when there are no changes');
+  it.todo('updateUser can change several fields at once');
+  it.todo('addTag adds the tag to the end without changing ada.tags');
+  it.todo('addTag returns the same user when the tag is already there');
+  it.todo('publicProfile has every field except email');
+  it.todo('removeItem works for the first and the last index');
+  it.todo(
+    'removeItem returns a new array with the same items for -1 or a too-big index',
+  );
+  it.todo('removeItem returns [] for an empty array');
 });

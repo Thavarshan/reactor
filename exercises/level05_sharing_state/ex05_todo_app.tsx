@@ -149,7 +149,7 @@
  * - A "Toggle all" checkbox like the one in the checkbox group exercise.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Todo = {
   /** A unique id, used as the React `key`. */
@@ -167,5 +167,5 @@ export type TodoAppProps = {
 
 export function TodoApp({ initialTodos = [] }: TodoAppProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: TodoApp");
+  throw new Error('Not implemented: TodoApp');
 }

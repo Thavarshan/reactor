@@ -154,7 +154,7 @@
  *   hook.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type DropdownProps = {
   /** The toggle button's text and accessible name, e.g. "Options". */
@@ -165,7 +165,11 @@ export type DropdownProps = {
   onSelect?: (item: string) => void;
 };
 
-export function Dropdown({ label, items, onSelect }: DropdownProps): ReactElement {
+export function Dropdown({
+  label,
+  items,
+  onSelect,
+}: DropdownProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Dropdown");
+  throw new Error('Not implemented: Dropdown');
 }

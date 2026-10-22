@@ -152,7 +152,7 @@
  *   learn about events properly in level 03.)
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Todo = {
   /** A unique id. Use it as the React key. */
@@ -170,7 +170,10 @@ export type TodoListViewProps = {
   emptyMessage?: string;
 };
 
-export function TodoListView({ todos, emptyMessage = "Nothing to do!" }: TodoListViewProps): ReactElement {
+export function TodoListView({
+  todos,
+  emptyMessage = 'Nothing to do!',
+}: TodoListViewProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: TodoListView");
+  throw new Error('Not implemented: TodoListView');
 }

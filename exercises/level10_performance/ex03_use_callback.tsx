@@ -147,7 +147,7 @@
  *   changes identity, so you can pass it down without useCallback.
  */
 
-import { memo, type ReactElement } from "react";
+import { memo, type ReactElement } from 'react';
 
 export type Song = {
   id: string;
@@ -170,12 +170,21 @@ export type SongRowProps = {
  * One memoized row. It calls `onRender` each time it renders, so tests
  * can count renders.
  */
-export const SongRow = memo(function SongRow({ song, isPlaying, onPlay, onRender }: SongRowProps) {
+export const SongRow = memo(function SongRow({
+  song,
+  isPlaying,
+  onPlay,
+  onRender,
+}: SongRowProps) {
   onRender?.(song.id);
   return (
     <li>
-      {song.title}{" "}
-      <button type="button" aria-pressed={isPlaying} onClick={() => onPlay(song.id)}>
+      {song.title}{' '}
+      <button
+        type="button"
+        aria-pressed={isPlaying}
+        onClick={() => onPlay(song.id)}
+      >
         Play {song.title}
       </button>
     </li>
@@ -191,5 +200,5 @@ export type PlaylistProps = {
 
 export function Playlist({ songs, onRowRender }: PlaylistProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Playlist");
+  throw new Error('Not implemented: Playlist');
 }

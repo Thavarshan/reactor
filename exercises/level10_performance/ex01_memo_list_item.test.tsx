@@ -12,18 +12,18 @@
  *     npm test -- ex01_memo_list_item
  */
 
-import { render, screen } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest';
 
-import { TaskList, TaskRow, type Task } from "./ex01_memo_list_item";
+import { TaskList, TaskRow, type Task } from './ex01_memo_list_item';
 
 const tasks: Task[] = [
-  { id: "1", title: "Buy milk", done: false },
-  { id: "2", title: "Walk the dog", done: false },
-  { id: "3", title: "Call Grandma", done: false },
+  { id: '1', title: 'Buy milk', done: false },
+  { id: '2', title: 'Walk the dog', done: false },
+  { id: '3', title: 'Call Grandma', done: false },
 ];
 
-describe("TaskList", () => {
+describe('TaskList', () => {
   // Examples to get you started:
   //
   // it("renders each row once at first", () => {
@@ -44,15 +44,17 @@ describe("TaskList", () => {
   //   expect(screen.getAllByRole("listitem")[1]).toHaveTextContent("Walk the dog (done)");
   // });
 
-  it.todo("calls onRowRender once per task on the first render, with each id");
-  it.todo("re-renders no rows when given the same array, or a new array of the same tasks");
-  it.todo("re-renders only the row whose task object changed");
-  it.todo("re-renders every row when every task is a new copy");
-  it.todo("renders only the new row when a task is added at the end");
-  it.todo("renders an empty list for no tasks");
+  it.todo('calls onRowRender once per task on the first render, with each id');
+  it.todo(
+    're-renders no rows when given the same array, or a new array of the same tasks',
+  );
+  it.todo('re-renders only the row whose task object changed');
+  it.todo('re-renders every row when every task is a new copy');
+  it.todo('renders only the new row when a task is added at the end');
+  it.todo('renders an empty list for no tasks');
 });
 
-describe("TaskRow", () => {
-  it.todo("skips a re-render when given the same task object");
-  it.todo("re-renders when given a new task object");
+describe('TaskRow', () => {
+  it.todo('skips a re-render when given the same task object');
+  it.todo('re-renders when given a new task object');
 });

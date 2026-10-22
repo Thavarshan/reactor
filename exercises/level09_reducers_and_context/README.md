@@ -19,13 +19,13 @@ A reducer is a plain function. It takes the current state and an
 state:
 
 ```ts
-type CounterAction = { type: "incremented" } | { type: "reset" };
+type CounterAction = { type: 'incremented' } | { type: 'reset' };
 
 function counterReducer(count: number, action: CounterAction): number {
   switch (action.type) {
-    case "incremented":
+    case 'incremented':
       return count + 1;
-    case "reset":
+    case 'reset':
       return 0;
   }
 }
@@ -44,7 +44,7 @@ Because a reducer is just a function, you can test it with no React at
 all:
 
 ```ts
-expect(counterReducer(4, { type: "incremented" })).toBe(5);
+expect(counterReducer(4, { type: 'incremented' })).toBe(5);
 ```
 
 In a component, `useReducer` connects a reducer to React. You get the
@@ -54,7 +54,7 @@ runs your reducer and re-renders with the result:
 ```tsx
 const [count, dispatch] = useReducer(counterReducer, 0);
 
-<button onClick={() => dispatch({ type: "incremented" })}>+</button>
+<button onClick={() => dispatch({ type: 'incremented' })}>+</button>;
 ```
 
 Event handlers now say WHAT happened ("incremented"). The reducer
@@ -72,7 +72,7 @@ const UserContext = createContext<string | null>(null);
 // 2. Provide a value somewhere high up in the tree.
 <UserContext value="Ada">
   <Page />
-</UserContext>
+</UserContext>;
 
 // 3. Read it anywhere below, however deep.
 function Avatar() {
@@ -101,7 +101,7 @@ Real apps wrap context in two small helpers:
 function useUser() {
   const user = use(UserContext);
   if (user === null) {
-    throw new Error("useUser must be used inside a UserProvider");
+    throw new Error('useUser must be used inside a UserProvider');
   }
   return user;
 }
@@ -133,8 +133,10 @@ To check that a hook throws outside its provider, silence React's error
 log first, then expect the throw:
 
 ```tsx
-vi.spyOn(console, "error").mockImplementation(() => {});
-expect(() => renderHook(() => useTheme())).toThrow("useTheme must be used inside a ThemeProvider");
+vi.spyOn(console, 'error').mockImplementation(() => {});
+expect(() => renderHook(() => useTheme())).toThrow(
+  'useTheme must be used inside a ThemeProvider',
+);
 ```
 
 ## The exercises

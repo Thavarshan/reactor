@@ -9,22 +9,24 @@
  *     npm test -- ex05_error_boundary
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { ErrorBoundary } from "./ex05_error_boundary";
+import { ErrorBoundary } from './ex05_error_boundary';
 
 // A component that throws on purpose.
 function Bomb({ explode }: { explode: boolean }) {
-  if (explode) throw new Error("Boom");
+  if (explode) {
+    throw new Error('Boom');
+  }
   return <p>All good</p>;
 }
 
-describe("ErrorBoundary", () => {
+describe('ErrorBoundary', () => {
   beforeEach(() => {
     // React logs every caught error. Keep the test output readable.
-    vi.spyOn(console, "error").mockImplementation(() => {});
+    vi.spyOn(console, 'error').mockImplementation(() => {});
   });
   afterEach(() => {
     vi.restoreAllMocks();
@@ -46,13 +48,17 @@ describe("ErrorBoundary", () => {
   //   expect(screen.getByRole("button", { name: "Try again" })).toBeInTheDocument();
   // });
 
-  it.todo("calls onError once with the error");
-  it.todo("shows the children again after Try again, once fixed, and calls onReset");
-  it.todo("shows the fallback again when Try again fails");
-  it.todo("renders fallbackRender instead of the default, and its reset works");
-  it.todo("resets when resetKeys change while showing the fallback");
-  it.todo("resets when the resetKeys length changes");
-  it.todo("does not call onReset when resetKeys change with no error");
-  it.todo("does not reset for a new array with the same keys");
-  it.todo("keeps the fallback when the resetKeys change itself causes the error");
+  it.todo('calls onError once with the error');
+  it.todo(
+    'shows the children again after Try again, once fixed, and calls onReset',
+  );
+  it.todo('shows the fallback again when Try again fails');
+  it.todo('renders fallbackRender instead of the default, and its reset works');
+  it.todo('resets when resetKeys change while showing the fallback');
+  it.todo('resets when the resetKeys length changes');
+  it.todo('does not call onReset when resetKeys change with no error');
+  it.todo('does not reset for a new array with the same keys');
+  it.todo(
+    'keeps the fallback when the resetKeys change itself causes the error',
+  );
 });

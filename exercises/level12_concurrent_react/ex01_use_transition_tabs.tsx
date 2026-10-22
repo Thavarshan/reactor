@@ -170,7 +170,7 @@
  *   data. In a real browser, isPending DOES show for slow rendering.
  */
 
-import { use, type ReactNode, type ReactElement } from "react";
+import { use, type ReactNode, type ReactElement } from 'react';
 
 export type TransitionTab = {
   /** A unique id for the tab. */
@@ -214,7 +214,10 @@ export function createSlowContent(text: string) {
   return { content: <SlowText />, finish };
 }
 
-export function TransitionTabs({ tabs, defaultTabId = tabs[0]?.id }: TransitionTabsProps): ReactElement {
+export function TransitionTabs({
+  tabs,
+  defaultTabId = tabs[0]?.id,
+}: TransitionTabsProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: TransitionTabs");
+  throw new Error('Not implemented: TransitionTabs');
 }

@@ -9,22 +9,22 @@
  *     npm test -- ex05_window_size
  */
 
-import { act, render, screen } from "@testing-library/react";
-import { StrictMode } from "react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { act, render, screen } from '@testing-library/react';
+import { StrictMode } from 'react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { WindowSize } from "./ex05_window_size";
+import { WindowSize } from './ex05_window_size';
 
 // Pretend the user resized the window. act(...) lets React finish
 // re-rendering before the test looks at the screen.
 function resizeWindow(width: number, height: number) {
   act(() => {
     Object.assign(window, { innerWidth: width, innerHeight: height });
-    window.dispatchEvent(new Event("resize"));
+    window.dispatchEvent(new Event('resize'));
   });
 }
 
-describe("WindowSize", () => {
+describe('WindowSize', () => {
   afterEach(() => {
     // Put the test browser back to its normal size, and remove any spies.
     Object.assign(window, { innerWidth: 1024, innerHeight: 768 });
@@ -48,8 +48,8 @@ describe("WindowSize", () => {
   //   expect(removeSpy).toHaveBeenCalledWith("resize", expect.any(Function));
   // });
 
-  it.todo("shows the current size and layout on the first render");
-  it.todo("uses mobile below 600, tablet from 600 to 1023, desktop from 1024");
-  it.todo("removes the SAME function it added");
-  it.todo("has exactly one resize listener inside StrictMode");
+  it.todo('shows the current size and layout on the first render');
+  it.todo('uses mobile below 600, tablet from 600 to 1023, desktop from 1024');
+  it.todo('removes the SAME function it added');
+  it.todo('has exactly one resize listener inside StrictMode');
 });

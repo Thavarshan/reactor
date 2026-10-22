@@ -144,7 +144,7 @@
  *   `id`. Then `getByRole("article", { name: "Coffee Mug" })` works.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Product = {
   /** A unique number for this product. */
@@ -166,7 +166,10 @@ export type ProductCardProps = {
   currency?: string;
 };
 
-export function ProductCard({ product, currency = "USD" }: ProductCardProps): ReactElement {
+export function ProductCard({
+  product,
+  currency = 'USD',
+}: ProductCardProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ProductCard");
+  throw new Error('Not implemented: ProductCard');
 }

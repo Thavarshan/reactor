@@ -172,7 +172,7 @@
  * - Prefetch the next page in the background, so "Next" is instant.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 /** One post in the list. */
 export type Post = {
@@ -189,5 +189,5 @@ export type PostsPage = {
 
 export function PostsPager(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: PostsPager");
+  throw new Error('Not implemented: PostsPager');
 }

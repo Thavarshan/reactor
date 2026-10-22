@@ -152,7 +152,7 @@
  * - Pull the timing out into a `useDebouncedValue(value, delay)` hook.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type DebouncedSearchProps = {
   /** Called with the trimmed query once typing has stopped. */
@@ -161,7 +161,10 @@ export type DebouncedSearchProps = {
   delay?: number;
 };
 
-export function DebouncedSearch({ onSearch, delay = 300 }: DebouncedSearchProps): ReactElement {
+export function DebouncedSearch({
+  onSearch,
+  delay = 300,
+}: DebouncedSearchProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: DebouncedSearch");
+  throw new Error('Not implemented: DebouncedSearch');
 }

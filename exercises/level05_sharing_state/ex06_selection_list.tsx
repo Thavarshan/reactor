@@ -152,7 +152,7 @@
  *   selection.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Contact = {
   /** A unique id. */
@@ -168,9 +168,9 @@ export type Contact = {
  * Sample contacts for your tests and the playground.
  */
 export const CONTACTS: Contact[] = [
-  { id: 1, name: "Ada Lovelace", email: "ada@example.com" },
-  { id: 2, name: "Grace Hopper", email: "grace@example.com" },
-  { id: 3, name: "Alan Turing", email: "alan@example.com" },
+  { id: 1, name: 'Ada Lovelace', email: 'ada@example.com' },
+  { id: 2, name: 'Grace Hopper', email: 'grace@example.com' },
+  { id: 3, name: 'Alan Turing', email: 'alan@example.com' },
 ];
 
 export type ContactManagerProps = {
@@ -178,7 +178,9 @@ export type ContactManagerProps = {
   initialContacts: Contact[];
 };
 
-export function ContactManager({ initialContacts }: ContactManagerProps): ReactElement {
+export function ContactManager({
+  initialContacts,
+}: ContactManagerProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ContactManager");
+  throw new Error('Not implemented: ContactManager');
 }

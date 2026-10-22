@@ -1,14 +1,14 @@
 # Level 03: State and Events
 
 Until now your components showed whatever their props said, and nothing
-more. This level makes them *interactive*: they remember things and change
+more. This level makes them _interactive_: they remember things and change
 when the user clicks, types or moves the mouse. The tool for that is
-*state*, and the way users reach it is *events*.
+_state_, and the way users reach it is _events_.
 
 ## State: values React remembers
 
 A normal variable inside a component is forgotten every time React draws
-the component again (a *re-render*). *State* is a value React keeps for you
+the component again (a _re-render_). _State_ is a value React keeps for you
 between renders. `useState` gives you the current value and a function to
 change it:
 
@@ -48,13 +48,13 @@ Pass a function, don't call one: `onClick={save}` or
 
 ## Keep state small, work the rest out
 
-The most useful habit in this level: store the *smallest* thing that
+The most useful habit in this level: store the _smallest_ thing that
 describes the screen, and calculate everything else during render.
 
 ```tsx
-const [text, setText] = useState("");
-const left = 100 - text.length;   // derived, not stored
-const isTooLong = left < 0;       // derived, not stored
+const [text, setText] = useState('');
+const left = 100 - text.length; // derived, not stored
+const isTooLong = left < 0; // derived, not stored
 ```
 
 Values you store twice can disagree. Values you derive can't. An accordion

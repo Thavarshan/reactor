@@ -157,7 +157,8 @@
  *   ArrowDown and sets aria-orientation on the tablist.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type TabItem = {
   /** The tab's text, which is also the panel's accessible name. */
@@ -175,7 +176,11 @@ export type TabsProps = {
   defaultIndex?: number;
 };
 
-export function Tabs({ label, tabs, defaultIndex = 0 }: TabsProps): ReactElement {
+export function Tabs({
+  label,
+  tabs,
+  defaultIndex = 0,
+}: TabsProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Tabs");
+  throw new Error('Not implemented: Tabs');
 }

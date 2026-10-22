@@ -198,5 +198,5 @@ export type UseToggleResult = {
 
 export function useToggle(initialValue = false): UseToggleResult {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useToggle");
+  throw new Error('Not implemented: useToggle');
 }

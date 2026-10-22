@@ -9,13 +9,16 @@
  *     npm test -- ex01_temperature_converter
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { TemperatureConverter, TemperatureInput } from "./ex01_temperature_converter";
+import {
+  TemperatureConverter,
+  TemperatureInput,
+} from './ex01_temperature_converter';
 
-describe("TemperatureInput", () => {
+describe('TemperatureInput', () => {
   // Example to get you started:
   //
   // it("shows its value, named by its label", () => {
@@ -23,10 +26,10 @@ describe("TemperatureInput", () => {
   //   expect(screen.getByRole("textbox", { name: "Celsius" })).toHaveValue("20");
   // });
 
-  it.todo("calls onChange with the new text on every keystroke");
+  it.todo('calls onChange with the new text on every keystroke');
 });
 
-describe("TemperatureConverter", () => {
+describe('TemperatureConverter', () => {
   // Example to get you started:
   //
   // it("converts Celsius to Fahrenheit", async () => {
@@ -36,12 +39,16 @@ describe("TemperatureConverter", () => {
   //   expect(screen.getByRole("textbox", { name: "Fahrenheit" })).toHaveValue("212");
   // });
 
-  it.todo("starts with both boxes empty and no alert");
-  it.todo("converts Celsius to Fahrenheit (37 -> 98.6, -40 -> -40)");
-  it.todo("converts Fahrenheit to Celsius (212 -> 100, 0 -> -17.8)");
-  it.todo("keeps the exact text in the box being typed in");
-  it.todo("shows an alert and empties the other box for text that isn't a number");
-  it.todo("empties the other box, without an alert, for empty or space-only text");
-  it.todo("removes the alert once the input is fixed");
-  it.todo("follows whichever box was typed in last");
+  it.todo('starts with both boxes empty and no alert');
+  it.todo('converts Celsius to Fahrenheit (37 -> 98.6, -40 -> -40)');
+  it.todo('converts Fahrenheit to Celsius (212 -> 100, 0 -> -17.8)');
+  it.todo('keeps the exact text in the box being typed in');
+  it.todo(
+    "shows an alert and empties the other box for text that isn't a number",
+  );
+  it.todo(
+    'empties the other box, without an alert, for empty or space-only text',
+  );
+  it.todo('removes the alert once the input is fixed');
+  it.todo('follows whichever box was typed in last');
 });

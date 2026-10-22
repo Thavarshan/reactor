@@ -126,7 +126,7 @@
  *   focused element. Look up role="spinbutton".
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type CounterProps = {
   /** The number shown at first. Default 0. */
@@ -139,7 +139,12 @@ export type CounterProps = {
   onChange?: (value: number) => void;
 };
 
-export function Counter({ initial = 0, min = 0, max = 10, onChange }: CounterProps): ReactElement {
+export function Counter({
+  initial = 0,
+  min = 0,
+  max = 10,
+  onChange,
+}: CounterProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Counter");
+  throw new Error('Not implemented: Counter');
 }

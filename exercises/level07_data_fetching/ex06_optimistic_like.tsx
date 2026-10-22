@@ -158,7 +158,7 @@
  *   `notation: "compact"`.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 /** What the server answers after a like or un-like. */
 export type LikeResponse = {
@@ -175,7 +175,11 @@ export type LikeButtonProps = {
   initialCount: number;
 };
 
-export function LikeButton({ postId, initialLiked, initialCount }: LikeButtonProps): ReactElement {
+export function LikeButton({
+  postId,
+  initialLiked,
+  initialCount,
+}: LikeButtonProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: LikeButton");
+  throw new Error('Not implemented: LikeButton');
 }

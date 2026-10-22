@@ -118,7 +118,7 @@
  *   a browser.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type GreetingProps = {
   /** Who to greet. Missing, empty or blank means "stranger". */
@@ -127,5 +127,5 @@ export type GreetingProps = {
 
 export function Greeting({ name }: GreetingProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Greeting");
+  throw new Error('Not implemented: Greeting');
 }

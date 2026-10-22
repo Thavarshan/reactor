@@ -9,13 +9,13 @@
  *     npm test -- ex04_icon_button
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { IconButton } from "./ex04_icon_button";
+import { IconButton } from './ex04_icon_button';
 
-describe("IconButton", () => {
+describe('IconButton', () => {
   // Examples to get you started:
   //
   // it("is named by its label, not its icon", () => {
@@ -32,11 +32,11 @@ describe("IconButton", () => {
   //   expect(onClick).toHaveBeenCalledTimes(1);
   // });
 
-  it.todo("wraps the icon in an aria-hidden element inside the button");
-  it.todo("has title set to the label and type=button");
-  it.todo("renders an svg icon inside the button");
-  it.todo("is disabled and ignores clicks when disabled");
-  it.todo("has no aria-pressed when pressed is not given");
-  it.todo("sets aria-pressed to true or false from pressed");
-  it.todo("throws for an empty or blank label");
+  it.todo('wraps the icon in an aria-hidden element inside the button');
+  it.todo('has title set to the label and type=button');
+  it.todo('renders an svg icon inside the button');
+  it.todo('is disabled and ignores clicks when disabled');
+  it.todo('has no aria-pressed when pressed is not given');
+  it.todo('sets aria-pressed to true or false from pressed');
+  it.todo('throws for an empty or blank label');
 });

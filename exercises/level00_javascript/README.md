@@ -8,13 +8,13 @@ feel new, take your time, because every later level builds on them.
 ## Arrays without loops
 
 React code turns arrays of data into things on screen. Instead of `for`
-loops, it uses array methods that take a small function (a *callback*):
+loops, it uses array methods that take a small function (a _callback_):
 
 ```ts
 const prices = [500, 1200, 300];
 
-prices.map((p) => p * 2);              // [1000, 2400, 600]
-prices.filter((p) => p > 400);         // [500, 1200]
+prices.map((p) => p * 2); // [1000, 2400, 600]
+prices.filter((p) => p > 400); // [500, 1200]
 prices.reduce((sum, p) => sum + p, 0); // 2000
 ```
 
@@ -22,26 +22,26 @@ These methods never change the original array. They return something new.
 
 ## Don't change it, copy it
 
-To *mutate* means to change something in place, like `user.name = "Bo"` or
+To _mutate_ means to change something in place, like `user.name = "Bo"` or
 `list.push(x)`. React expects you to leave old data alone and make a new
 copy with the change in it. The spread operator `...` makes that easy:
 
 ```ts
-const user = { name: "Ada", age: 36 };
+const user = { name: 'Ada', age: 36 };
 const older = { ...user, age: 37 }; // a new object. `user` is unchanged.
 
-const tags = ["a", "b"];
-const more = [...tags, "c"];        // a new array. `tags` is unchanged.
+const tags = ['a', 'b'];
+const more = [...tags, 'c']; // a new array. `tags` is unchanged.
 ```
 
-Why does React care? It compares objects by *identity*: "is this the very
+Why does React care? It compares objects by _identity_: "is this the very
 same object as last time?" A new object tells React that something changed.
 The same object tells it nothing did:
 
 ```ts
 const a = { x: 1 };
-a === a;          // true: the same object
-a === { x: 1 };   // false: looks the same, but it's a different object
+a === a; // true: the same object
+a === { x: 1 }; // false: looks the same, but it's a different object
 ```
 
 So when you update nested data, you copy everything on the path down to the
@@ -49,7 +49,7 @@ change and reuse everything else. Exercise 3 practises exactly this.
 
 ## Functions that remember
 
-A *closure* is a function that remembers the variables around it, even
+A _closure_ is a function that remembers the variables around it, even
 after the outer function has finished:
 
 ```ts
@@ -67,7 +67,7 @@ Every event handler you'll write inside a React component is a closure.
 
 ## Things that take time
 
-A *promise* stands for a value that arrives later, like the answer to a
+A _promise_ stands for a value that arrives later, like the answer to a
 network request. `async` and `await` let you wait for it as if it were
 normal step-by-step code:
 
@@ -77,13 +77,13 @@ async function load() {
     const user = await getUser(1); // pauses until the promise settles
     console.log(user.name);
   } catch (error) {
-    console.log("It failed:", error);
+    console.log('It failed:', error);
   }
 }
 ```
 
 Timers (`setTimeout`) are another source of "later". In tests you don't want
-to really wait, so you use *fake timers*. Time then only moves when the test
+to really wait, so you use _fake timers_. Time then only moves when the test
 says so:
 
 ```ts

@@ -7,6 +7,6 @@
 //   server.use(
 //     http.get("/api/users/1", () => HttpResponse.json({ id: 1, name: "Ada" })),
 //   );
-import { setupServer } from "msw/node";
+import { setupServer } from 'msw/node';
 
 export const server = setupServer();

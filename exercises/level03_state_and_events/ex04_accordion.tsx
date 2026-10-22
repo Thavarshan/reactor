@@ -147,7 +147,8 @@
  *   first and last.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type AccordionSection = {
   /** Unique within this accordion, e.g. "shipping". */
@@ -165,7 +166,10 @@ export type AccordionProps = {
   defaultOpenId?: string | null;
 };
 
-export function Accordion({ sections, defaultOpenId = null }: AccordionProps): ReactElement {
+export function Accordion({
+  sections,
+  defaultOpenId = null,
+}: AccordionProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Accordion");
+  throw new Error('Not implemented: Accordion');
 }

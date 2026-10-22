@@ -9,16 +9,16 @@
  *     npm test -- ex01_user_profile
  */
 
-import { render, screen } from "@testing-library/react";
-import { http, HttpResponse } from "msw";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import { http, HttpResponse } from 'msw';
+import { describe, expect, it } from 'vitest';
 
-import { server } from "../../test/server";
-import { type User, UserProfile } from "./ex01_user_profile";
+import { server } from '../../test/server';
+import { type User, UserProfile } from './ex01_user_profile';
 
-const ADA: User = { id: 1, name: "Ada Lovelace", email: "ada@example.com" };
+const ADA: User = { id: 1, name: 'Ada Lovelace', email: 'ada@example.com' };
 
-describe("UserProfile", () => {
+describe('UserProfile', () => {
   // Examples to get you started:
   //
   // it("shows loading, then the user", async () => {
@@ -38,6 +38,6 @@ describe("UserProfile", () => {
 
   it.todo("shows 'Could not load the user.' for a 500");
   it.todo("shows 'Could not load the user.' when there is no answer at all");
-  it.todo("shows loading again, then the new user, when userId changes");
+  it.todo('shows loading again, then the new user, when userId changes');
   it.todo("doesn't fetch again when re-rendered with the same userId");
 });

@@ -131,7 +131,7 @@
  *   too.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type SearchFilterProps = {
   /** The items to search through, shown in this order. */
@@ -140,7 +140,10 @@ export type SearchFilterProps = {
   label?: string;
 };
 
-export function SearchFilter({ items, label = "Search" }: SearchFilterProps): ReactElement {
+export function SearchFilter({
+  items,
+  label = 'Search',
+}: SearchFilterProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: SearchFilter");
+  throw new Error('Not implemented: SearchFilter');
 }

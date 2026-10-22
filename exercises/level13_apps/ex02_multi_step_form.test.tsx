@@ -9,13 +9,13 @@
  *     npm test -- ex02_multi_step_form
  */
 
-import { fireEvent, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { MultiStepForm } from "./ex02_multi_step_form";
+import { MultiStepForm } from './ex02_multi_step_form';
 
-describe("MultiStepForm", () => {
+describe('MultiStepForm', () => {
   // Examples to get you started:
   //
   // it("starts on step 1", () => {
@@ -31,15 +31,17 @@ describe("MultiStepForm", () => {
   //   expect(screen.getByLabelText("Email")).toHaveAttribute("aria-invalid", "true");
   // });
 
-  it.todo("starts on step 1 with Free checked and no errors");
-  it.todo("shows both errors, linked to their fields, for an empty step 1");
-  it.todo("asks for a valid email when there is no @");
-  it.todo("rejects a 7-character password and accepts an 8-character one");
-  it.todo("shows no errors while typing, only after Next");
-  it.todo("goes to step 2 and focuses its heading when step 1 is valid");
+  it.todo('starts on step 1 with Free checked and no errors');
+  it.todo('shows both errors, linked to their fields, for an empty step 1');
+  it.todo('asks for a valid email when there is no @');
+  it.todo('rejects a 7-character password and accepts an 8-character one');
+  it.todo('shows no errors while typing, only after Next');
+  it.todo('goes to step 2 and focuses its heading when step 1 is valid');
   it.todo("requires a name on step 2, and spaces only don't count");
-  it.todo("keeps the values when going Back");
-  it.todo("shows the values on the review step, but not the password");
-  it.todo("calls onSubmit once with trimmed data, then shows the welcome heading");
-  it.todo("does not call onSubmit when the form is submitted on step 1 or 2");
+  it.todo('keeps the values when going Back');
+  it.todo('shows the values on the review step, but not the password');
+  it.todo(
+    'calls onSubmit once with trimmed data, then shows the welcome heading',
+  );
+  it.todo('does not call onSubmit when the form is submitted on step 1 or 2');
 });

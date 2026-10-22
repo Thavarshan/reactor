@@ -192,7 +192,7 @@
  * - Turn the logic into a reusable `useInfiniteList(fetchPage)` hook.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Post = {
   id: number;
@@ -208,5 +208,5 @@ export type FeedPage = {
 
 export function InfiniteFeed(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: InfiniteFeed");
+  throw new Error('Not implemented: InfiniteFeed');
 }

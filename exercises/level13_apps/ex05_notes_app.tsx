@@ -173,7 +173,7 @@
  *   reload too.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Note = {
   /** A unique id. */
@@ -183,9 +183,9 @@ export type Note = {
 };
 
 /** PROVIDED: you don't need to change this. The localStorage key. */
-export const STORAGE_KEY = "reactor-notes";
+export const STORAGE_KEY = 'reactor-notes';
 
 export function NotesApp(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: NotesApp");
+  throw new Error('Not implemented: NotesApp');
 }

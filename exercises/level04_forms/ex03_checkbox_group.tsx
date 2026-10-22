@@ -158,7 +158,7 @@
  * - Group the options into sections, each with its own "Select all".
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type CheckboxGroupProps = {
   /** The group's name, shown in the <legend>. */
@@ -178,5 +178,5 @@ export function CheckboxGroup({
   onChange,
 }: CheckboxGroupProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: CheckboxGroup");
+  throw new Error('Not implemented: CheckboxGroup');
 }

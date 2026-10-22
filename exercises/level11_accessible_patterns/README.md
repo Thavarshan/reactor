@@ -48,7 +48,7 @@ is most of the work in this level:
   has `tabIndex={0}`. The rest have `tabIndex={-1}`, which code can
   focus but the Tab key skips. Arrow keys move between them.
 - **aria-activedescendant:** when focus must stay in a text box (an
-  autocomplete), the box *points at* the highlighted option instead.
+  autocomplete), the box _points at_ the highlighted option instead.
 - **Returning focus:** when a popup closes, put focus back on the button
   that opened it. Otherwise focus falls to `<body>` and the user is lost.
 
@@ -65,7 +65,7 @@ function close() {
 A screen reader reads what has focus. To announce something that
 appears elsewhere, like a toast, put it in a **live region**:
 `role="status"` waits politely, `role="alert"` interrupts. The region
-should exist *before* the message is added, or it may not be heard.
+should exist _before_ the message is added, or it may not be heard.
 
 ## Testing keyboard behaviour
 
@@ -73,10 +73,10 @@ user-event presses real-looking keys:
 
 ```tsx
 const user = userEvent.setup();
-await user.keyboard("{ArrowDown}{Enter}");
-await user.tab();                 // Tab
-await user.tab({ shift: true });  // Shift+Tab
-expect(screen.getByRole("menuitem", { name: "Edit" })).toHaveFocus();
+await user.keyboard('{ArrowDown}{Enter}');
+await user.tab(); // Tab
+await user.tab({ shift: true }); // Shift+Tab
+expect(screen.getByRole('menuitem', { name: 'Edit' })).toHaveFocus();
 ```
 
 A note on jsdom, the fake browser your tests run in: focus, keyboard

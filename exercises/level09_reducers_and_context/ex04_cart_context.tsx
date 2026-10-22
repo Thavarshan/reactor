@@ -198,7 +198,8 @@
  * - Save the cart in localStorage.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type Product = {
   /** A unique id, such as "apple". */
@@ -217,10 +218,10 @@ export type CartItem = {
 };
 
 export type CartAction =
-  | { type: "added"; product: Product }
-  | { type: "decremented"; id: string }
-  | { type: "removed"; id: string }
-  | { type: "cleared" };
+  | { type: 'added'; product: Product }
+  | { type: 'decremented'; id: string }
+  | { type: 'removed'; id: string }
+  | { type: 'cleared' };
 
 export type CartContextValue = {
   /** The items in the cart, in the order they were first added. */
@@ -241,20 +242,26 @@ export type CartContextValue = {
 
 // PROVIDED: you don't need to change this.
 export const SAMPLE_PRODUCTS: readonly Product[] = [
-  { id: "apple", name: "Apple", price: 0.5 },
-  { id: "bread", name: "Bread", price: 2.25 },
-  { id: "cheese", name: "Cheese", price: 4 },
+  { id: 'apple', name: 'Apple', price: 0.5 },
+  { id: 'bread', name: 'Bread', price: 2.25 },
+  { id: 'cheese', name: 'Cheese', price: 4 },
 ];
 
 // PROVIDED: you don't need to change this. formatPrice(3.25) -> "$3.25"
-const priceFormat = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+const priceFormat = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+});
 export function formatPrice(price: number): string {
   return priceFormat.format(price);
 }
 
-export function cartReducer(items: readonly CartItem[], action: CartAction): readonly CartItem[] {
+export function cartReducer(
+  items: readonly CartItem[],
+  action: CartAction,
+): readonly CartItem[] {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: cartReducer");
+  throw new Error('Not implemented: cartReducer');
 }
 
 export type CartProviderProps = {
@@ -264,14 +271,17 @@ export type CartProviderProps = {
   initialItems?: readonly CartItem[];
 };
 
-export function CartProvider({ children, initialItems = [] }: CartProviderProps): ReactElement {
+export function CartProvider({
+  children,
+  initialItems = [],
+}: CartProviderProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: CartProvider");
+  throw new Error('Not implemented: CartProvider');
 }
 
 export function useCart(): CartContextValue {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useCart");
+  throw new Error('Not implemented: useCart');
 }
 
 export type ProductListProps = {
@@ -281,15 +291,15 @@ export type ProductListProps = {
 
 export function ProductList({ products }: ProductListProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ProductList");
+  throw new Error('Not implemented: ProductList');
 }
 
 export function CartSummary(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: CartSummary");
+  throw new Error('Not implemented: CartSummary');
 }
 
 export function CartBadge(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: CartBadge");
+  throw new Error('Not implemented: CartBadge');
 }

@@ -9,13 +9,13 @@
  *     npm test -- ex02_stopwatch
  */
 
-import { act, fireEvent, render, screen } from "@testing-library/react";
-import { StrictMode } from "react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { act, fireEvent, render, screen } from '@testing-library/react';
+import { StrictMode } from 'react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { Stopwatch } from "./ex02_stopwatch";
+import { Stopwatch } from './ex02_stopwatch';
 
-describe("Stopwatch", () => {
+describe('Stopwatch', () => {
   // Fake timers: the clock only moves when the test moves it. Always
   // switch back to real timers, or the next test inherits the fake clock.
   afterEach(() => {
@@ -43,11 +43,11 @@ describe("Stopwatch", () => {
   //   expect(vi.getTimerCount()).toBe(0);
   // });
 
-  it.todo("starts at 00:00.0 with a Start button");
-  it.todo("rolls over into minutes (65300 ms -> 01:05.3)");
-  it.todo("Stop freezes the time and Start continues from it");
-  it.todo("Stop leaves no timer running");
-  it.todo("Reset while running goes to 00:00.0 and stops");
-  it.todo("Reset while stopped goes to 00:00.0");
-  it.todo("runs at normal speed inside StrictMode");
+  it.todo('starts at 00:00.0 with a Start button');
+  it.todo('rolls over into minutes (65300 ms -> 01:05.3)');
+  it.todo('Stop freezes the time and Start continues from it');
+  it.todo('Stop leaves no timer running');
+  it.todo('Reset while running goes to 00:00.0 and stops');
+  it.todo('Reset while stopped goes to 00:00.0');
+  it.todo('runs at normal speed inside StrictMode');
 });

@@ -9,14 +9,14 @@
  *     npm test -- ex04_use_with_suspense
  */
 
-import { act, render, screen } from "@testing-library/react";
-import { http, HttpResponse } from "msw";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { act, render, screen } from '@testing-library/react';
+import { http, HttpResponse } from 'msw';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { server } from "../../test/server";
-import { clearUserCache, fetchUser, UserCard } from "./ex04_use_with_suspense";
+import { server } from '../../test/server';
+import { clearUserCache, fetchUser, UserCard } from './ex04_use_with_suspense';
 
-describe("UserCard", () => {
+describe('UserCard', () => {
   // Forget cached users between tests (uncomment once clearUserCache works):
   // beforeEach(() => clearUserCache());
 
@@ -40,12 +40,12 @@ describe("UserCard", () => {
   //   expect(fetchUser(1)).toBe(fetchUser(1));
   // });
 
-  it.todo("shows Loading user... first, then the name and email");
-  it.todo("fetchUser returns the same Promise for the same id");
-  it.todo("makes only one request for two cards with the same user");
-  it.todo("shows the alert when the request fails");
-  it.todo("fetchUser rejects with Could not load user 9 on a 404");
-  it.todo("shows the loading status, then the new user, when userId changes");
-  it.todo("shows an already loaded user at once");
-  it.todo("shows a working user after a failure when userId changes");
+  it.todo('shows Loading user... first, then the name and email');
+  it.todo('fetchUser returns the same Promise for the same id');
+  it.todo('makes only one request for two cards with the same user');
+  it.todo('shows the alert when the request fails');
+  it.todo('fetchUser rejects with Could not load user 9 on a 404');
+  it.todo('shows the loading status, then the new user, when userId changes');
+  it.todo('shows an already loaded user at once');
+  it.todo('shows a working user after a failure when userId changes');
 });

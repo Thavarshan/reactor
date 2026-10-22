@@ -7,8 +7,8 @@ makes them the easiest kind to build and to test.
 
 ## Components and JSX
 
-A *component* is a function with a capital letter that returns what should
-appear on screen. The HTML-like syntax it returns is called *JSX*:
+A _component_ is a function with a capital letter that returns what should
+appear on screen. The HTML-like syntax it returns is called _JSX_:
 
 ```tsx
 function Welcome() {
@@ -20,7 +20,7 @@ You use it like a tag: `<Welcome />`. Curly braces drop a JavaScript value
 into JSX:
 
 ```tsx
-const user = "Ada";
+const user = 'Ada';
 <p>Signed in as {user}</p>; // Signed in as Ada
 ```
 
@@ -30,15 +30,19 @@ like `<img src={url} alt="A red bike" />`.
 
 ## Props
 
-*Props* are a component's inputs, like a function's arguments. The parent
+_Props_ are a component's inputs, like a function's arguments. The parent
 passes them as attributes. The component receives them as one object and
 usually destructures them, with defaults for the optional ones:
 
 ```tsx
 type PriceProps = { amount: number; currency?: string };
 
-function Price({ amount, currency = "USD" }: PriceProps) {
-  return <p>{amount} {currency}</p>;
+function Price({ amount, currency = 'USD' }: PriceProps) {
+  return (
+    <p>
+      {amount} {currency}
+    </p>
+  );
 }
 
 <Price amount={20} />; // 20 USD
@@ -49,13 +53,16 @@ function Price({ amount, currency = "USD" }: PriceProps) {
 You can't put an `if` statement inside JSX, but you can use expressions:
 
 ```tsx
-{isAdmin ? <AdminMenu /> : <UserMenu />}   // one or the other
-{hasError && <p>Something went wrong</p>}  // this, or nothing
+{
+  isAdmin ? <AdminMenu /> : <UserMenu />;
+} // one or the other
+{
+  hasError && <p>Something went wrong</p>;
+} // this, or nothing
 ```
 
 React shows nothing for `false`, `null` and `undefined`, but it does show
-the number `0`. So `{count && <Badge />}` prints a stray "0" when count is
-0. Write `{count > 0 && <Badge />}` instead. Exercise 3 is all about this.
+the number `0`. So `{count && <Badge />}` prints a stray "0" when count is 0. Write `{count > 0 && <Badge />}` instead. Exercise 3 is all about this.
 
 ## Lists and keys
 
@@ -75,14 +82,16 @@ React uses keys to keep track of which item is which when the list changes.
 ## Testing what's on the screen
 
 Tests render a component into a fake page, then look for elements the way a
-user or a screen reader would: by *role* (what kind of thing it is) and
-*accessible name* (what a screen reader reads out for it).
+user or a screen reader would: by _role_ (what kind of thing it is) and
+_accessible name_ (what a screen reader reads out for it).
 
 ```tsx
-import { render, screen } from "@testing-library/react";
+import { render, screen } from '@testing-library/react';
 
 render(<Welcome />);
-expect(screen.getByRole("heading", { name: "Welcome to the shop" })).toBeInTheDocument();
+expect(
+  screen.getByRole('heading', { name: 'Welcome to the shop' }),
+).toBeInTheDocument();
 ```
 
 Some common roles: `<h1>` to `<h6>` are "heading", `<button>` is "button",

@@ -9,11 +9,11 @@
  *     npm test -- ex04_closures
  */
 
-import { describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi } from 'vitest';
 
-import { makeCounter, memoizeOne, once } from "./ex04_closures";
+import { makeCounter, memoizeOne, once } from './ex04_closures';
 
-describe("closures", () => {
+describe('closures', () => {
   // Examples to get you started:
   //
   // it("makeCounter counts up from start", () => {
@@ -31,14 +31,14 @@ describe("closures", () => {
   //   expect(fn).toHaveBeenCalledTimes(1);
   // });
 
-  it.todo("makeCounter() starts at 0 and can go below zero");
-  it.todo("two counters are independent");
-  it.todo("reset returns to start after several increments");
-  it.todo("once passes the arguments through to fn");
-  it.todo("once returns the first result even for different arguments");
-  it.todo("once remembers an undefined result and still calls fn once");
-  it.todo("memoizeOne calls fn on the first call");
-  it.todo("memoizeOne calls fn only once for repeated arguments");
-  it.todo("memoizeOne treats equal-looking objects as different arguments");
-  it.todo("memoizeOne with A, B, A calls fn three times");
+  it.todo('makeCounter() starts at 0 and can go below zero');
+  it.todo('two counters are independent');
+  it.todo('reset returns to start after several increments');
+  it.todo('once passes the arguments through to fn');
+  it.todo('once returns the first result even for different arguments');
+  it.todo('once remembers an undefined result and still calls fn once');
+  it.todo('memoizeOne calls fn on the first call');
+  it.todo('memoizeOne calls fn only once for repeated arguments');
+  it.todo('memoizeOne treats equal-looking objects as different arguments');
+  it.todo('memoizeOne with A, B, A calls fn three times');
 });

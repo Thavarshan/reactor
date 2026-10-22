@@ -9,13 +9,13 @@
  *     npm test -- ex01_modal_dialog
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { ModalDialog } from "./ex01_modal_dialog";
+import { ModalDialog } from './ex01_modal_dialog';
 
-describe("ModalDialog", () => {
+describe('ModalDialog', () => {
   // Examples to get you started. First, a helper that renders a dialog
   // with two focusable children and returns the onClose spy:
   //
@@ -49,13 +49,13 @@ describe("ModalDialog", () => {
   //   expect(trigger).toHaveFocus();
   // });
 
-  it.todo("renders no dialog at first");
-  it.todo("focuses Close when the children have nothing focusable");
-  it.todo("wraps Tab from the last element to the first");
-  it.todo("wraps Shift+Tab from the first element to the last");
-  it.todo("keeps focus on Close when it is the only focusable element");
-  it.todo("closes with the Close button and focuses the trigger");
-  it.todo("calls onClose once per close, and not when opening");
-  it.todo("can be opened again, and focus moves in again");
-  it.todo("gives two dialogs on one page different ids");
+  it.todo('renders no dialog at first');
+  it.todo('focuses Close when the children have nothing focusable');
+  it.todo('wraps Tab from the last element to the first');
+  it.todo('wraps Shift+Tab from the first element to the last');
+  it.todo('keeps focus on Close when it is the only focusable element');
+  it.todo('closes with the Close button and focuses the trigger');
+  it.todo('calls onClose once per close, and not when opening');
+  it.todo('can be opened again, and focus moves in again');
+  it.todo('gives two dialogs on one page different ids');
 });

@@ -9,20 +9,20 @@
  *     npm test -- ex04_controlled_tabs
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { useState } from "react";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { useState } from 'react';
+import { describe, expect, it, vi } from 'vitest';
 
-import { type Tab, Tabs } from "./ex04_controlled_tabs";
+import { type Tab, Tabs } from './ex04_controlled_tabs';
 
 const TABS: Tab[] = [
-  { id: "profile", label: "Profile", content: "Your name and photo." },
-  { id: "billing", label: "Billing", content: "Your billing details." },
-  { id: "security", label: "Security", content: "Your password." },
+  { id: 'profile', label: 'Profile', content: 'Your name and photo.' },
+  { id: 'billing', label: 'Billing', content: 'Your billing details.' },
+  { id: 'security', label: 'Security', content: 'Your password.' },
 ];
 
-describe("Tabs", () => {
+describe('Tabs', () => {
   // Examples to get you started:
   //
   // it("selects the first tab by default", () => {
@@ -40,14 +40,14 @@ describe("Tabs", () => {
   //   expect(screen.getByRole("tab", { name: "Profile" })).toHaveAttribute("aria-selected", "true");
   // });
 
-  it.todo("selects the first tab and shows one panel without defaultValue");
-  it.todo("starts on defaultValue");
-  it.todo("switches tabs on click and calls onChange when uncontrolled");
+  it.todo('selects the first tab and shows one panel without defaultValue');
+  it.todo('starts on defaultValue');
+  it.todo('switches tabs on click and calls onChange when uncontrolled');
   it.todo("doesn't call onChange when the selected tab is clicked");
-  it.todo("keeps the selection when controlled with a fixed value");
+  it.todo('keeps the selection when controlled with a fixed value');
   it.todo("follows a parent's state, including changes from outside");
-  it.todo("names the panel after the selected tab and links them both ways");
-  it.todo("works without onChange");
+  it.todo('names the panel after the selected tab and links them both ways');
+  it.todo('works without onChange');
 });
 
 // A parent that controls the tabs, for the "follows a parent's state" test.

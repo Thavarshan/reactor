@@ -162,7 +162,7 @@
  *   aria-busy="true" on the list.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 /** A post, as the server sends it. */
 export type Post = {
@@ -177,5 +177,5 @@ export type UserPostsProps = {
 
 export function UserPosts({ userId }: UserPostsProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: UserPosts");
+  throw new Error('Not implemented: UserPosts');
 }

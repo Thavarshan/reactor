@@ -9,12 +9,12 @@
  *     npm test -- ex06_status_badge
  */
 
-import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 
-import { StatusBadge } from "./ex06_status_badge";
+import { StatusBadge } from './ex06_status_badge';
 
-describe("StatusBadge", () => {
+describe('StatusBadge', () => {
   // Examples to get you started:
   //
   // it("shows a green Active badge", () => {
@@ -27,9 +27,9 @@ describe("StatusBadge", () => {
   //   expect(screen.getByText("Unknown")).toHaveClass("badge", "badge-grey");
   // });
 
-  it.todo("shows a yellow Pending badge");
-  it.todo("shows a red Suspended badge");
+  it.todo('shows a yellow Pending badge');
+  it.todo('shows a red Suspended badge');
   it.todo("ignores case and spaces: '  ACTIVE ' shows Active");
-  it.todo("shows Unknown for the empty string");
+  it.todo('shows Unknown for the empty string');
   it.todo("shows Unknown for 'constructor' and 'toString'");
 });

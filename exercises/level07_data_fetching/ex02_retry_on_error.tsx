@@ -147,7 +147,7 @@
  * - Show "Attempt 2 of 3" while retrying.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 /** A quote, as the server sends it. */
 export type Quote = {
@@ -157,5 +157,5 @@ export type Quote = {
 
 export function QuoteOfTheDay(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: QuoteOfTheDay");
+  throw new Error('Not implemented: QuoteOfTheDay');
 }

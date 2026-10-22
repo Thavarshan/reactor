@@ -152,7 +152,7 @@
  *   same person always gets the same colour.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type AvatarProps = {
   /** The person's full name. Used for alt text and initials. */
@@ -163,5 +163,5 @@ export type AvatarProps = {
 
 export function Avatar({ name, src }: AvatarProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Avatar");
+  throw new Error('Not implemented: Avatar');
 }

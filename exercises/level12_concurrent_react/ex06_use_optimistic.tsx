@@ -166,7 +166,7 @@
  *   `scrollIntoView`).
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Message = {
   /** A unique id, chosen by the server. */
@@ -182,7 +182,10 @@ export type ChatProps = {
   sendMessage: (text: string) => Promise<Message>;
 };
 
-export function Chat({ initialMessages = [], sendMessage }: ChatProps): ReactElement {
+export function Chat({
+  initialMessages = [],
+  sendMessage,
+}: ChatProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Chat");
+  throw new Error('Not implemented: Chat');
 }

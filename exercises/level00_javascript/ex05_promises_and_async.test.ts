@@ -9,11 +9,11 @@
  *     npm test -- ex05_promises_and_async
  */
 
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { delay, retry, withTimeout } from "./ex05_promises_and_async";
+import { delay, retry, withTimeout } from './ex05_promises_and_async';
 
-describe("promises and async", () => {
+describe('promises and async', () => {
   // Fake timers: time only moves when the test says so.
   beforeEach(() => {
     vi.useFakeTimers();
@@ -42,13 +42,15 @@ describe("promises and async", () => {
   //   await check;
   // });
 
-  it.todo("withTimeout passes through the value of a fast promise");
-  it.todo("withTimeout passes through the error of a fast promise that rejects");
-  it.todo("withTimeout leaves no timers behind once the promise settles");
-  it.todo("retry resolves straight away when the first attempt works");
-  it.todo("retry resolves after two failures, calling fn 3 times");
-  it.todo("retry rejects with the last error when every attempt fails");
-  it.todo("retry with attempts: 1 never retries");
-  it.todo("retry waits waitMs between attempts");
-  it.todo("retry with no options makes 3 attempts, 1000 ms apart");
+  it.todo('withTimeout passes through the value of a fast promise');
+  it.todo(
+    'withTimeout passes through the error of a fast promise that rejects',
+  );
+  it.todo('withTimeout leaves no timers behind once the promise settles');
+  it.todo('retry resolves straight away when the first attempt works');
+  it.todo('retry resolves after two failures, calling fn 3 times');
+  it.todo('retry rejects with the last error when every attempt fails');
+  it.todo('retry with attempts: 1 never retries');
+  it.todo('retry waits waitMs between attempts');
+  it.todo('retry with no options makes 3 attempts, 1000 ms apart');
 });

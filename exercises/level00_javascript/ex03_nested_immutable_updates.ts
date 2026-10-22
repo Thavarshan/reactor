@@ -209,17 +209,21 @@ export type Board = {
 
 export function toggleTodo(list: TodoList, todoId: number): TodoList {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: toggleTodo");
+  throw new Error('Not implemented: toggleTodo');
 }
 
-export function renameColumn(board: Board, columnId: string, name: string): Board {
+export function renameColumn(
+  board: Board,
+  columnId: string,
+  name: string,
+): Board {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: renameColumn");
+  throw new Error('Not implemented: renameColumn');
 }
 
 export function addCard(board: Board, columnId: string, card: Card): Board {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: addCard");
+  throw new Error('Not implemented: addCard');
 }
 
 export function moveCard(
@@ -229,5 +233,5 @@ export function moveCard(
   toColumnId: string,
 ): Board {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: moveCard");
+  throw new Error('Not implemented: moveCard');
 }

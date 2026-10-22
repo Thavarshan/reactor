@@ -139,7 +139,8 @@
  *   needs a TypeScript overload or a conditional type.)
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type ListProps<T> = {
   /** The things to show, in order. */
@@ -158,9 +159,9 @@ export function List<T>({
   items,
   renderItem,
   getKey,
-  emptyText = "Nothing here yet.",
+  emptyText = 'Nothing here yet.',
   label,
 }: ListProps<T>): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: List");
+  throw new Error('Not implemented: List');
 }

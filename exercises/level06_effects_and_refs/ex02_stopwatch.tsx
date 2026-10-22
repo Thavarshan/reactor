@@ -147,9 +147,9 @@
  *   instead of counting ticks.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export function Stopwatch(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Stopwatch");
+  throw new Error('Not implemented: Stopwatch');
 }

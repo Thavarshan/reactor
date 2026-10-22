@@ -10,11 +10,17 @@
  *     npm test -- ex03_auth_context
  */
 
-import { act, render, renderHook, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { act, render, renderHook, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { AuthProvider, LoginForm, RequireAuth, useAuth, UserMenu } from "./ex03_auth_context";
+import {
+  AuthProvider,
+  LoginForm,
+  RequireAuth,
+  useAuth,
+  UserMenu,
+} from './ex03_auth_context';
 
 // A small app to test with. Uncomment it together with the examples.
 //
@@ -29,7 +35,7 @@ import { AuthProvider, LoginForm, RequireAuth, useAuth, UserMenu } from "./ex03_
 //   );
 // }
 
-describe("auth context", () => {
+describe('auth context', () => {
   // Remove any spies a test created (such as a silenced console.error).
   afterEach(() => {
     vi.restoreAllMocks();
@@ -52,11 +58,11 @@ describe("auth context", () => {
   //   expect(screen.getByText("Signed in as Ada")).toBeInTheDocument();
   // });
 
-  it.todo("shows the children and no form when initialUser is given");
-  it.todo("trims the name before logging in");
-  it.todo("shows an alert and stays logged out when the name is blank");
-  it.todo("removes the alert after a successful login");
-  it.todo("hides the children again after Log out");
-  it.todo("useAuth: login then logout leaves user null");
-  it.todo("useAuth throws outside an AuthProvider");
+  it.todo('shows the children and no form when initialUser is given');
+  it.todo('trims the name before logging in');
+  it.todo('shows an alert and stays logged out when the name is blank');
+  it.todo('removes the alert after a successful login');
+  it.todo('hides the children again after Log out');
+  it.todo('useAuth: login then logout leaves user null');
+  it.todo('useAuth throws outside an AuthProvider');
 });

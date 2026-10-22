@@ -152,7 +152,7 @@
  *   totals and a binary search to find the first visible row.)
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type VirtualListProps = {
   /** The accessible name of the list. */
@@ -167,7 +167,13 @@ export type VirtualListProps = {
   overscan?: number;
 };
 
-export function VirtualList({ label, items, rowHeight, height, overscan = 0 }: VirtualListProps): ReactElement {
+export function VirtualList({
+  label,
+  items,
+  rowHeight,
+  height,
+  overscan = 0,
+}: VirtualListProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: VirtualList");
+  throw new Error('Not implemented: VirtualList');
 }

@@ -15,8 +15,8 @@ test, hints and stretch goals. See [How to read an exercise](#how-to-read-an-exe
 Next to it is a test file with a list of `it.todo`s waiting to become your
 tests.
 
-New to the jargon? [GLOSSARY.md](GLOSSARY.md) explains terms like *props*,
-*state*, *re-render*, *side effect* and *accessible name* in plain words.
+New to the jargon? [GLOSSARY.md](GLOSSARY.md) explains terms like _props_,
+_state_, _re-render_, _side effect_ and _accessible name_ in plain words.
 
 ## Requirements
 
@@ -83,17 +83,17 @@ Try not to peek at the HINTS section until you've been stuck for a while.
 
 Every exercise has the same sections, in this order:
 
-| Section | What it tells you |
-| --- | --- |
-| **YOUR TASK** | What to build, with a small sketch of the UI and one usage example. Start here. |
-| **BACKGROUND** (most exercises) | The new idea explained with a small example that isn't the answer. |
-| **WHAT YOUR TESTS CAN FIND** | The exact roles, names and labels your component must render. Tests find elements the way a user or screen reader would, so this is the contract between your component and its tests. |
-| **THE RULES** | A numbered checklist of *everything* the component must do. "You can assume" lists what you don't need to handle. |
-| **EXAMPLES** | What the user does, and what they should see. |
-| **EDGE CASES TO TEST** | Ready-made test ideas with expected results. Each matches an `it.todo` in the test file. |
-| **HINTS** | From a gentle nudge to nearly the answer, including how to test the tricky parts. |
-| **REACT CONCEPTS TO LEARN** | The React features this exercise practises. |
-| **STRETCH GOALS** | Optional extras once your tests pass. |
+| Section                         | What it tells you                                                                                                                                                                      |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **YOUR TASK**                   | What to build, with a small sketch of the UI and one usage example. Start here.                                                                                                        |
+| **BACKGROUND** (most exercises) | The new idea explained with a small example that isn't the answer.                                                                                                                     |
+| **WHAT YOUR TESTS CAN FIND**    | The exact roles, names and labels your component must render. Tests find elements the way a user or screen reader would, so this is the contract between your component and its tests. |
+| **THE RULES**                   | A numbered checklist of _everything_ the component must do. "You can assume" lists what you don't need to handle.                                                                      |
+| **EXAMPLES**                    | What the user does, and what they should see.                                                                                                                                          |
+| **EDGE CASES TO TEST**          | Ready-made test ideas with expected results. Each matches an `it.todo` in the test file.                                                                                               |
+| **HINTS**                       | From a gentle nudge to nearly the answer, including how to test the tricky parts.                                                                                                      |
+| **REACT CONCEPTS TO LEARN**     | The React features this exercise practises.                                                                                                                                            |
+| **STRETCH GOALS**               | Optional extras once your tests pass.                                                                                                                                                  |
 
 When you're unsure what the component should do, **THE RULES** is the source
 of truth.
@@ -116,7 +116,7 @@ npm run dev                      # browser playground
   `screen.getByRole("button", { name: "Save" })` and
   `screen.getByLabelText("Email")` over class names or test IDs.
 - **`getBy` vs `queryBy` vs `findBy`:** `getBy...` throws if the element is
-  missing. `queryBy...` returns `null` (use it to check something is *not*
+  missing. `queryBy...` returns `null` (use it to check something is _not_
   there). `findBy...` waits for it to appear (use it with `await` after
   anything asynchronous).
 - **Interact with `user-event`:** `const user = userEvent.setup()`, then
@@ -154,22 +154,22 @@ reactor/
 
 ## Curriculum
 
-| Level | Topic | Exercises |
-| --- | --- | --- |
-| 00 | **Modern JavaScript** for React | array_methods, destructuring_and_spread, nested_immutable_updates, closures, promises_and_async, debounce_and_throttle |
-| 01 | **JSX and components** | greeting, product_card, unread_badge, todo_list_view, user_table, status_badge |
-| 02 | **Props and composition** | button, avatar, card, icon_button, list_with_render_prop, page_layout |
-| 03 | **State and events** | counter, toggle_switch, character_count, accordion, star_rating, image_carousel |
-| 04 | **Forms** | controlled_input, signup_form, checkbox_group, search_filter, dependent_selects, dynamic_fields |
-| 05 | **Sharing state** between components | temperature_converter, filterable_product_table, shopping_cart, controlled_tabs, todo_app, selection_list |
-| 06 | **Effects and refs** | document_title, stopwatch, inline_edit, dropdown_click_outside, window_size, debounced_search |
-| 07 | **Fetching data** | user_profile, retry_on_error, stale_responses, pagination, create_post_form, optimistic_like |
-| 08 | **Custom hooks** | use_toggle, use_local_storage, use_debounced_value, use_previous, use_interval, use_fetch |
-| 09 | **Reducers and context** | todo_reducer, theme_context, auth_context, cart_context, undo_redo |
-| 10 | **Performance** | memo_list_item, use_memo, use_callback, key_bugs, virtualized_list, state_colocation |
-| 11 | **Accessible UI patterns** | modal_dialog, tabs_keyboard, combobox, toast_notifications, error_boundary, menu_button |
-| 12 | **Concurrent React** (React 19) | use_transition_tabs, use_deferred_value, lazy_and_suspense, use_with_suspense, form_actions, use_optimistic |
-| 13 | **Small apps** | kanban_board, multi_step_form, infinite_feed, router_app, notes_app |
+| Level | Topic                                | Exercises                                                                                                              |
+| ----- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| 00    | **Modern JavaScript** for React      | array_methods, destructuring_and_spread, nested_immutable_updates, closures, promises_and_async, debounce_and_throttle |
+| 01    | **JSX and components**               | greeting, product_card, unread_badge, todo_list_view, user_table, status_badge                                         |
+| 02    | **Props and composition**            | button, avatar, card, icon_button, list_with_render_prop, page_layout                                                  |
+| 03    | **State and events**                 | counter, toggle_switch, character_count, accordion, star_rating, image_carousel                                        |
+| 04    | **Forms**                            | controlled_input, signup_form, checkbox_group, search_filter, dependent_selects, dynamic_fields                        |
+| 05    | **Sharing state** between components | temperature_converter, filterable_product_table, shopping_cart, controlled_tabs, todo_app, selection_list              |
+| 06    | **Effects and refs**                 | document_title, stopwatch, inline_edit, dropdown_click_outside, window_size, debounced_search                          |
+| 07    | **Fetching data**                    | user_profile, retry_on_error, stale_responses, pagination, create_post_form, optimistic_like                           |
+| 08    | **Custom hooks**                     | use_toggle, use_local_storage, use_debounced_value, use_previous, use_interval, use_fetch                              |
+| 09    | **Reducers and context**             | todo_reducer, theme_context, auth_context, cart_context, undo_redo                                                     |
+| 10    | **Performance**                      | memo_list_item, use_memo, use_callback, key_bugs, virtualized_list, state_colocation                                   |
+| 11    | **Accessible UI patterns**           | modal_dialog, tabs_keyboard, combobox, toast_notifications, error_boundary, menu_button                                |
+| 12    | **Concurrent React** (React 19)      | use_transition_tabs, use_deferred_value, lazy_and_suspense, use_with_suspense, form_actions, use_optimistic            |
+| 13    | **Small apps**                       | kanban_board, multi_step_form, infinite_feed, router_app, notes_app                                                    |
 
 Work through the levels in order, since later levels assume earlier concepts.
 Within a level, exercises get harder as the numbers go up.

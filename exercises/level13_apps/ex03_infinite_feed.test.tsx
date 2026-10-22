@@ -9,21 +9,21 @@
  *     npm test -- ex03_infinite_feed
  */
 
-import { act, render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { delay, http, HttpResponse } from "msw";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { act, render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { delay, http, HttpResponse } from 'msw';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { server } from "../../test/server";
-import { InfiniteFeed, type FeedPage } from "./ex03_infinite_feed";
+import { server } from '../../test/server';
+import { InfiniteFeed, type FeedPage } from './ex03_infinite_feed';
 
 // A fake server with 3 pages of 2 posts each. `requested` records which
 // pages were asked for.
 let requested: number[] = [];
 function mockFeedApi() {
   server.use(
-    http.get("/api/posts", ({ request }) => {
-      const page = Number(new URL(request.url).searchParams.get("page"));
+    http.get('/api/posts', ({ request }) => {
+      const page = Number(new URL(request.url).searchParams.get('page'));
       requested.push(page);
       const body: FeedPage = {
         posts: [
@@ -37,7 +37,7 @@ function mockFeedApi() {
   );
 }
 
-describe("InfiniteFeed", () => {
+describe('InfiniteFeed', () => {
   beforeEach(() => {
     requested = [];
   });
@@ -62,13 +62,13 @@ describe("InfiniteFeed", () => {
   //   expect(requested).toEqual([1, 2]);
   // });
 
-  it.todo("shows Loading posts... and then page 1");
-  it.todo("adds page 2 after page 1 with Load more");
-  it.todo("loads the next page when the sentinel becomes visible");
-  it.todo("does nothing when isIntersecting is false");
-  it.todo("makes only one request for two quick triggers");
+  it.todo('shows Loading posts... and then page 1');
+  it.todo('adds page 2 after page 1 with Load more');
+  it.todo('loads the next page when the sentinel becomes visible');
+  it.todo('does nothing when isIntersecting is false');
+  it.todo('makes only one request for two quick triggers');
   it.todo("shows You're all caught up! after the last page and stops loading");
-  it.todo("keeps old posts on failure, and Try again asks for the same page");
-  it.todo("works with the button when IntersectionObserver is missing");
-  it.todo("disconnects the observer on unmount");
+  it.todo('keeps old posts on failure, and Try again asks for the same page');
+  it.todo('works with the button when IntersectionObserver is missing');
+  it.todo('disconnects the observer on unmount');
 });

@@ -170,7 +170,7 @@
  * - Show "3 of 6 products" under the table.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Product = {
   /** The product's name, unique. */
@@ -188,12 +188,12 @@ export type Product = {
  * Sample products for your tests and the playground.
  */
 export const PRODUCTS: Product[] = [
-  { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
-  { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
-  { category: "Fruits", price: "$2", stocked: false, name: "Passionfruit" },
-  { category: "Vegetables", price: "$2", stocked: true, name: "Spinach" },
-  { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
-  { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
+  { category: 'Fruits', price: '$1', stocked: true, name: 'Apple' },
+  { category: 'Fruits', price: '$1', stocked: true, name: 'Dragonfruit' },
+  { category: 'Fruits', price: '$2', stocked: false, name: 'Passionfruit' },
+  { category: 'Vegetables', price: '$2', stocked: true, name: 'Spinach' },
+  { category: 'Vegetables', price: '$4', stocked: false, name: 'Pumpkin' },
+  { category: 'Vegetables', price: '$1', stocked: true, name: 'Peas' },
 ];
 
 export type SearchBarProps = {
@@ -228,15 +228,21 @@ export function SearchBar({
   onInStockOnlyChange,
 }: SearchBarProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: SearchBar");
+  throw new Error('Not implemented: SearchBar');
 }
 
-export function ProductTable({ products, filterText, inStockOnly }: ProductTableProps): ReactElement {
+export function ProductTable({
+  products,
+  filterText,
+  inStockOnly,
+}: ProductTableProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ProductTable");
+  throw new Error('Not implemented: ProductTable');
 }
 
-export function FilterableProductTable({ products }: FilterableProductTableProps): ReactElement {
+export function FilterableProductTable({
+  products,
+}: FilterableProductTableProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: FilterableProductTable");
+  throw new Error('Not implemented: FilterableProductTable');
 }

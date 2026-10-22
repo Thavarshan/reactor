@@ -157,7 +157,7 @@
  * - Make the number of decimal places a prop of the converter.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 /**
  * PROVIDED: you don't need to change this.
@@ -177,12 +177,16 @@ export type TemperatureInputProps = {
   onChange: (text: string) => void;
 };
 
-export function TemperatureInput({ label, value, onChange }: TemperatureInputProps): ReactElement {
+export function TemperatureInput({
+  label,
+  value,
+  onChange,
+}: TemperatureInputProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: TemperatureInput");
+  throw new Error('Not implemented: TemperatureInput');
 }
 
 export function TemperatureConverter(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: TemperatureConverter");
+  throw new Error('Not implemented: TemperatureConverter');
 }

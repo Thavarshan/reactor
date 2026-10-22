@@ -141,7 +141,7 @@
  *   any language.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type UnreadBadgeProps = {
   /** How many messages are unread. 0 means none. */
@@ -150,7 +150,10 @@ export type UnreadBadgeProps = {
   max?: number;
 };
 
-export function UnreadBadge({ count, max = 99 }: UnreadBadgeProps): ReactElement {
+export function UnreadBadge({
+  count,
+  max = 99,
+}: UnreadBadgeProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: UnreadBadge");
+  throw new Error('Not implemented: UnreadBadge');
 }

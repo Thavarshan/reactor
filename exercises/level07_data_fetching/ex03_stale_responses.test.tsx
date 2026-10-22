@@ -9,19 +9,19 @@
  *     npm test -- ex03_stale_responses
  */
 
-import { act, render, screen } from "@testing-library/react";
-import { delay, http, HttpResponse } from "msw";
-import { StrictMode } from "react";
-import { describe, expect, it } from "vitest";
+import { act, render, screen } from '@testing-library/react';
+import { delay, http, HttpResponse } from 'msw';
+import { StrictMode } from 'react';
+import { describe, expect, it } from 'vitest';
 
-import { server } from "../../test/server";
-import { type Post, UserPosts } from "./ex03_stale_responses";
+import { server } from '../../test/server';
+import { type Post, UserPosts } from './ex03_stale_responses';
 
 const ADA_POSTS: Post[] = [
-  { id: 1, title: "Notes on the Analytical Engine" },
-  { id: 2, title: "Sketch of the Engine" },
+  { id: 1, title: 'Notes on the Analytical Engine' },
+  { id: 2, title: 'Sketch of the Engine' },
 ];
-const GRACE_POSTS: Post[] = [{ id: 3, title: "The first compiler" }];
+const GRACE_POSTS: Post[] = [{ id: 3, title: 'The first compiler' }];
 
 // Wait for real time to pass, inside act so React finishes any update
 // that a late answer causes.
@@ -29,7 +29,7 @@ function waitMs(ms: number) {
   return act(() => new Promise<void>((resolve) => setTimeout(resolve, ms)));
 }
 
-describe("UserPosts", () => {
+describe('UserPosts', () => {
   // Examples to get you started:
   //
   // it("shows loading, then the posts", async () => {
@@ -60,7 +60,7 @@ describe("UserPosts", () => {
 
   it.todo("shows 'No posts yet.' and no list for an empty array");
   it.todo("shows 'Could not load posts.' for a 500");
-  it.todo("shows loading at once, without the old titles, when userId changes");
-  it.todo("ignores a slow ERROR for the previous user");
-  it.todo("shows the posts and no alert inside StrictMode");
+  it.todo('shows loading at once, without the old titles, when userId changes');
+  it.todo('ignores a slow ERROR for the previous user');
+  it.todo('shows the posts and no alert inside StrictMode');
 });

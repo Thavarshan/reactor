@@ -9,13 +9,13 @@
  *     npm test -- ex01_controlled_input
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { NameGreeting } from "./ex01_controlled_input";
+import { NameGreeting } from './ex01_controlled_input';
 
-describe("NameGreeting", () => {
+describe('NameGreeting', () => {
   // Examples to get you started:
   //
   // it("greets a stranger when the box is empty", () => {
@@ -30,12 +30,12 @@ describe("NameGreeting", () => {
   //   expect(screen.getByRole("status")).toHaveTextContent("Hello, Ada!");
   // });
 
-  it.todo("starts empty, greets a stranger and disables Clear");
-  it.todo("fills the box and the greeting from initialName");
-  it.todo("updates the greeting after every letter");
-  it.todo("trims spaces in the greeting but keeps them in the box");
-  it.todo("treats a box of only spaces as a stranger, with Clear enabled");
-  it.todo("Clear empties the box, resets the greeting and disables itself");
-  it.todo("lets you type again after Clear");
-  it.todo("acts like Clear when the user deletes all the text");
+  it.todo('starts empty, greets a stranger and disables Clear');
+  it.todo('fills the box and the greeting from initialName');
+  it.todo('updates the greeting after every letter');
+  it.todo('trims spaces in the greeting but keeps them in the box');
+  it.todo('treats a box of only spaces as a stranger, with Clear enabled');
+  it.todo('Clear empties the box, resets the greeting and disables itself');
+  it.todo('lets you type again after Clear');
+  it.todo('acts like Clear when the user deletes all the text');
 });

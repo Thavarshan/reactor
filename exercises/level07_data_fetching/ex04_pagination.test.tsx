@@ -9,19 +9,22 @@
  *     npm test -- ex04_pagination
  */
 
-import { render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { http, HttpResponse } from "msw";
-import { describe, expect, it } from "vitest";
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { http, HttpResponse } from 'msw';
+import { describe, expect, it } from 'vitest';
 
-import { server } from "../../test/server";
-import { type PostsPage, PostsPager } from "./ex04_pagination";
+import { server } from '../../test/server';
+import { type PostsPage, PostsPager } from './ex04_pagination';
 
 // PROVIDED: you don't need to change this.
 // Builds a fake page with two posts: "Post 1 on page 2", "Post 2 on page 2".
 function makePage(page: number, totalPages: number): PostsPage {
   return {
-    posts: [1, 2].map((n) => ({ id: page * 10 + n, title: `Post ${n} on page ${page}` })),
+    posts: [1, 2].map((n) => ({
+      id: page * 10 + n,
+      title: `Post ${n} on page ${page}`,
+    })),
     page,
     totalPages,
   };
@@ -39,7 +42,7 @@ function createGate() {
   return { opened, open };
 }
 
-describe("PostsPager", () => {
+describe('PostsPager', () => {
   // Examples to get you started:
   //
   // it("loads page 1 first", async () => {
@@ -76,11 +79,11 @@ describe("PostsPager", () => {
   //   expect(screen.queryByRole("status")).not.toBeInTheDocument();
   // });
 
-  it.todo("shows only the loading status before page 1 arrives");
-  it.todo("requests page=2 when Next is clicked");
-  it.todo("jumps straight to a page with its numbered button");
-  it.todo("disables Next on the last page");
+  it.todo('shows only the loading status before page 1 arrives');
+  it.todo('requests page=2 when Next is clicked');
+  it.todo('jumps straight to a page with its numbered button');
+  it.todo('disables Next on the last page');
   it.todo("puts aria-current on the current page's button only");
-  it.todo("disables Previous and Next when there is only one page");
+  it.todo('disables Previous and Next when there is only one page');
   it.todo("sends no request when the current page's button is clicked");
 });

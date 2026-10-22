@@ -146,9 +146,9 @@
  *   button in its new column, so a keyboard user can keep moving it.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
-export type ColumnId = "todo" | "doing" | "done";
+export type ColumnId = 'todo' | 'doing' | 'done';
 
 export type Card = {
   /** A unique id. */
@@ -161,9 +161,9 @@ export type Card = {
 
 /** PROVIDED: you don't need to change this. The columns, left to right. */
 export const COLUMNS: { id: ColumnId; title: string }[] = [
-  { id: "todo", title: "To do" },
-  { id: "doing", title: "In progress" },
-  { id: "done", title: "Done" },
+  { id: 'todo', title: 'To do' },
+  { id: 'doing', title: 'In progress' },
+  { id: 'done', title: 'Done' },
 ];
 
 export type KanbanBoardProps = {
@@ -173,7 +173,10 @@ export type KanbanBoardProps = {
   onChange?: (cards: Card[]) => void;
 };
 
-export function KanbanBoard({ initialCards = [], onChange }: KanbanBoardProps): ReactElement {
+export function KanbanBoard({
+  initialCards = [],
+  onChange,
+}: KanbanBoardProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: KanbanBoard");
+  throw new Error('Not implemented: KanbanBoard');
 }

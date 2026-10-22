@@ -9,13 +9,13 @@
  *     npm test -- ex05_dependent_selects
  */
 
-import { render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { COUNTRIES, LocationPicker } from "./ex05_dependent_selects";
+import { COUNTRIES, LocationPicker } from './ex05_dependent_selects';
 
-describe("LocationPicker", () => {
+describe('LocationPicker', () => {
   // Examples to get you started:
   //
   // it("starts with the City select disabled", () => {
@@ -34,10 +34,10 @@ describe("LocationPicker", () => {
   // });
 
   it.todo("starts with both placeholders, City disabled and 'Pick a country'");
-  it.todo("lists the placeholder and every country");
+  it.todo('lists the placeholder and every country');
   it.todo("enables City and lists only the chosen country's cities");
   it.todo("shows 'You picked <city>, <country>' once both are chosen");
-  it.todo("resets the city when the country changes");
-  it.todo("resets a city name that both countries share");
+  it.todo('resets the city when the country changes');
+  it.todo('resets a city name that both countries share');
   it.todo("disables City again when going back to 'Choose a country'");
 });

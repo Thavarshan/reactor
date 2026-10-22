@@ -148,7 +148,7 @@
  * - Allow half stars.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type StarRatingProps = {
   /** How many stars. Default 5. */
@@ -161,7 +161,12 @@ export type StarRatingProps = {
   onChange?: (value: number) => void;
 };
 
-export function StarRating({ max = 5, defaultValue = 0, label = "Rating", onChange }: StarRatingProps): ReactElement {
+export function StarRating({
+  max = 5,
+  defaultValue = 0,
+  label = 'Rating',
+  onChange,
+}: StarRatingProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: StarRating");
+  throw new Error('Not implemented: StarRating');
 }

@@ -154,12 +154,13 @@
  *   playground.
  */
 
-import { ComponentProps, type ReactElement } from "react";
+import type { ComponentProps } from 'react';
+import { type ReactElement } from 'react';
 
-export type ButtonVariant = "primary" | "secondary" | "danger";
-export type ButtonSize = "small" | "medium" | "large";
+export type ButtonVariant = 'primary' | 'secondary' | 'danger';
+export type ButtonSize = 'small' | 'medium' | 'large';
 
-export type ButtonProps = ComponentProps<"button"> & {
+export type ButtonProps = ComponentProps<'button'> & {
   /** How the button looks. Default "primary". */
   variant?: ButtonVariant;
   /** How big the button is. Default "medium". */
@@ -167,12 +168,12 @@ export type ButtonProps = ComponentProps<"button"> & {
 };
 
 export function Button({
-  variant = "primary",
-  size = "medium",
+  variant = 'primary',
+  size = 'medium',
   className,
-  type = "button",
+  type = 'button',
   ...rest
 }: ButtonProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Button");
+  throw new Error('Not implemented: Button');
 }

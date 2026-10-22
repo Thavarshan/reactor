@@ -9,16 +9,16 @@
  *     npm test -- ex06_use_fetch
  */
 
-import { act, renderHook, waitFor } from "@testing-library/react";
-import { delay, http, HttpResponse } from "msw";
-import { describe, expect, it } from "vitest";
+import { act, renderHook, waitFor } from '@testing-library/react';
+import { delay, http, HttpResponse } from 'msw';
+import { describe, expect, it } from 'vitest';
 
-import { server } from "../../test/server";
-import { useFetch } from "./ex06_use_fetch";
+import { server } from '../../test/server';
+import { useFetch } from './ex06_use_fetch';
 
 type User = { name: string };
 
-describe("useFetch", () => {
+describe('useFetch', () => {
   // Examples to get you started:
   //
   // it("starts out loading", () => {
@@ -37,10 +37,10 @@ describe("useFetch", () => {
   //   expect(result.current.error).toBeUndefined();
   // });
 
-  it.todo("returns an error with the status for a 500 response");
-  it.todo("returns an error when the network fails");
-  it.todo("aborts the old request when the url changes");
-  it.todo("never lets a slow old response replace newer data");
-  it.todo("aborts the running request on unmount");
-  it.todo("fetches again and shows the new data when refetch is called");
+  it.todo('returns an error with the status for a 500 response');
+  it.todo('returns an error when the network fails');
+  it.todo('aborts the old request when the url changes');
+  it.todo('never lets a slow old response replace newer data');
+  it.todo('aborts the running request on unmount');
+  it.todo('fetches again and shows the new data when refetch is called');
 });

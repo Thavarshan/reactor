@@ -175,9 +175,9 @@
  * - Make onSubmit async, and show "Creating account..." while it runs.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
-export type Plan = "free" | "pro";
+export type Plan = 'free' | 'pro';
 
 export type SignupData = {
   email: string;
@@ -194,5 +194,5 @@ export type MultiStepFormProps = {
 
 export function MultiStepForm({ onSubmit }: MultiStepFormProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: MultiStepForm");
+  throw new Error('Not implemented: MultiStepForm');
 }

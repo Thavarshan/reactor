@@ -146,7 +146,7 @@
  * - Keep the cart in localStorage so it survives a page reload.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Product = {
   /** A unique id, like "apple". */
@@ -162,9 +162,9 @@ export type Product = {
  * Sample products for your tests and the playground.
  */
 export const PRODUCTS: Product[] = [
-  { id: "apple", name: "Apple", price: 0.5 },
-  { id: "bread", name: "Bread", price: 2.25 },
-  { id: "milk", name: "Milk", price: 1.2 },
+  { id: 'apple', name: 'Apple', price: 0.5 },
+  { id: 'bread', name: 'Bread', price: 2.25 },
+  { id: 'milk', name: 'Milk', price: 1.2 },
 ];
 
 /**
@@ -182,5 +182,5 @@ export type ShopProps = {
 
 export function Shop({ products }: ShopProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Shop");
+  throw new Error('Not implemented: Shop');
 }

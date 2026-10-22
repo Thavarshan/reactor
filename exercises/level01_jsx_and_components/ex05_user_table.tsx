@@ -157,7 +157,7 @@
  *   Intl.DateTimeFormat.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type User = {
   /** A unique id. Use it as the React key. */
@@ -167,7 +167,7 @@ export type User = {
   /** The user's email address. */
   email: string;
   /** What the user is allowed to do. */
-  role: "admin" | "member";
+  role: 'admin' | 'member';
 };
 
 export type UserTableProps = {
@@ -177,7 +177,10 @@ export type UserTableProps = {
   caption?: string;
 };
 
-export function UserTable({ users, caption = "Users" }: UserTableProps): ReactElement {
+export function UserTable({
+  users,
+  caption = 'Users',
+}: UserTableProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: UserTable");
+  throw new Error('Not implemented: UserTable');
 }

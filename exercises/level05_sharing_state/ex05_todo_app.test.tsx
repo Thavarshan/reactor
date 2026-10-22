@@ -9,19 +9,19 @@
  *     npm test -- ex05_todo_app
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { type Todo, TodoApp } from "./ex05_todo_app";
+import { type Todo, TodoApp } from './ex05_todo_app';
 
 const TODOS: Todo[] = [
-  { id: "1", text: "Walk the dog", done: true },
-  { id: "2", text: "Write tests", done: false },
-  { id: "3", text: "Read a book", done: false },
+  { id: '1', text: 'Walk the dog', done: true },
+  { id: '2', text: 'Write tests', done: false },
+  { id: '3', text: 'Read a book', done: false },
 ];
 
-describe("TodoApp", () => {
+describe('TodoApp', () => {
   // Examples to get you started:
   //
   // it("adds a todo", async () => {
@@ -42,14 +42,14 @@ describe("TodoApp", () => {
   // });
 
   it.todo("starts with 'Nothing to show', '0 items left' and All pressed");
-  it.todo("shows initialTodos in order, with done ones ticked");
-  it.todo("adds a trimmed todo at the end and empties the box");
-  it.todo("adds a todo when Enter is pressed");
+  it.todo('shows initialTodos in order, with done ones ticked');
+  it.todo('adds a trimmed todo at the end and empties the box');
+  it.todo('adds a todo when Enter is pressed');
   it.todo("doesn't add an empty or spaces-only todo");
-  it.todo("updates the count when todos are ticked and unticked");
-  it.todo("deletes only the clicked todo");
-  it.todo("shows the right todos for each filter, with aria-pressed following");
+  it.todo('updates the count when todos are ticked and unticked');
+  it.todo('deletes only the clicked todo');
+  it.todo('shows the right todos for each filter, with aria-pressed following');
   it.todo("says 'Nothing to show' for a filter with no todos");
-  it.todo("counts every todo, whatever the filter");
-  it.todo("hides a todo ticked while the Active filter is on");
+  it.todo('counts every todo, whatever the filter');
+  it.todo('hides a todo ticked while the Active filter is on');
 });

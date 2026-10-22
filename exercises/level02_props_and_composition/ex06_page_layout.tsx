@@ -149,7 +149,8 @@
  * - Add an `aside` slot rendered as <aside> (role "complementary").
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type PageLayoutProps = {
   /** Shown in the <header> (role "banner"). Optional. */
@@ -167,10 +168,10 @@ export type PageLayoutProps = {
 export function PageLayout({
   header,
   sidebar,
-  sidebarLabel = "Sidebar",
+  sidebarLabel = 'Sidebar',
   footer,
   children,
 }: PageLayoutProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: PageLayout");
+  throw new Error('Not implemented: PageLayout');
 }

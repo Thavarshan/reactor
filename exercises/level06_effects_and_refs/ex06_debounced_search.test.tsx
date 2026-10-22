@@ -9,15 +9,15 @@
  *     npm test -- ex06_debounced_search
  */
 
-import { act, fireEvent, render, screen } from "@testing-library/react";
-import { StrictMode } from "react";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { act, fireEvent, render, screen } from '@testing-library/react';
+import { StrictMode } from 'react';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { DebouncedSearch } from "./ex06_debounced_search";
+import { DebouncedSearch } from './ex06_debounced_search';
 
 // Put new text in the search box in one instant event.
 function typeInto(value: string) {
-  fireEvent.change(screen.getByRole("searchbox", { name: "Search" }), {
+  fireEvent.change(screen.getByRole('searchbox', { name: 'Search' }), {
     target: { value },
   });
 }
@@ -29,7 +29,7 @@ function wait(ms: number) {
   });
 }
 
-describe("DebouncedSearch", () => {
+describe('DebouncedSearch', () => {
   afterEach(() => {
     vi.useRealTimers();
   });
@@ -63,11 +63,13 @@ describe("DebouncedSearch", () => {
   // });
 
   it.todo("doesn't call onSearch on the first render, even after waiting");
-  it.todo("trims the query before calling onSearch");
+  it.todo('trims the query before calling onSearch');
   it.todo("doesn't search the same query twice in a row");
   it.todo("doesn't call onSearch for only spaces");
-  it.todo("calls onSearch with an empty string when the box is cleared after a search");
-  it.todo("uses a custom delay");
-  it.todo("never calls onSearch after unmount");
-  it.todo("calls onSearch once inside StrictMode");
+  it.todo(
+    'calls onSearch with an empty string when the box is cleared after a search',
+  );
+  it.todo('uses a custom delay');
+  it.todo('never calls onSearch after unmount');
+  it.todo('calls onSearch once inside StrictMode');
 });

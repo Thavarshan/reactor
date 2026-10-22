@@ -15,7 +15,7 @@ change:
 
 ```tsx
 function Page() {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   return (
     <>
       <SearchBox query={query} onQueryChange={setQuery} />
@@ -25,7 +25,9 @@ function Page() {
 }
 
 function SearchBox({ query, onQueryChange }: SearchBoxProps) {
-  return <input value={query} onChange={(e) => onQueryChange(e.target.value)} />;
+  return (
+    <input value={query} onChange={(e) => onQueryChange(e.target.value)} />
+  );
 }
 ```
 

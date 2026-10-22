@@ -9,13 +9,13 @@
  *     npm test -- ex03_inline_edit
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { InlineEdit } from "./ex03_inline_edit";
+import { InlineEdit } from './ex03_inline_edit';
 
-describe("InlineEdit", () => {
+describe('InlineEdit', () => {
   // Examples to get you started:
   //
   // it("focuses the text box when Edit is clicked", async () => {
@@ -38,11 +38,11 @@ describe("InlineEdit", () => {
   //   expect(screen.getByRole("button", { name: "Edit" })).toHaveFocus();
   // });
 
-  it.todo("shows the text and an Edit button first, and moves no focus");
-  it.todo("trims spaces before saving");
-  it.todo("Escape keeps the old text, skips onSave and focuses Edit");
-  it.todo("Enter with a blank box keeps the old text");
+  it.todo('shows the text and an Edit button first, and moves no focus');
+  it.todo('trims spaces before saving');
+  it.todo('Escape keeps the old text, skips onSave and focuses Edit');
+  it.todo('Enter with a blank box keeps the old text');
   it.todo("Enter without changes doesn't call onSave");
-  it.todo("editing again after Escape starts from the saved text");
-  it.todo("works without an onSave prop");
+  it.todo('editing again after Escape starts from the saved text');
+  it.todo('works without an onSave prop');
 });

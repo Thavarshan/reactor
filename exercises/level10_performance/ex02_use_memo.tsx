@@ -145,7 +145,7 @@
  *   the playground to compare `actualDuration` with and without useMemo.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Product = {
   id: number;
@@ -160,18 +160,20 @@ export type Product = {
  */
 export function filterProducts(products: Product[], query: string): Product[] {
   const q = query.trim().toLowerCase();
-  if (q === "") return products;
+  if (q === '') {
+    return products;
+  }
   return products.filter((p) => p.name.toLowerCase().includes(q));
 }
 
 /** PROVIDED: sample data for your tests and the playground. */
 export const sampleProducts: Product[] = [
-  { id: 1, name: "Apple", price: 0.5 },
-  { id: 2, name: "Banana", price: 0.25 },
-  { id: 3, name: "Cherry", price: 3 },
-  { id: 4, name: "Grapes", price: 2.5 },
-  { id: 5, name: "Lemon", price: 0.4 },
-  { id: 6, name: "Mango", price: 1.2 },
+  { id: 1, name: 'Apple', price: 0.5 },
+  { id: 2, name: 'Banana', price: 0.25 },
+  { id: 3, name: 'Cherry', price: 3 },
+  { id: 4, name: 'Grapes', price: 2.5 },
+  { id: 5, name: 'Lemon', price: 0.4 },
+  { id: 6, name: 'Mango', price: 1.2 },
 ];
 
 export type ProductSearchProps = {
@@ -181,7 +183,10 @@ export type ProductSearchProps = {
   filter?: (products: Product[], query: string) => Product[];
 };
 
-export function ProductSearch({ products, filter = filterProducts }: ProductSearchProps): ReactElement {
+export function ProductSearch({
+  products,
+  filter = filterProducts,
+}: ProductSearchProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ProductSearch");
+  throw new Error('Not implemented: ProductSearch');
 }

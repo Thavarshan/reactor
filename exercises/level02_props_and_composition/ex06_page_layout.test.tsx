@@ -9,13 +9,13 @@
  *     npm test -- ex06_page_layout
  */
 
-import { render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { PageLayout } from "./ex06_page_layout";
+import { PageLayout } from './ex06_page_layout';
 
-describe("PageLayout", () => {
+describe('PageLayout', () => {
   // Examples to get you started:
   //
   // it("puts children in the main landmark", () => {
@@ -32,11 +32,13 @@ describe("PageLayout", () => {
   //   expect(screen.getByRole("link", { name: "Home" })).toHaveFocus();
   // });
 
-  it.todo("renders every slot inside its landmark");
-  it.todo("leaves out missing or null landmarks, but always renders main");
-  it.todo("names the navigation Sidebar by default, or sidebarLabel");
-  it.todo("orders landmarks banner, navigation, main, contentinfo");
-  it.todo("has a skip link to #main-content, and main has the id and tabindex -1");
-  it.todo("does not put main itself in the Tab order");
-  it.todo("adds the with-sidebar class only when there is a sidebar");
+  it.todo('renders every slot inside its landmark');
+  it.todo('leaves out missing or null landmarks, but always renders main');
+  it.todo('names the navigation Sidebar by default, or sidebarLabel');
+  it.todo('orders landmarks banner, navigation, main, contentinfo');
+  it.todo(
+    'has a skip link to #main-content, and main has the id and tabindex -1',
+  );
+  it.todo('does not put main itself in the Tab order');
+  it.todo('adds the with-sidebar class only when there is a sidebar');
 });

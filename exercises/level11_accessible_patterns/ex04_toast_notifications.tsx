@@ -158,7 +158,8 @@
  * - Show at most 3 toasts. Drop the oldest when a fourth arrives.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type ToastProviderProps = {
   /** Your app. */
@@ -172,12 +173,15 @@ export type ToastApi = {
   showToast: (message: string) => void;
 };
 
-export function ToastProvider({ children, duration = 5000 }: ToastProviderProps): ReactElement {
+export function ToastProvider({
+  children,
+  duration = 5000,
+}: ToastProviderProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ToastProvider");
+  throw new Error('Not implemented: ToastProvider');
 }
 
 export function useToast(): ToastApi {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useToast");
+  throw new Error('Not implemented: useToast');
 }

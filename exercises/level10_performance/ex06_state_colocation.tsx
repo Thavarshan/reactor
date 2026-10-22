@@ -159,7 +159,7 @@
  */
 
 // ReactNode is the type for a `children` prop. You will need it.
-import { useState, type ReactNode, type ReactElement } from "react";
+import { useState, type ReactNode, type ReactElement } from 'react';
 
 export type ReportRow = {
   region: string;
@@ -168,10 +168,10 @@ export type ReportRow = {
 
 /** PROVIDED: the report data. */
 export const reportRows: ReportRow[] = [
-  { region: "North", sales: 1200 },
-  { region: "South", sales: 950 },
-  { region: "East", sales: 1430 },
-  { region: "West", sales: 880 },
+  { region: 'North', sales: 1200 },
+  { region: 'South', sales: 950 },
+  { region: 'East', sales: 1430 },
+  { region: 'West', sales: 880 },
 ];
 
 export type SlowReportProps = {
@@ -219,16 +219,17 @@ export type DashboardProps = {
  * every change re-renders SlowReport. Use it to prove the problem.
  */
 export function SlowDashboard({ onReportRender }: DashboardProps) {
-  const [note, setNote] = useState("");
-  const [theme, setTheme] = useState("light");
+  const [note, setNote] = useState('');
+  const [theme, setTheme] = useState('light');
   return (
     <div>
       <label>
-        Quick note <input value={note} onChange={(e) => setNote(e.target.value)} />
+        Quick note{' '}
+        <input value={note} onChange={(e) => setNote(e.target.value)} />
       </label>
       <p>Characters: {note.length}</p>
       <label>
-        Theme{" "}
+        Theme{' '}
         <select value={theme} onChange={(e) => setTheme(e.target.value)}>
           <option value="light">Light</option>
           <option value="dark">Dark</option>
@@ -243,5 +244,5 @@ export function SlowDashboard({ onReportRender }: DashboardProps) {
 
 export function Dashboard({ onReportRender }: DashboardProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Dashboard");
+  throw new Error('Not implemented: Dashboard');
 }

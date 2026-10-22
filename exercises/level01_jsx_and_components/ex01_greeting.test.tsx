@@ -9,12 +9,12 @@
  *     npm test -- ex01_greeting
  */
 
-import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 
-import { Greeting } from "./ex01_greeting";
+import { Greeting } from './ex01_greeting';
 
-describe("Greeting", () => {
+describe('Greeting', () => {
   // Examples to get you started:
   //
   // it("greets a person by name", () => {
@@ -27,9 +27,9 @@ describe("Greeting", () => {
   //   expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Hello, Ada!");
   // });
 
-  it.todo("greets a stranger when there is no name");
-  it.todo("greets a stranger when the name is empty");
-  it.todo("removes spaces around the name");
-  it.todo("greets a stranger when the name is only spaces");
-  it.todo("keeps spaces inside a name");
+  it.todo('greets a stranger when there is no name');
+  it.todo('greets a stranger when the name is empty');
+  it.todo('removes spaces around the name');
+  it.todo('greets a stranger when the name is only spaces');
+  it.todo('keeps spaces inside a name');
 });

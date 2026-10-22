@@ -142,7 +142,8 @@
  * - In the playground, put the Button from ex01 in a Card's footer.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type CardProps = {
   /** Shown in an <h2> at the top. Optional. */
@@ -155,5 +156,5 @@ export type CardProps = {
 
 export function Card({ title, footer, children }: CardProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Card");
+  throw new Error('Not implemented: Card');
 }

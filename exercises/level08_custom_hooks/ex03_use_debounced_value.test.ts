@@ -9,12 +9,12 @@
  *     npm test -- ex03_use_debounced_value
  */
 
-import { act, renderHook } from "@testing-library/react";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { act, renderHook } from '@testing-library/react';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { useDebouncedValue } from "./ex03_use_debounced_value";
+import { useDebouncedValue } from './ex03_use_debounced_value';
 
-describe("useDebouncedValue", () => {
+describe('useDebouncedValue', () => {
   // Fake timers let a test move time forward instantly.
   beforeEach(() => {
     vi.useFakeTimers();
@@ -43,10 +43,10 @@ describe("useDebouncedValue", () => {
   //   expect(result.current).toBe("b");
   // });
 
-  it.todo("still returns the old value 1 ms before the delay is over");
-  it.todo("waits 500 ms when no delay is given");
-  it.todo("restarts the wait on a second change and skips the middle value");
-  it.todo("does not restart the wait when re-rendered with the same value");
-  it.todo("restarts the wait with the new delay when the delay changes");
-  it.todo("leaves no timers behind after unmount");
+  it.todo('still returns the old value 1 ms before the delay is over');
+  it.todo('waits 500 ms when no delay is given');
+  it.todo('restarts the wait on a second change and skips the middle value');
+  it.todo('does not restart the wait when re-rendered with the same value');
+  it.todo('restarts the wait with the new delay when the delay changes');
+  it.todo('leaves no timers behind after unmount');
 });

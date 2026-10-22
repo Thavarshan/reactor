@@ -160,7 +160,7 @@
  *   screen while the next one loads.
  */
 
-import { Component, type ReactNode, type ReactElement } from "react";
+import { Component, type ReactNode, type ReactElement } from 'react';
 
 export type User = {
   id: number;
@@ -195,20 +195,20 @@ export class ErrorBoundary extends Component<
 
 export function fetchUser(id: number): Promise<User> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: fetchUser");
+  throw new Error('Not implemented: fetchUser');
 }
 
 export function clearUserCache(): void {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: clearUserCache");
+  throw new Error('Not implemented: clearUserCache');
 }
 
 export function UserDetails({ userId }: UserCardProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: UserDetails");
+  throw new Error('Not implemented: UserDetails');
 }
 
 export function UserCard({ userId }: UserCardProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: UserCard");
+  throw new Error('Not implemented: UserCard');
 }

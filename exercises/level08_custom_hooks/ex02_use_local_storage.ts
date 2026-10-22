@@ -143,7 +143,10 @@
 /** The setter returned by useLocalStorage. It takes a value or a function. */
 export type SetValue<T> = (next: T | ((previous: T) => T)) => void;
 
-export function useLocalStorage<T>(key: string, initialValue: T): [T, SetValue<T>] {
+export function useLocalStorage<T>(
+  key: string,
+  initialValue: T,
+): [T, SetValue<T>] {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useLocalStorage");
+  throw new Error('Not implemented: useLocalStorage');
 }

@@ -9,12 +9,12 @@
  *     npm test -- ex03_card
  */
 
-import { render, screen, within } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { render, screen, within } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 
-import { Card } from "./ex03_card";
+import { Card } from './ex03_card';
 
-describe("Card", () => {
+describe('Card', () => {
   // Examples to get you started:
   //
   // it("names the article after its title", () => {
@@ -30,10 +30,10 @@ describe("Card", () => {
   //   expect(button.closest("footer")).not.toBeNull();
   // });
 
-  it.todo("renders children in an article with no heading and no name");
-  it.todo("renders no heading for a null title");
-  it.todo("renders no footer element without a footer or with footer={null}");
-  it.todo("renders title, children and footer in that order");
-  it.todo("accepts JSX in every slot");
-  it.todo("gives each of two cards its own name");
+  it.todo('renders children in an article with no heading and no name');
+  it.todo('renders no heading for a null title');
+  it.todo('renders no footer element without a footer or with footer={null}');
+  it.todo('renders title, children and footer in that order');
+  it.todo('accepts JSX in every slot');
+  it.todo('gives each of two cards its own name');
 });

@@ -168,7 +168,7 @@
  *   with and without memo, for 5,000 tasks.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Task = {
   id: string;
@@ -192,10 +192,10 @@ export type TaskListProps = {
 
 export function TaskRow({ task, onRender }: TaskRowProps): ReactElement {
   // TODO: build me (and wrap me in memo), then make your tests pass.
-  throw new Error("Not implemented: TaskRow");
+  throw new Error('Not implemented: TaskRow');
 }
 
 export function TaskList({ tasks, onRowRender }: TaskListProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: TaskList");
+  throw new Error('Not implemented: TaskList');
 }

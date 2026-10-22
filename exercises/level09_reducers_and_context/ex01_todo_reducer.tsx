@@ -197,7 +197,7 @@
  *   level 08.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Todo = {
   /** A unique whole number. */
@@ -209,14 +209,17 @@ export type Todo = {
 };
 
 export type TodoAction =
-  | { type: "added"; text: string }
-  | { type: "toggled"; id: number }
-  | { type: "deleted"; id: number }
-  | { type: "cleared_done" };
+  | { type: 'added'; text: string }
+  | { type: 'toggled'; id: number }
+  | { type: 'deleted'; id: number }
+  | { type: 'cleared_done' };
 
-export function todoReducer(todos: readonly Todo[], action: TodoAction): readonly Todo[] {
+export function todoReducer(
+  todos: readonly Todo[],
+  action: TodoAction,
+): readonly Todo[] {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: todoReducer");
+  throw new Error('Not implemented: todoReducer');
 }
 
 export type TodoAppProps = {
@@ -226,5 +229,5 @@ export type TodoAppProps = {
 
 export function TodoApp({ initialTodos = [] }: TodoAppProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: TodoApp");
+  throw new Error('Not implemented: TodoApp');
 }

@@ -9,15 +9,15 @@
  *     npm test -- ex04_search_filter
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { SearchFilter } from "./ex04_search_filter";
+import { SearchFilter } from './ex04_search_filter';
 
-const FRUITS = ["Apple", "Banana", "Cherry", "Mango"];
+const FRUITS = ['Apple', 'Banana', 'Cherry', 'Mango'];
 
-describe("SearchFilter", () => {
+describe('SearchFilter', () => {
   // Examples to get you started:
   //
   // it("shows every item at first", () => {
@@ -35,12 +35,14 @@ describe("SearchFilter", () => {
   //   expect(screen.getByRole("status")).toHaveTextContent("2 results");
   // });
 
-  it.todo("shows every item in order, with the count, when the box is empty");
-  it.todo("ignores upper and lower case");
-  it.todo("matches text in the middle of an item");
+  it.todo('shows every item in order, with the count, when the box is empty');
+  it.todo('ignores upper and lower case');
+  it.todo('matches text in the middle of an item');
   it.todo("says '1 result' for exactly one match");
   it.todo("shows no list and a 'No results for' message when nothing matches");
-  it.todo("ignores spaces around the text, and shows everything for only spaces");
-  it.todo("brings every item back when the text is deleted");
-  it.todo("names the search box with the label prop");
+  it.todo(
+    'ignores spaces around the text, and shows everything for only spaces',
+  );
+  it.todo('brings every item back when the text is deleted');
+  it.todo('names the search box with the label prop');
 });

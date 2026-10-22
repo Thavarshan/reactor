@@ -9,13 +9,16 @@
  *     npm test -- ex02_use_deferred_value
  */
 
-import { act, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { act, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { createControlledSearch, DeferredSearch } from "./ex02_use_deferred_value";
+import {
+  createControlledSearch,
+  DeferredSearch,
+} from './ex02_use_deferred_value';
 
-describe("DeferredSearch", () => {
+describe('DeferredSearch', () => {
   // Examples to get you started:
   //
   // it("shows the fallback until the first answer arrives", async () => {
@@ -43,11 +46,13 @@ describe("DeferredSearch", () => {
   //   expect(screen.getByRole("list", { name: "Results" })).toHaveTextContent("apple");
   // });
 
-  it.todo("shows Loading results... until the first answer");
-  it.todo("shows typed text in the input immediately");
-  it.todo("keeps old results and shows the status while a new query loads");
-  it.todo("does not bring back the Loading results... fallback while typing");
-  it.todo("shows the new results and removes the status when the answer arrives");
-  it.todo("shows No results for an empty answer");
-  it.todo("ends up showing results for the full text after fast typing");
+  it.todo('shows Loading results... until the first answer');
+  it.todo('shows typed text in the input immediately');
+  it.todo('keeps old results and shows the status while a new query loads');
+  it.todo('does not bring back the Loading results... fallback while typing');
+  it.todo(
+    'shows the new results and removes the status when the answer arrives',
+  );
+  it.todo('shows No results for an empty answer');
+  it.todo('ends up showing results for the full text after fast typing');
 });

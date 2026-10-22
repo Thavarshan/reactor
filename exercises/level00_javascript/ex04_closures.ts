@@ -156,15 +156,19 @@ export type Counter = {
 
 export function makeCounter(start = 0): Counter {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: makeCounter");
+  throw new Error('Not implemented: makeCounter');
 }
 
-export function once<A extends unknown[], R>(fn: (...args: A) => R): (...args: A) => R {
+export function once<A extends unknown[], R>(
+  fn: (...args: A) => R,
+): (...args: A) => R {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: once");
+  throw new Error('Not implemented: once');
 }
 
-export function memoizeOne<A extends unknown[], R>(fn: (...args: A) => R): (...args: A) => R {
+export function memoizeOne<A extends unknown[], R>(
+  fn: (...args: A) => R,
+): (...args: A) => R {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: memoizeOne");
+  throw new Error('Not implemented: memoizeOne');
 }

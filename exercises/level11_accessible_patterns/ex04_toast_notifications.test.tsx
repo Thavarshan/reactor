@@ -9,19 +9,26 @@
  *     npm test -- ex04_toast_notifications
  */
 
-import { act, fireEvent, render, renderHook, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import {
+  act,
+  fireEvent,
+  render,
+  renderHook,
+  screen,
+  within,
+} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
-import { ToastProvider, useToast } from "./ex04_toast_notifications";
+import { ToastProvider, useToast } from './ex04_toast_notifications';
 
 // A tiny component that uses the hook, so tests can click to show toasts.
-function SaveButton({ message = "Saved" }: { message?: string }) {
+function SaveButton({ message = 'Saved' }: { message?: string }) {
   const { showToast } = useToast();
   return <button onClick={() => showToast(message)}>Show {message}</button>;
 }
 
-describe("ToastProvider + useToast", () => {
+describe('ToastProvider + useToast', () => {
   afterEach(() => {
     vi.useRealTimers();
   });
@@ -45,16 +52,16 @@ describe("ToastProvider + useToast", () => {
   //   expect(screen.queryByRole("listitem")).not.toBeInTheDocument();
   // });
 
-  it.todo("renders the status container in document.body even with no toasts");
-  it.todo("shows several toasts oldest first");
-  it.todo("keeps a toast until exactly `duration` ms");
-  it.todo("gives each toast its own timer");
-  it.todo("uses a custom duration");
-  it.todo("removes only the dismissed toast and cancels its timer");
-  it.todo("makes two toasts for the same message twice");
-  it.todo("leaves no timers pending after unmount");
+  it.todo('renders the status container in document.body even with no toasts');
+  it.todo('shows several toasts oldest first');
+  it.todo('keeps a toast until exactly `duration` ms');
+  it.todo('gives each toast its own timer');
+  it.todo('uses a custom duration');
+  it.todo('removes only the dismissed toast and cancels its timer');
+  it.todo('makes two toasts for the same message twice');
+  it.todo('leaves no timers pending after unmount');
   // For the last two, renderHook is handy:
   //   renderHook(() => useToast(), { wrapper: ToastProvider })
-  it.todo("throws when useToast is used outside a ToastProvider");
-  it.todo("keeps showToast the same function after a re-render");
+  it.todo('throws when useToast is used outside a ToastProvider');
+  it.todo('keeps showToast the same function after a re-render');
 });

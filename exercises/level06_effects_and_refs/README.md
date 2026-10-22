@@ -15,7 +15,7 @@ React runs them after the screen has updated:
 
 ```tsx
 useEffect(() => {
-  console.log("the page now shows", count);
+  console.log('the page now shows', count);
 }, [count]);
 ```
 
@@ -32,7 +32,7 @@ component is removed from the page (**unmounted**):
 
 ```tsx
 useEffect(() => {
-  const id = setInterval(() => console.log("tick"), 1000);
+  const id = setInterval(() => console.log('tick'), 1000);
   return () => clearInterval(id);
 }, []);
 ```
@@ -69,7 +69,7 @@ jobs:
    ```tsx
    const inputRef = useRef<HTMLInputElement>(null);
    // ...
-   <input ref={inputRef} />
+   <input ref={inputRef} />;
    // later, in an effect or an event handler:
    inputRef.current?.focus();
    ```
@@ -96,6 +96,7 @@ in the HINTS, but here's the toolbox:
   ```
 
   Always call `vi.useRealTimers()` in `afterEach`.
+
 - **`fireEvent` with fake timers.** user-event waits on real timers
   internally, so with plain fake timers it hangs. In the timer exercises,
   use `fireEvent.click` and `fireEvent.change`. They fire one event

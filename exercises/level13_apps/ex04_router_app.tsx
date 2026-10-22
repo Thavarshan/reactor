@@ -170,7 +170,7 @@
  *   in state in the Layout and pass it down with useOutletContext.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type Product = {
   /** A unique id, used in the URL: /products/<id>. */
@@ -182,9 +182,9 @@ export type Product = {
 
 /** PROVIDED: you don't need to change this. The default products. */
 export const PRODUCTS: Product[] = [
-  { id: "1", name: "Teapot", price: 24.5 },
-  { id: "2", name: "Mug", price: 8 },
-  { id: "3", name: "Tea towel", price: 12.25 },
+  { id: '1', name: 'Teapot', price: 24.5 },
+  { id: '2', name: 'Mug', price: 8 },
+  { id: '3', name: 'Tea towel', price: 12.25 },
 ];
 
 export type AppRoutesProps = {
@@ -192,7 +192,9 @@ export type AppRoutesProps = {
   products?: Product[];
 };
 
-export function AppRoutes({ products = PRODUCTS }: AppRoutesProps): ReactElement {
+export function AppRoutes({
+  products = PRODUCTS,
+}: AppRoutesProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: AppRoutes");
+  throw new Error('Not implemented: AppRoutes');
 }

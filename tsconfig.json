@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "ES2023",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
@@ -14,21 +10,10 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "allowImportingTsExtensions": false,
-    "types": [
-      "node",
-      "vite/client",
-      "@testing-library/jest-dom/vitest"
-    ],
+    "types": ["node", "vite/client", "@testing-library/jest-dom/vitest"],
     "paths": {
-      "@/*": [
-        "./playground/*"
-      ]
+      "@/*": ["./playground/*"]
     }
   },
-  "include": [
-    "exercises",
-    "playground",
-    "test",
-    "vite.config.ts"
-  ]
+  "include": ["exercises", "playground", "test", "vite.config.ts"]
 }

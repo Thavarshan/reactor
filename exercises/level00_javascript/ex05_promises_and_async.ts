@@ -173,12 +173,12 @@ export type RetryOptions = {
 
 export function delay(ms: number): Promise<void> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: delay");
+  throw new Error('Not implemented: delay');
 }
 
 export function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: withTimeout");
+  throw new Error('Not implemented: withTimeout');
 }
 
 export async function retry<T>(
@@ -186,5 +186,5 @@ export async function retry<T>(
   { attempts = 3, waitMs = 1000 }: RetryOptions = {},
 ): Promise<T> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: retry");
+  throw new Error('Not implemented: retry');
 }

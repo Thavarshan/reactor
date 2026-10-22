@@ -10,9 +10,9 @@
  *     npm test -- ex04_cart_context
  */
 
-import { render, renderHook, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { afterEach, describe, expect, it, vi } from "vitest";
+import { render, renderHook, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import {
   CartBadge,
@@ -23,7 +23,7 @@ import {
   ProductList,
   SAMPLE_PRODUCTS,
   useCart,
-} from "./ex04_cart_context";
+} from './ex04_cart_context';
 
 const [apple, bread] = SAMPLE_PRODUCTS;
 
@@ -39,7 +39,7 @@ const [apple, bread] = SAMPLE_PRODUCTS;
 //   );
 // }
 
-describe("cartReducer", () => {
+describe('cartReducer', () => {
   // Example to get you started:
   //
   // it("adds a new product with quantity 1", () => {
@@ -48,14 +48,14 @@ describe("cartReducer", () => {
   //   ]);
   // });
 
-  it.todo("adds 1 to the quantity of a product already in the cart");
-  it.todo("keeps the other items as the same objects");
-  it.todo("removes an item when its quantity goes from 1 to 0");
-  it.todo("returns the same array for an unknown id");
-  it.todo("returns the same array when clearing an empty cart");
+  it.todo('adds 1 to the quantity of a product already in the cart');
+  it.todo('keeps the other items as the same objects');
+  it.todo('removes an item when its quantity goes from 1 to 0');
+  it.todo('returns the same array for an unknown id');
+  it.todo('returns the same array when clearing an empty cart');
 });
 
-describe("cart components", () => {
+describe('cart components', () => {
   // Remove any spies a test created (such as a silenced console.error).
   afterEach(() => {
     vi.restoreAllMocks();
@@ -73,10 +73,10 @@ describe("cart components", () => {
   //   expect(cart).toHaveTextContent("Apple x 2");
   // });
 
-  it.todo("shows an empty cart with a $0.00 total, Cart (0) and no Clear cart");
-  it.todo("updates the badge and the total together");
-  it.todo("removes the line when Decrease is clicked at quantity 1");
-  it.todo("empties the cart with Clear cart");
-  it.todo("shows initialItems straight away");
-  it.todo("useCart throws outside a CartProvider");
+  it.todo('shows an empty cart with a $0.00 total, Cart (0) and no Clear cart');
+  it.todo('updates the badge and the total together');
+  it.todo('removes the line when Decrease is clicked at quantity 1');
+  it.todo('empties the cart with Clear cart');
+  it.todo('shows initialItems straight away');
+  it.todo('useCart throws outside a CartProvider');
 });

@@ -9,13 +9,13 @@
  *     npm test -- ex06_dynamic_fields
  */
 
-import { fireEvent, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { EmailListForm } from "./ex06_dynamic_fields";
+import { EmailListForm } from './ex06_dynamic_fields';
 
-describe("EmailListForm", () => {
+describe('EmailListForm', () => {
   // Examples to get you started:
   //
   // it("starts with one field whose remove button is disabled", () => {
@@ -34,10 +34,12 @@ describe("EmailListForm", () => {
   it.todo("starts with one empty 'Email 1' and a disabled remove button");
   it.todo("adds 'Email 2' and enables both remove buttons");
   it.todo("disables 'Add email' at max");
-  it.todo("removes the middle row, keeping the other texts and renumbering");
-  it.todo("disables the last remove button when one field is left");
-  it.todo("submits the non-empty values in order");
-  it.todo("shows the alert and doesn't call onSubmit when every field is empty");
-  it.todo("removes the alert after a good submit");
+  it.todo('removes the middle row, keeping the other texts and renumbering');
+  it.todo('disables the last remove button when one field is left');
+  it.todo('submits the non-empty values in order');
+  it.todo(
+    "shows the alert and doesn't call onSubmit when every field is empty",
+  );
+  it.todo('removes the alert after a good submit');
   it.todo("prevents the browser's default submit");
 });

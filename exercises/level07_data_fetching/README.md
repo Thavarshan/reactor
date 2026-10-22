@@ -41,7 +41,7 @@ It only rejects when there's no answer at all. Check `response.ok`
 yourself:
 
 ```tsx
-const response = await fetch("/api/books/1");
+const response = await fetch('/api/books/1');
 if (!response.ok) throw new Error(`Server said ${response.status}`);
 ```
 
@@ -52,10 +52,10 @@ belongs in the **event handler**, not in an effect. Pass `fetch` a method,
 a header and a JSON body:
 
 ```tsx
-await fetch("/api/books", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ title: "Emma" }),
+await fetch('/api/books', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ title: 'Emma' }),
 });
 ```
 
@@ -76,11 +76,11 @@ answers at the start of each test with `server.use`. They're removed
 automatically after each test:
 
 ```tsx
-import { delay, http, HttpResponse } from "msw";
-import { server } from "../../test/server";
+import { delay, http, HttpResponse } from 'msw';
+import { server } from '../../test/server';
 
 server.use(
-  http.get("/api/books/1", () => HttpResponse.json({ id: 1, title: "Emma" })),
+  http.get('/api/books/1', () => HttpResponse.json({ id: 1, title: 'Emma' })),
 );
 ```
 

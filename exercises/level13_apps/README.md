@@ -18,7 +18,7 @@ Before writing code for an app, answer three questions on paper:
    state:
 
    ```tsx
-   const todo = cards.filter((card) => card.column === "todo");
+   const todo = cards.filter((card) => card.column === 'todo');
    ```
 
 3. **What talks to the outside world?** Fetching, localStorage, timers
@@ -33,8 +33,15 @@ function NoteItem({ note, onEdit, onDelete }: NoteItemProps) {
   return (
     <li>
       <h3>{note.title}</h3>
-      <button aria-label={`Edit ${note.title}`} onClick={() => onEdit(note.id)}>Edit</button>
-      <button aria-label={`Delete ${note.title}`} onClick={() => onDelete(note.id)}>Delete</button>
+      <button aria-label={`Edit ${note.title}`} onClick={() => onEdit(note.id)}>
+        Edit
+      </button>
+      <button
+        aria-label={`Delete ${note.title}`}
+        onClick={() => onDelete(note.id)}
+      >
+        Delete
+      </button>
     </li>
   );
 }
@@ -58,9 +65,9 @@ App tests tell a short story: do something, check the screen, do the
 next thing.
 
 ```tsx
-await user.type(screen.getByLabelText("New card"), "Write tests{Enter}");
-const todo = screen.getByRole("region", { name: "To do" });
-expect(within(todo).getByText("Write tests")).toBeInTheDocument();
+await user.type(screen.getByLabelText('New card'), 'Write tests{Enter}');
+const todo = screen.getByRole('region', { name: 'To do' });
+expect(within(todo).getByText('Write tests')).toBeInTheDocument();
 ```
 
 Useful tools for this level:

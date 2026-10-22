@@ -157,5 +157,5 @@
 
 export function useInterval(callback: () => void, delay: number | null): void {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useInterval");
+  throw new Error('Not implemented: useInterval');
 }

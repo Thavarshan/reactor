@@ -9,13 +9,13 @@
  *     npm test -- ex05_create_post_form
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { http, HttpResponse } from "msw";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { http, HttpResponse } from 'msw';
+import { describe, expect, it, vi } from 'vitest';
 
-import { server } from "../../test/server";
-import { CreatePostForm } from "./ex05_create_post_form";
+import { server } from '../../test/server';
+import { CreatePostForm } from './ex05_create_post_form';
 
 // PROVIDED: you don't need to change this.
 // A gate: a handler can `await gate.opened`, and waits there until the
@@ -28,7 +28,7 @@ function createGate() {
   return { opened, open };
 }
 
-describe("CreatePostForm", () => {
+describe('CreatePostForm', () => {
   // Examples to get you started:
   //
   // it("sends the post and clears the form", async () => {
@@ -69,14 +69,14 @@ describe("CreatePostForm", () => {
   //   expect(screen.getByLabelText("Body")).toHaveValue("No title here");
   // });
 
-  it.todo("sends a POST with a JSON Content-Type header");
+  it.todo('sends a POST with a JSON Content-Type header');
   it.todo("disables the button and shows 'Creating post...' while waiting");
-  it.todo("sends only one request when the button is clicked twice");
+  it.todo('sends only one request when the button is clicked twice');
   it.todo("doesn't mark Body invalid when only Title has a message");
-  it.todo("shows both messages when both fields are rejected");
-  it.todo("shows the alert and keeps the text on a 500");
-  it.todo("shows the alert on a network failure");
-  it.todo("clears old messages and the alert when submitting again");
-  it.todo("submits when Enter is pressed in the Title field");
-  it.todo("works without an onCreated prop");
+  it.todo('shows both messages when both fields are rejected');
+  it.todo('shows the alert and keeps the text on a 500');
+  it.todo('shows the alert on a network failure');
+  it.todo('clears old messages and the alert when submitting again');
+  it.todo('submits when Enter is pressed in the Title field');
+  it.todo('works without an onCreated prop');
 });

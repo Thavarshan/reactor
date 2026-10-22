@@ -9,13 +9,13 @@
  *     npm test -- ex01_button
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { Button } from "./ex01_button";
+import { Button } from './ex01_button';
 
-describe("Button", () => {
+describe('Button', () => {
   // Examples to get you started:
   //
   // it("uses the primary variant and medium size by default", () => {
@@ -39,13 +39,15 @@ describe("Button", () => {
   //   expect(onSubmit).not.toHaveBeenCalled();
   // });
 
-  it.todo("has the default classes and type=button with no props");
-  it.todo("applies the variant and size classes, and not the defaults");
-  it.todo("adds an extra className without losing its own classes");
-  it.todo("submits a form when type=submit is passed");
-  it.todo("does not submit a form without a type");
-  it.todo("calls onClick once per click");
-  it.todo("is disabled and ignores clicks when disabled is passed");
-  it.todo("passes other attributes (title, id, name, aria-describedby) through");
-  it.todo("uses aria-label as the accessible name");
+  it.todo('has the default classes and type=button with no props');
+  it.todo('applies the variant and size classes, and not the defaults');
+  it.todo('adds an extra className without losing its own classes');
+  it.todo('submits a form when type=submit is passed');
+  it.todo('does not submit a form without a type');
+  it.todo('calls onClick once per click');
+  it.todo('is disabled and ignores clicks when disabled is passed');
+  it.todo(
+    'passes other attributes (title, id, name, aria-describedby) through',
+  );
+  it.todo('uses aria-label as the accessible name');
 });

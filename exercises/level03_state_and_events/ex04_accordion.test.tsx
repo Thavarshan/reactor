@@ -9,19 +9,19 @@
  *     npm test -- ex04_accordion
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it } from 'vitest';
 
-import { Accordion, type AccordionSection } from "./ex04_accordion";
+import { Accordion, type AccordionSection } from './ex04_accordion';
 
 const sections: AccordionSection[] = [
-  { id: "shipping", title: "Shipping", content: "We ship worldwide." },
-  { id: "returns", title: "Returns", content: "Return within 30 days." },
-  { id: "warranty", title: "Warranty", content: <p>Two years.</p> },
+  { id: 'shipping', title: 'Shipping', content: 'We ship worldwide.' },
+  { id: 'returns', title: 'Returns', content: 'Return within 30 days.' },
+  { id: 'warranty', title: 'Warranty', content: <p>Two years.</p> },
 ];
 
-describe("Accordion", () => {
+describe('Accordion', () => {
   // Examples to get you started:
   //
   // it("starts with every section closed", () => {
@@ -42,14 +42,14 @@ describe("Accordion", () => {
   //   );
   // });
 
-  it.todo("renders each title as a button inside a level-3 heading");
-  it.todo("opens the defaultOpenId section first");
-  it.todo("keeps only one section open at a time");
-  it.todo("closes an open section when its button is clicked again");
-  it.todo("links each button to its panel with aria-controls");
-  it.todo("keeps closed panels on the page but hidden");
-  it.todo("uses unique ids with two accordions on the page");
-  it.todo("keeps two accordions independent");
-  it.todo("renders no buttons for an empty list");
-  it.todo("opens a section with Enter from the keyboard");
+  it.todo('renders each title as a button inside a level-3 heading');
+  it.todo('opens the defaultOpenId section first');
+  it.todo('keeps only one section open at a time');
+  it.todo('closes an open section when its button is clicked again');
+  it.todo('links each button to its panel with aria-controls');
+  it.todo('keeps closed panels on the page but hidden');
+  it.todo('uses unique ids with two accordions on the page');
+  it.todo('keeps two accordions independent');
+  it.todo('renders no buttons for an empty list');
+  it.todo('opens a section with Enter from the keyboard');
 });

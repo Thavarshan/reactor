@@ -9,13 +9,13 @@
  *     npm test -- ex02_signup_form
  */
 
-import { fireEvent, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { fireEvent, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { describe, expect, it, vi } from 'vitest';
 
-import { SignupForm } from "./ex02_signup_form";
+import { SignupForm } from './ex02_signup_form';
 
-describe("SignupForm", () => {
+describe('SignupForm', () => {
   // Examples to get you started:
   //
   // it("shows every required error when submitted empty", async () => {
@@ -43,14 +43,16 @@ describe("SignupForm", () => {
   //   });
   // });
 
-  it.todo("shows no errors and nothing invalid before the first submit");
-  it.todo("shows all three required errors on an empty submit, without calling onSubmit");
-  it.todo("links each error to its input and marks the input invalid");
-  it.todo("rejects an email without a dot after the @");
-  it.todo("rejects a 7-character password but accepts an 8-character one");
-  it.todo("says the passwords do not match");
-  it.todo("keeps the errors while typing, and updates them on the next submit");
-  it.todo("calls onSubmit once with the email and password");
+  it.todo('shows no errors and nothing invalid before the first submit');
+  it.todo(
+    'shows all three required errors on an empty submit, without calling onSubmit',
+  );
+  it.todo('links each error to its input and marks the input invalid');
+  it.todo('rejects an email without a dot after the @');
+  it.todo('rejects a 7-character password but accepts an 8-character one');
+  it.todo('says the passwords do not match');
+  it.todo('keeps the errors while typing, and updates them on the next submit');
+  it.todo('calls onSubmit once with the email and password');
   it.todo("prevents the browser's default submit");
-  it.todo("submits when Enter is pressed in a field");
+  it.todo('submits when Enter is pressed in a field');
 });

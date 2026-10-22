@@ -150,7 +150,7 @@
  * - Preload the next image so it appears without a delay.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type CarouselImage = {
   /** The image's url. */
@@ -166,7 +166,10 @@ export type ImageCarouselProps = {
   label?: string;
 };
 
-export function ImageCarousel({ images, label = "Image carousel" }: ImageCarouselProps): ReactElement {
+export function ImageCarousel({
+  images,
+  label = 'Image carousel',
+}: ImageCarouselProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ImageCarousel");
+  throw new Error('Not implemented: ImageCarousel');
 }

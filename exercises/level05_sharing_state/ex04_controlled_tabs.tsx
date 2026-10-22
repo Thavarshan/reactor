@@ -151,7 +151,8 @@
  *   controlled, like React does for inputs.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type Tab = {
   /** A unique id, used by `value`, `defaultValue` and `onChange`. */
@@ -175,7 +176,13 @@ export type TabsProps = {
   onChange?: (id: string) => void;
 };
 
-export function Tabs({ tabs, label, value, defaultValue, onChange }: TabsProps): ReactElement {
+export function Tabs({
+  tabs,
+  label,
+  value,
+  defaultValue,
+  onChange,
+}: TabsProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: Tabs");
+  throw new Error('Not implemented: Tabs');
 }

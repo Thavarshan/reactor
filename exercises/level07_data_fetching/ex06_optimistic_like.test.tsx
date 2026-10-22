@@ -9,13 +9,13 @@
  *     npm test -- ex06_optimistic_like
  */
 
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { http, HttpResponse } from "msw";
-import { describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { http, HttpResponse } from 'msw';
+import { describe, expect, it } from 'vitest';
 
-import { server } from "../../test/server";
-import { LikeButton } from "./ex06_optimistic_like";
+import { server } from '../../test/server';
+import { LikeButton } from './ex06_optimistic_like';
 
 // PROVIDED: you don't need to change this.
 // A gate: a handler can `await gate.opened`, and waits there until the
@@ -29,7 +29,7 @@ function createGate() {
   return { opened, open };
 }
 
-describe("LikeButton", () => {
+describe('LikeButton', () => {
   // Examples to get you started:
   //
   // it("shows the like at once, then the server's count", async () => {
@@ -64,9 +64,9 @@ describe("LikeButton", () => {
   //   expect(screen.getByText("10 likes")).toBeInTheDocument();
   // });
 
-  it.todo("shows the initial state with the right plural");
-  it.todo("sends DELETE to un-like, and POST to like, for the right postId");
-  it.todo("rolls a failed un-like back to pressed");
-  it.todo("rolls back on a network failure");
-  it.todo("removes the alert on the next click");
+  it.todo('shows the initial state with the right plural');
+  it.todo('sends DELETE to un-like, and POST to like, for the right postId');
+  it.todo('rolls a failed un-like back to pressed');
+  it.todo('rolls back on a network failure');
+  it.todo('removes the alert on the next click');
 });

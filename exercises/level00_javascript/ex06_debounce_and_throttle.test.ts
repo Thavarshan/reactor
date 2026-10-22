@@ -9,11 +9,11 @@
  *     npm test -- ex06_debounce_and_throttle
  */
 
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { debounce, throttle } from "./ex06_debounce_and_throttle";
+import { debounce, throttle } from './ex06_debounce_and_throttle';
 
-describe("debounce and throttle", () => {
+describe('debounce and throttle', () => {
   // Fake timers: time only moves when the test says so.
   beforeEach(() => {
     vi.useFakeTimers();
@@ -42,11 +42,13 @@ describe("debounce and throttle", () => {
   //   expect(fn).toHaveBeenCalledWith("a");
   // });
 
-  it.todo("debounce restarts the wait on every call");
-  it.todo("debounce calls fn again after a second burst");
-  it.todo("cancel stops a waiting call");
-  it.todo("cancel with nothing waiting does nothing, and later calls still work");
-  it.todo("throttle ignores calls inside the window and never runs them later");
-  it.todo("throttle runs a call exactly waitMs after the last run");
-  it.todo("two debounced functions have separate timers");
+  it.todo('debounce restarts the wait on every call');
+  it.todo('debounce calls fn again after a second burst');
+  it.todo('cancel stops a waiting call');
+  it.todo(
+    'cancel with nothing waiting does nothing, and later calls still work',
+  );
+  it.todo('throttle ignores calls inside the window and never runs them later');
+  it.todo('throttle runs a call exactly waitMs after the last run');
+  it.todo('two debounced functions have separate timers');
 });

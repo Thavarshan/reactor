@@ -146,27 +146,27 @@ export type User = {
 };
 
 /** Any fields of a user except `id`. */
-export type UserChanges = Partial<Omit<User, "id">>;
+export type UserChanges = Partial<Omit<User, 'id'>>;
 
 /** A user without the private `email` field. */
-export type PublicProfile = Omit<User, "email">;
+export type PublicProfile = Omit<User, 'email'>;
 
 export function updateUser(user: User, changes: UserChanges): User {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: updateUser");
+  throw new Error('Not implemented: updateUser');
 }
 
 export function addTag(user: User, tag: string): User {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: addTag");
+  throw new Error('Not implemented: addTag');
 }
 
 export function publicProfile(user: User): PublicProfile {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: publicProfile");
+  throw new Error('Not implemented: publicProfile');
 }
 
 export function removeItem<T>(items: readonly T[], index: number): T[] {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: removeItem");
+  throw new Error('Not implemented: removeItem');
 }

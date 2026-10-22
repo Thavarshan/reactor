@@ -9,14 +9,14 @@
  *     npm test -- ex04_router_app
  */
 
-import { render, screen, within } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { MemoryRouter } from "react-router";
-import { describe, expect, it } from "vitest";
+import { render, screen, within } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { MemoryRouter } from 'react-router';
+import { describe, expect, it } from 'vitest';
 
-import { AppRoutes, type Product } from "./ex04_router_app";
+import { AppRoutes, type Product } from './ex04_router_app';
 
-describe("AppRoutes", () => {
+describe('AppRoutes', () => {
   // A helper that renders the app as if the browser had opened `url`
   // (uncomment it together with the examples):
   //
@@ -45,12 +45,14 @@ describe("AppRoutes", () => {
   //   expect(screen.getByText("$8.00")).toBeInTheDocument();
   // });
 
-  it.todo("shows the home heading at /, with only Home current");
-  it.todo("lists every product with a link to its page");
-  it.todo("opens a product page with its formatted price");
-  it.todo("keeps Products current on a product page");
-  it.todo("goes back to the list with Back to products");
-  it.todo("shows Product not found for an unknown id");
-  it.todo("shows Page not found with the nav for an unknown address, and Go home works");
-  it.todo("uses a custom products prop");
+  it.todo('shows the home heading at /, with only Home current');
+  it.todo('lists every product with a link to its page');
+  it.todo('opens a product page with its formatted price');
+  it.todo('keeps Products current on a product page');
+  it.todo('goes back to the list with Back to products');
+  it.todo('shows Product not found for an unknown id');
+  it.todo(
+    'shows Page not found with the nav for an unknown address, and Go home works',
+  );
+  it.todo('uses a custom products prop');
 });

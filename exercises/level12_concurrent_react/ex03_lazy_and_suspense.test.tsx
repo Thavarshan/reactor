@@ -9,14 +9,18 @@
  *     npm test -- ex03_lazy_and_suspense
  */
 
-import { act, render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import { lazy, type ComponentType } from "react";
-import { describe, expect, it, vi } from "vitest";
+import { act, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import { lazy, type ComponentType } from 'react';
+import { describe, expect, it, vi } from 'vitest';
 
-import { LazySalesChart, LazySalesTable, LazyTabs } from "./ex03_lazy_and_suspense";
+import {
+  LazySalesChart,
+  LazySalesTable,
+  LazyTabs,
+} from './ex03_lazy_and_suspense';
 
-describe("LazyTabs", () => {
+describe('LazyTabs', () => {
   // Examples to get you started:
   //
   // it("shows the fallback, then the panel", async () => {
@@ -36,10 +40,10 @@ describe("LazyTabs", () => {
   //   expect(await screen.findByRole("heading", { name: "Sales chart" })).toBeInTheDocument();
   // });
 
-  it.todo("selects the first tab, and its fallback names it");
-  it.todo("shows the panel once its component has loaded");
-  it.todo("never starts loading a tab that is never clicked");
+  it.todo('selects the first tab, and its fallback names it');
+  it.todo('shows the panel once its component has loaded');
+  it.todo('never starts loading a tab that is never clicked');
   it.todo("shows the clicked tab's own fallback, then its panel");
-  it.todo("shows an already loaded tab straight away, with no fallback");
-  it.todo("loads the real SalesChart and SalesTable panels");
+  it.todo('shows an already loaded tab straight away, with no fallback');
+  it.todo('loads the real SalesChart and SalesTable panels');
 });

@@ -9,18 +9,18 @@ who use a screen reader or only a keyboard.
 
 ## Props are a component's inputs
 
-A component is a function, and its *props* are its arguments. React passes
+A component is a function, and its _props_ are its arguments. React passes
 them all in one object, which you usually unpack right in the signature.
 You can give a missing prop a default value there too:
 
 ```tsx
-type BadgeProps = { label: string; tone?: "info" | "warning" };
+type BadgeProps = { label: string; tone?: 'info' | 'warning' };
 
-function Badge({ label, tone = "info" }: BadgeProps) {
+function Badge({ label, tone = 'info' }: BadgeProps) {
   return <span className={`badge badge-${tone}`}>{label}</span>;
 }
 
-<Badge label="New" />;               // tone is "info"
+<Badge label="New" />; // tone is "info"
 <Badge label="Late" tone="warning" />;
 ```
 
@@ -29,11 +29,14 @@ A component never changes its own props. They belong to the parent.
 ## Passing the rest along
 
 Sometimes a component cares about a few props and should hand everything
-else to the HTML element underneath. The *rest* syntax collects the
-leftovers, and the *spread* syntax passes them on:
+else to the HTML element underneath. The _rest_ syntax collects the
+leftovers, and the _spread_ syntax passes them on:
 
 ```tsx
-function TextField({ label, ...rest }: { label: string } & ComponentProps<"input">) {
+function TextField({
+  label,
+  ...rest
+}: { label: string } & ComponentProps<'input'>) {
   return (
     <label>
       {label} <input {...rest} />
@@ -48,10 +51,16 @@ function TextField({ label, ...rest }: { label: string } & ComponentProps<"input
 
 Whatever you put between a component's tags arrives as the `children`
 prop. Any other prop can hold JSX too. Props used that way are often called
-*slots*:
+_slots_:
 
 ```tsx
-function Panel({ heading, children }: { heading: ReactNode; children: ReactNode }) {
+function Panel({
+  heading,
+  children,
+}: {
+  heading: ReactNode;
+  children: ReactNode;
+}) {
   return (
     <section>
       <h2>{heading}</h2>
@@ -60,7 +69,13 @@ function Panel({ heading, children }: { heading: ReactNode; children: ReactNode 
   );
 }
 
-<Panel heading={<>Inbox <small>(3)</small></>}>
+<Panel
+  heading={
+    <>
+      Inbox <small>(3)</small>
+    </>
+  }
+>
   <p>No new messages.</p>
 </Panel>;
 ```
@@ -68,13 +83,13 @@ function Panel({ heading, children }: { heading: ReactNode; children: ReactNode 
 The type `ReactNode` means "anything React can render": text, numbers,
 elements, `null`.
 
-A prop can even hold a *function* that returns JSX. That's a *render prop*:
+A prop can even hold a _function_ that returns JSX. That's a _render prop_:
 the component decides when and where to draw, and the parent decides what.
 
 ## Names for everyone
 
-Tests in this repo find elements the way a screen reader does: by *role*
-(what kind of thing it is) and *accessible name* (what it's called). That's
+Tests in this repo find elements the way a screen reader does: by _role_
+(what kind of thing it is) and _accessible name_ (what it's called). That's
 no accident. If a test can't find your button, a blind user can't either.
 
 ```tsx
@@ -84,7 +99,7 @@ no accident. If a test can't find your button, a blind user can't either.
 <nav aria-label="Chapters">...</nav>        // role "navigation", name "Chapters"
 ```
 
-Elements like `<header>`, `<nav>`, `<main>` and `<footer>` are *landmarks*
+Elements like `<header>`, `<nav>`, `<main>` and `<footer>` are _landmarks_
 that screen reader users jump between, a bit like glancing at a page's
 layout.
 

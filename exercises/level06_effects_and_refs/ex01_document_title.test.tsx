@@ -9,17 +9,17 @@
  *     npm test -- ex01_document_title
  */
 
-import { render, screen } from "@testing-library/react";
-import { StrictMode } from "react";
-import { beforeEach, describe, expect, it } from "vitest";
+import { render, screen } from '@testing-library/react';
+import { StrictMode } from 'react';
+import { beforeEach, describe, expect, it } from 'vitest';
 
-import { PageTitle } from "./ex01_document_title";
+import { PageTitle } from './ex01_document_title';
 
-describe("PageTitle", () => {
+describe('PageTitle', () => {
   // document.title survives between tests, so start each test from a
   // known value. Then "restored" has a clear meaning.
   beforeEach(() => {
-    document.title = "My app";
+    document.title = 'My app';
   });
 
   // Examples to get you started:
@@ -36,11 +36,11 @@ describe("PageTitle", () => {
   //   expect(document.title).toBe("My app");
   // });
 
-  it.todo("shows just the title when there is no count");
-  it.todo("shows just the title when count is 0");
-  it.todo("shows (99) at 99 and (99+) above 99");
-  it.todo("renders the title, without the count, in the h1");
-  it.todo("updates the tab when title or count changes");
-  it.todo("restores the ORIGINAL title on unmount after several changes");
-  it.todo("works and cleans up inside StrictMode");
+  it.todo('shows just the title when there is no count');
+  it.todo('shows just the title when count is 0');
+  it.todo('shows (99) at 99 and (99+) above 99');
+  it.todo('renders the title, without the count, in the h1');
+  it.todo('updates the tab when title or count changes');
+  it.todo('restores the ORIGINAL title on unmount after several changes');
+  it.todo('works and cleans up inside StrictMode');
 });

@@ -165,7 +165,8 @@
  * - Move focus to the "Name" input when the login form appears.
  */
 
-import { ReactNode, type ReactElement } from "react";
+import type { ReactNode } from 'react';
+import { type ReactElement } from 'react';
 
 export type User = {
   /** The name the user logged in with. */
@@ -188,24 +189,27 @@ export type AuthProviderProps = {
   initialUser?: User | null;
 };
 
-export function AuthProvider({ children, initialUser = null }: AuthProviderProps): ReactElement {
+export function AuthProvider({
+  children,
+  initialUser = null,
+}: AuthProviderProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: AuthProvider");
+  throw new Error('Not implemented: AuthProvider');
 }
 
 export function useAuth(): AuthContextValue {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useAuth");
+  throw new Error('Not implemented: useAuth');
 }
 
 export function LoginForm(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: LoginForm");
+  throw new Error('Not implemented: LoginForm');
 }
 
 export function UserMenu(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: UserMenu");
+  throw new Error('Not implemented: UserMenu');
 }
 
 export type RequireAuthProps = {
@@ -215,5 +219,5 @@ export type RequireAuthProps = {
 
 export function RequireAuth({ children }: RequireAuthProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: RequireAuth");
+  throw new Error('Not implemented: RequireAuth');
 }

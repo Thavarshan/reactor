@@ -175,7 +175,7 @@
  * - Move the fetching into a custom hook, `useUser(userId)`.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 /** A user, as the server sends it. */
 export type User = {
@@ -191,5 +191,5 @@ export type UserProfileProps = {
 
 export function UserProfile({ userId }: UserProfileProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: UserProfile");
+  throw new Error('Not implemented: UserProfile');
 }

@@ -134,9 +134,9 @@
  *   something outside React. Rewrite the hook with it.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export function WindowSize(): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: WindowSize");
+  throw new Error('Not implemented: WindowSize');
 }

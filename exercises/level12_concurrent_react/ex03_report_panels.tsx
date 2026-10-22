@@ -7,9 +7,9 @@
  */
 
 const SALES = [
-  { month: "Jan", total: 120 },
-  { month: "Feb", total: 95 },
-  { month: "Mar", total: 140 },
+  { month: 'Jan', total: 120 },
+  { month: 'Feb', total: 95 },
+  { month: 'Mar', total: 140 },
 ];
 
 export function SalesChart() {
@@ -18,7 +18,7 @@ export function SalesChart() {
       <h2 id="sales-chart-heading">Sales chart</h2>
       {SALES.map((row) => (
         <div key={row.month}>
-          {row.month} {"#".repeat(row.total / 10)}
+          {row.month} {'#'.repeat(row.total / 10)}
         </div>
       ))}
     </section>

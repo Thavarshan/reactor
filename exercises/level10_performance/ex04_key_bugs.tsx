@@ -138,7 +138,7 @@
  *   made during render, like `key={Math.random()}`?
  */
 
-import { useState, type ReactElement } from "react";
+import { useState, type ReactElement } from 'react';
 
 export type Guest = {
   id: number;
@@ -156,20 +156,23 @@ export type GuestListProps = {
  */
 export function BuggyGuestList({ initialGuests }: GuestListProps) {
   const [guests, setGuests] = useState(initialGuests);
-  const [newName, setNewName] = useState("");
+  const [newName, setNewName] = useState('');
 
   function addToTop() {
     const name = newName.trim();
-    if (name === "") return;
+    if (name === '') {
+      return;
+    }
     const id = Math.max(0, ...guests.map((g) => g.id)) + 1;
     setGuests([{ id, name }, ...guests]);
-    setNewName("");
+    setNewName('');
   }
 
   return (
     <div>
       <label>
-        New guest <input value={newName} onChange={(e) => setNewName(e.target.value)} />
+        New guest{' '}
+        <input value={newName} onChange={(e) => setNewName(e.target.value)} />
       </label>
       <button type="button" onClick={addToTop}>
         Add to top
@@ -183,8 +186,11 @@ export function BuggyGuestList({ initialGuests }: GuestListProps) {
           <li key={index}>
             <label>
               Note for {guest.name} <input />
-            </label>{" "}
-            <button type="button" onClick={() => setGuests(guests.filter((g) => g.id !== guest.id))}>
+            </label>{' '}
+            <button
+              type="button"
+              onClick={() => setGuests(guests.filter((g) => g.id !== guest.id))}
+            >
               Remove {guest.name}
             </button>
           </li>
@@ -196,5 +202,5 @@ export function BuggyGuestList({ initialGuests }: GuestListProps) {
 
 export function GuestList({ initialGuests }: GuestListProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: GuestList");
+  throw new Error('Not implemented: GuestList');
 }

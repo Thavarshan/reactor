@@ -175,7 +175,7 @@
  *   past and future.
  */
 
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export type History<T> = {
   /** Earlier values, oldest first. */
@@ -186,11 +186,15 @@ export type History<T> = {
   future: readonly T[];
 };
 
-export type HistoryAction<T> = { type: "set"; value: T } | { type: "undo" } | { type: "redo" };
+export type HistoryAction<T> =
+  { type: 'set'; value: T } | { type: 'undo' } | { type: 'redo' };
 
-export function historyReducer<T>(state: History<T>, action: HistoryAction<T>): History<T> {
+export function historyReducer<T>(
+  state: History<T>,
+  action: HistoryAction<T>,
+): History<T> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: historyReducer");
+  throw new Error('Not implemented: historyReducer');
 }
 
 export type UseHistoryResult<T> = {
@@ -210,11 +214,11 @@ export type UseHistoryResult<T> = {
 
 export function useHistory<T>(initialValue: T): UseHistoryResult<T> {
   // TODO: implement me, then make your tests pass.
-  throw new Error("Not implemented: useHistory");
+  throw new Error('Not implemented: useHistory');
 }
 
 // PROVIDED: you don't need to change this.
-export const COLORS = ["white", "red", "green", "blue"] as const;
+export const COLORS = ['white', 'red', 'green', 'blue'] as const;
 export type Color = (typeof COLORS)[number];
 
 export type ColorPickerProps = {
@@ -222,7 +226,9 @@ export type ColorPickerProps = {
   initialColor?: Color;
 };
 
-export function ColorPicker({ initialColor = "white" }: ColorPickerProps): ReactElement {
+export function ColorPicker({
+  initialColor = 'white',
+}: ColorPickerProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: ColorPicker");
+  throw new Error('Not implemented: ColorPicker');
 }

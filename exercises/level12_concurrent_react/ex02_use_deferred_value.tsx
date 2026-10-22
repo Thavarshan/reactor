@@ -142,7 +142,7 @@
  * - Replace the provided search with a real fetch to an /api endpoint.
  */
 
-import { use, type ReactElement } from "react";
+import { use, type ReactElement } from 'react';
 
 export type DeferredSearchProps = {
   /** Finds matches for a query. Returns a Promise of result strings. */
@@ -153,9 +153,12 @@ export type DeferredSearchProps = {
 
 // Remembers one Promise per search function and query, so asking twice
 // for the same query gives the SAME Promise. (`use` needs that.)
-const resultsCache = new WeakMap<DeferredSearchProps["search"], Map<string, Promise<string[]>>>();
+const resultsCache = new WeakMap<
+  DeferredSearchProps['search'],
+  Map<string, Promise<string[]>>
+>();
 
-function getResults(search: DeferredSearchProps["search"], query: string) {
+function getResults(search: DeferredSearchProps['search'], query: string) {
   let byQuery = resultsCache.get(search);
   if (!byQuery) {
     byQuery = new Map();
@@ -174,9 +177,17 @@ function getResults(search: DeferredSearchProps["search"], query: string) {
  * Shows the results for `query`. It WAITS (suspends) until `search`
  * answers, so it must sit inside a <Suspense> boundary.
  */
-export function SearchResults({ query, search }: { query: string; search: DeferredSearchProps["search"] }) {
+export function SearchResults({
+  query,
+  search,
+}: {
+  query: string;
+  search: DeferredSearchProps['search'];
+}) {
   const results = use(getResults(search, query));
-  if (results.length === 0) return <p>No results</p>;
+  if (results.length === 0) {
+    return <p>No results</p>;
+  }
   return (
     <ul aria-label="Results">
       {results.map((result) => (
@@ -212,7 +223,7 @@ export function createControlledSearch() {
       return promiseFor(query);
     },
     respond(query: string, results: string[]) {
-      promiseFor(query);
+      void promiseFor(query);
       answers.get(query)!(results);
     },
   };
@@ -220,5 +231,5 @@ export function createControlledSearch() {
 
 export function DeferredSearch({ search }: DeferredSearchProps): ReactElement {
   // TODO: build me, then make your tests pass.
-  throw new Error("Not implemented: DeferredSearch");
+  throw new Error('Not implemented: DeferredSearch');
 }
